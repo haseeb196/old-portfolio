@@ -1,0 +1,6 @@
+build
+.next
+out
+node_modules/
+jsconfig.json
+public
