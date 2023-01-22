@@ -1,4 +1,4 @@
-import { ModeNight, Menu  } from '@mui/icons-material';
+import { ModeNight, Menu, WbSunny } from '@mui/icons-material';
 import { IconButton } from '@mui/material';
 import Link from 'next/link';
 import React from 'react';
@@ -65,17 +65,34 @@ const Sidebar = () => {
           chg ? 'bg-[#03001C]' : 'bg-[#F9F9F9]'
         } rounded-3xl p-1`}
       >
-        <IconButton onClick={colorchanger}>
-          <ModeNight htmlColor={chg ? 'white' : 'gray'} />
+        <IconButton
+          onClick={colorchanger}
+          className="shadow-2xl"
+        >
+          {chg ? (
+            <WbSunny
+              htmlColor="white"
+              style={{ transition: 'all', transitionDuration: '130ms' }}
+            />
+          ) : (
+            <ModeNight
+              htmlColor="gray"
+              style={{ transition: 'all', transitionDuration: '130ms' }}
+            />
+          )}
         </IconButton>
       </div>
     </div>
   ) : (
-    <div className='flex flex-row justify-between bg-[#03001C] text-white py-3'>
-      <div className='ml-5'>
-        <h1 className='uppercase text-[20px] font-bold tracking-widest '>tokoyo</h1>
+    <div className="flex flex-row justify-between items-center bg-[#03001C] text-white py-3">
+      <div className="ml-5">
+        <h1 className="uppercase text-[20px] font-bold tracking-widest ">
+          tokoyo
+        </h1>
       </div>
-      <div className='mr-5'><Drawers /></div>
+      <div className="mr-5">
+        <Drawers />
+      </div>
     </div>
   );
 };
