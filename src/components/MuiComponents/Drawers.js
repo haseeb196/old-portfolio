@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import Drawer from '@mui/material/Drawer';
-import { IconButton, Box, List, ListItem } from '@mui/material';
 import { Clear, Menu } from '@mui/icons-material';
+import { Box, IconButton, List, ListItem } from '@mui/material';
+import Drawer from '@mui/material/Drawer';
 import Link from 'next/link';
+import { useState } from 'react';
 
 const Drawers = () => {
   const [open, setOpen] = useState(false);
@@ -21,16 +21,16 @@ const Drawers = () => {
         onClose={() => setOpen(false)}
         anchor={'right'}
       >
-        <Box className="flex flex-wrap flex-col items-start">
+        <Box className="flex flex-col flex-wrap items-start">
           <IconButton onClick={() => setOpen(false)}>
             <Clear />
           </IconButton>
-          <List className="md:pr-[210px] lg:pr-[210px] pl-[20px] sm:pr-[170px]">
+          <List className="pl-[20px] sm:pr-[170px] md:pr-[210px] lg:pr-[210px]">
             <ListItem>
               <Link
                 href={'/'}
                 onClick={() => setOpen(false)}
-                className="md:text-[21px] lg:text-[21px] sm:text-[18px]"
+                className="sm:text-[18px] md:text-[21px] lg:text-[21px]"
               >
                 Home
               </Link>
@@ -39,7 +39,7 @@ const Drawers = () => {
               <Link
                 href={'/about'}
                 onClick={() => setOpen(false)}
-                className="md:text-[21px] lg:text-[21px] sm:text-[18px]"
+                className="sm:text-[18px] md:text-[21px] lg:text-[21px]"
               >
                 About
               </Link>
@@ -48,7 +48,7 @@ const Drawers = () => {
               <Link
                 href={'/service'}
                 onClick={() => setOpen(false)}
-                className="md:text-[21px] lg:text-[21px] sm:text-[18px]"
+                className="sm:text-[18px] md:text-[21px] lg:text-[21px]"
               >
                 Service
               </Link>
@@ -57,7 +57,7 @@ const Drawers = () => {
               <Link
                 href={'/projects'}
                 onClick={() => setOpen(false)}
-                className="md:text-[21px] lg:text-[21px] sm:text-[18px]"
+                className="sm:text-[18px] md:text-[21px] lg:text-[21px]"
               >
                 Projects
               </Link>
@@ -66,7 +66,7 @@ const Drawers = () => {
               <Link
                 href={'/news'}
                 onClick={() => setOpen(false)}
-                className="md:text-[21px] lg:text-[21px] sm:text-[18px]"
+                className="sm:text-[18px] md:text-[21px] lg:text-[21px]"
               >
                 News
               </Link>
@@ -75,7 +75,7 @@ const Drawers = () => {
               <Link
                 href={'/contact'}
                 onClick={() => setOpen(false)}
-                className="md:text-[21px] lg:text-[21px] sm:text-[18px]"
+                className="sm:text-[18px] md:text-[21px] lg:text-[21px]"
               >
                 Contact
               </Link>

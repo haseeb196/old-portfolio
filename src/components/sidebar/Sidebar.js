@@ -1,10 +1,9 @@
-import { ModeNight, Menu, WbSunny } from '@mui/icons-material';
-import { IconButton } from '@mui/material';
-import Link from 'next/link';
-import React from 'react';
-import useMediaQuery from '@mui/material/useMediaQuery';
-import { useState } from 'react';
 import Drawers from '@/components/MuiComponents/Drawers';
+import { ModeNight, WbSunny } from '@mui/icons-material';
+import { IconButton } from '@mui/material';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import Link from 'next/link';
+import { useState } from 'react';
 const Sidebar = () => {
   const [chg, setChg] = useState(false);
   const media = useMediaQuery('(min-width:1200px)');
@@ -18,12 +17,12 @@ const Sidebar = () => {
   return media ? (
     <div
       className={`${
-        chg ? 'bg-[#FEFCF3]' : 'bg-[#03001C]'
-      } shadow-2xl flex flex-col text-white xl:max-w-[23%] xl:min-w-[22%]  xl:h-[100vh] justify-center items-start gap-y-16 px-[70px] transition-all duration-150 fixed`}
+        chg ? 'bg-[#FEFCF3]' : 'bg-[#000007]'
+      } flex flex-[0.3] flex-col items-start justify-center gap-y-16  px-[70px] text-white shadow-2xl transition-all duration-150 xl:h-[100vh] xl:min-w-[22%] xl:max-w-[23%]`}
     >
       <div>
         <h1
-          className={`text-[42px] tracking-[0.35rem] font-[600] uppercase unboundeds ${
+          className={`unboundeds text-[42px] font-[600] uppercase tracking-[0.35rem] ${
             chg ? 'text-black' : 'text-white'
           }`}
         >
@@ -32,7 +31,7 @@ const Sidebar = () => {
       </div>
       <div>
         <ul
-          className={`flex gap-y-2 flex-col text-[19px] capitalize ${
+          className={`flex flex-col gap-y-2 text-[19px] capitalize ${
             chg ? 'text-black' : 'text-white'
           }`}
         >
@@ -62,7 +61,7 @@ const Sidebar = () => {
       </div>
       <div
         className={`mt-[-25px] shadow-[0px_22px_70px_4px_rgba(0,0,0,0.56)] ${
-          chg ? 'bg-[#03001C]' : 'bg-[#F9F9F9]'
+          chg ? 'bg-[#000002]' : 'bg-[#F9F9F9]'
         } rounded-3xl p-1`}
       >
         <IconButton
@@ -84,9 +83,9 @@ const Sidebar = () => {
       </div>
     </div>
   ) : (
-    <div className="flex flex-row justify-between items-center bg-[#03001C] text-white py-3">
+    <div className="flex flex-row items-center justify-between bg-[#03001C] py-3 text-white">
       <div className="ml-5">
-        <h1 className="uppercase text-[20px] font-bold tracking-widest ">
+        <h1 className="text-[20px] font-bold uppercase tracking-widest ">
           tokoyo
         </h1>
       </div>

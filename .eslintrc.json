@@ -1,7 +1,10 @@
 {
   "extends": ["next/core-web-vitals", "prettier"],
+  "plugins": ["unused-imports"],
   "rules": {
     "curly": ["error", "all"],
-    "lines-around-comment": "error"
+    "lines-around-comment": "error",
+    "unused-imports/no-unused-imports": "error"
   }
+  
 }
