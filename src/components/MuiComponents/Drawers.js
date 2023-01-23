@@ -22,7 +22,10 @@ const Drawers = () => {
         anchor={'right'}
       >
         <Box className="flex flex-col flex-wrap items-start">
-          <IconButton onClick={() => setOpen(false)}>
+          <IconButton
+            onClick={() => setOpen(false)}
+            className="pl-2 pt-2"
+          >
             <Clear />
           </IconButton>
           <List className="pl-[20px] sm:pr-[170px] md:pr-[210px] lg:pr-[210px]">
