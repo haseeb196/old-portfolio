@@ -2,10 +2,12 @@ import { Clear, Menu } from '@mui/icons-material';
 import { Box, IconButton, List, ListItem } from '@mui/material';
 import Drawer from '@mui/material/Drawer';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { useState } from 'react';
 
 const Drawers = () => {
   const [open, setOpen] = useState(false);
+  const router = useRouter();
   return (
     <>
       <IconButton
@@ -33,7 +35,9 @@ const Drawers = () => {
               <Link
                 href={'/'}
                 onClick={() => setOpen(false)}
-                className="sm:text-[18px] md:text-[21px] lg:text-[21px]"
+                className={`sm:text-[18px] md:text-[21px] lg:text-[21px] ${
+                  router.pathname == '/' ? 'text-black' : 'text-white'
+                }`}
               >
                 Home
               </Link>
@@ -42,7 +46,9 @@ const Drawers = () => {
               <Link
                 href={'/about'}
                 onClick={() => setOpen(false)}
-                className="sm:text-[18px] md:text-[21px] lg:text-[21px]"
+                className={`sm:text-[18px] md:text-[21px] lg:text-[21px] ${
+                  router.pathname == '/about' ? 'text-black' : 'text-gray-400'
+                }`}
               >
                 About
               </Link>
@@ -51,7 +57,9 @@ const Drawers = () => {
               <Link
                 href={'/service'}
                 onClick={() => setOpen(false)}
-                className="sm:text-[18px] md:text-[21px] lg:text-[21px]"
+                className={`sm:text-[18px] md:text-[21px] lg:text-[21px] ${
+                  router.pathname == '/service' ? 'text-black' : 'text-gray-400'
+                }`}
               >
                 Service
               </Link>
@@ -60,7 +68,11 @@ const Drawers = () => {
               <Link
                 href={'/projects'}
                 onClick={() => setOpen(false)}
-                className="sm:text-[18px] md:text-[21px] lg:text-[21px]"
+                className={`sm:text-[18px] md:text-[21px] lg:text-[21px] ${
+                  router.pathname == '/projects'
+                    ? 'text-black'
+                    : 'text-gray-400'
+                }`}
               >
                 Projects
               </Link>
@@ -69,7 +81,9 @@ const Drawers = () => {
               <Link
                 href={'/news'}
                 onClick={() => setOpen(false)}
-                className="sm:text-[18px] md:text-[21px] lg:text-[21px]"
+                className={`sm:text-[18px] md:text-[21px] lg:text-[21px] ${
+                  router.pathname == '/news' ? 'text-black' : 'text-gray-400'
+                }`}
               >
                 News
               </Link>
@@ -78,7 +92,9 @@ const Drawers = () => {
               <Link
                 href={'/contact'}
                 onClick={() => setOpen(false)}
-                className="sm:text-[18px] md:text-[21px] lg:text-[21px]"
+                className={`sm:text-[18px] md:text-[21px] lg:text-[21px] ${
+                  router.pathname == '/contact' ? 'text-black' : 'text-gray-400'
+                }`}
               >
                 Contact
               </Link>

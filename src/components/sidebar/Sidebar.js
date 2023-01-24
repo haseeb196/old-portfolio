@@ -3,8 +3,10 @@ import { ModeNight, WbSunny } from '@mui/icons-material';
 import { IconButton } from '@mui/material';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { useState } from 'react';
 const Sidebar = () => {
+  const router = useRouter();
   const [chg, setChg] = useState(false);
   const media = useMediaQuery('(min-width:1200px)');
   const colorchanger = () => {
@@ -31,27 +33,91 @@ const Sidebar = () => {
       </div>
       <div>
         <ul
-          className={`flex flex-col gap-y-2 text-[19px] capitalize ${
-            chg ? 'text-black' : 'text-white'
-          }`}
+          className={`flex flex-col gap-y-2 text-[19px] capitalize transition-all duration-100`}
         >
           <li>
-            <Link href={'/'}>Home</Link>
+            <Link
+              href={'/'}
+              className={`${
+                router.pathname == '/'
+                  ? chg
+                    ? 'text-black'
+                    : 'text-white'
+                  : 'text-gray-400'
+              }`}
+            >
+              Home
+            </Link>
           </li>
           <li>
-            <Link href={'/about'}>About</Link>
+            <Link
+              href={'/about'}
+              className={`${
+                router.pathname == '/about'
+                  ? chg
+                    ? 'text-black'
+                    : 'text-white'
+                  : 'text-gray-400'
+              }`}
+            >
+              About
+            </Link>
           </li>
           <li>
-            <Link href={'/service'}>Service</Link>
+            <Link
+              href={'/service'}
+              className={`${
+                router.pathname == '/service'
+                  ? chg
+                    ? 'text-black'
+                    : 'text-white'
+                  : 'text-gray-400'
+              }`}
+            >
+              Service
+            </Link>
           </li>
           <li>
-            <Link href={'/projects'}>projects</Link>
+            <Link
+              href={'/projects'}
+              className={`${
+                router.pathname == '/projects'
+                  ? chg
+                    ? 'text-black'
+                    : 'text-white'
+                  : 'text-gray-400'
+              }`}
+            >
+              projects
+            </Link>
           </li>
           <li>
-            <Link href={'/news'}>News</Link>
+            <Link
+              href={'/news'}
+              className={`${
+                router.pathname == '/news'
+                  ? chg
+                    ? 'text-black'
+                    : 'text-white'
+                  : 'text-gray-400'
+              }`}
+            >
+              News
+            </Link>
           </li>
           <li>
-            <Link href={'/contact'}>Contact</Link>
+            <Link
+              href={'/contact'}
+              className={`${
+                router.pathname == '/contact'
+                  ? chg
+                    ? 'text-black'
+                    : 'text-white'
+                  : 'text-gray-400'
+              }`}
+            >
+              Contact
+            </Link>
           </li>
         </ul>
       </div>

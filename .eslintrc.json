@@ -6,5 +6,4 @@
     "lines-around-comment": "error",
     "unused-imports/no-unused-imports": "error"
   }
-  
 }

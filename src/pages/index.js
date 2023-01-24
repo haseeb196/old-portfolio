@@ -34,7 +34,7 @@ export default function Home() {
         />
       </Head>
       <main
-        className={`flex flex-[1.3] items-center justify-center xl:flex-row sg:min-h-[80vh] sg:flex-col   ${
+        className={`flex flex-[1.3] items-center justify-center xl:flex-row sg:min-h-[93vh] sg:flex-col  ${
           !media2 ? (colors ? 'bg-[#f1f1ed]' : 'bg-[#03001C]') : 'bg-white'
         } transition-all duration-100`}
       >
