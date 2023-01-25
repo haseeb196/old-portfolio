@@ -1,11 +1,5 @@
-import BubbleAnimation from '@/components/BubbleAnimation/Bubble';
-
 const about = () => {
-  return (
-    <div>
-      <BubbleAnimation />
-    </div>
-  );
+  return <div className="h-[90vh] w-[90vw]">gcnh</div>;
 };
 
 export default about;

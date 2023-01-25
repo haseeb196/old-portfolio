@@ -1,4 +1,4 @@
-import Drawers from '@/components/MuiComponents/Drawers';
+import Drawers from '@/components/sidebar/MuiComponents/Drawers';
 import { ModeNight, WbSunny } from '@mui/icons-material';
 import { IconButton } from '@mui/material';
 import useMediaQuery from '@mui/material/useMediaQuery';
@@ -24,7 +24,7 @@ const Sidebar = () => {
     >
       <div>
         <h1
-          className={`unboundeds text-[42px] font-[600] uppercase tracking-[0.35rem] ${
+          className={`unboundeds text-[42px] font-[700] uppercase tracking-[0.35rem] ${
             chg ? 'text-black' : 'text-white'
           }`}
         >
@@ -134,14 +134,14 @@ const Sidebar = () => {
           onClick={colorchanger}
           className="shadow-2xl"
         >
-          {chg ? (
+          {!chg ? (
             <WbSunny
-              htmlColor="white"
+              htmlColor="gray"
               style={{ transition: 'all', transitionDuration: '130ms' }}
             />
           ) : (
             <ModeNight
-              htmlColor="gray"
+              htmlColor="white"
               style={{ transition: 'all', transitionDuration: '130ms' }}
             />
           )}

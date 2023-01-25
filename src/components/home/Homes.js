@@ -6,8 +6,8 @@ const Homes = ({ color }) => {
     <div
       className={`flex flex-row items-start !justify-center gap-10 px-4 transition-all  duration-100 s1040:flex-col s1040:gap-5`}
     >
-      <div className="s1040:w-100%  xl:px-5 s1040:mx-auto">
-        <BubbleAnimation />
+      <div className="s1040:w-100%  xl:ml-8 s1040:mx-auto">
+        <BubbleAnimation cdg={color} />
       </div>
       <div className="flex flex-col gap-6 sg:gap-4">
         <h1
@@ -18,7 +18,7 @@ const Homes = ({ color }) => {
           adriano smith
         </h1>
         <p
-          className={`text-[22px] sm:!text-[18px] lg:!text-start xl:max-w-[700px] sg:max-w-[600px] sg:text-center sg:text-[20px] sg:text-black  ${
+          className={`text-[22px] sm:!text-[18px] lg:!text-start xl:max-w-[650px] sg:max-w-[600px] sg:text-center sg:text-[20px] sg:text-black  ${
             color ? 'text-black' : 'text-white'
           }`}
         >
@@ -29,25 +29,25 @@ const Homes = ({ color }) => {
         <div className="flex gap-8 lg:!justify-start sg:flex-row sg:justify-center">
           <button>
             <Facebook
-              htmlColor="gray"
+              htmlColor={`${color ? 'gray' : 'white'}`}
               className="text-[30px] sm:text-[24px]"
             />
           </button>
           <button>
             <Twitter
-              htmlColor="gray"
+              htmlColor={`${color ? 'gray' : 'white'}`}
               className="text-[30px] sm:text-[24px]"
             />
           </button>
           <button>
             <GitHub
-              htmlColor="gray"
+              htmlColor={`${color ? 'gray' : 'white'}`}
               className="text-[30px] sm:text-[24px]"
             />
           </button>
           <button>
             <LinkedIn
-              htmlColor="gray"
+              htmlColor={`${color ? 'gray' : 'white'}`}
               className="text-[30px] sm:text-[24px]"
             />
           </button>

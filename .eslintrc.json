@@ -4,6 +4,7 @@
   "rules": {
     "curly": ["error", "all"],
     "lines-around-comment": "error",
-    "unused-imports/no-unused-imports": "error"
+    "unused-imports/no-unused-imports": "error",
+    "no-unused-vars": ["error", { "vars": "all" }]
   }
 }
