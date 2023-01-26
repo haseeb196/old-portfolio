@@ -1,36 +1,17 @@
 /* eslint-disable @next/next/no-page-custom-font */
-import Homes from '@/components/home/Homes';
-
+import Homes from '@/components/PagesComponents/home/Homes';
 import { ModeNight, WbSunny } from '@mui/icons-material';
 import { useMediaQuery } from '@mui/material';
 import Head from 'next/head';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 export default function Home() {
   const [colors, setColors] = useState(true);
-  const mousetrackw = useMediaQuery('(min-width:1024px)');
+  const minheight = useMediaQuery('(min-height:925px)');
+
   const media = useMediaQuery('(min-width:1200px)');
   const media2 = useMediaQuery('(max-width:1200px)');
-  const [mousetrack, setMousetrack] = useState({});
-  const mousetrackstyle = {
-    transform: `translate(${mousetrack.x}px, ${mousetrack.y}px)`,
-    width: '6px',
-    height: '6px',
-    marginLeft: '-3px',
-    marginTop: '-3px',
-    transition: `width .3s ease-in-out, height .3s ease-in-out, margin .3s ease-in-out, opacity .3s ease-in-out`,
-  };
 
-  useEffect(() => {
-    const handleMouseMove = (event) => {
-      setMousetrack({ x: event.pageX, y: event.pageY });
-    };
-    window.addEventListener('mousemove', handleMouseMove);
-
-    return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-    };
-  });
   const colorchanger = () => {
     if (colors === true) {
       setColors(false);
@@ -56,8 +37,10 @@ export default function Home() {
         />
       </Head>
       <main
-        className={`flex flex-[1.3] items-center justify-center xl:flex-row  sg:min-h-[90vh]  sg:flex-col  ${
-          !media2 ? (colors ? 'bg-[#BBBBBB]' : 'bg-[#212731]') : 'bg-white'
+        className={`flex flex-[1.3] items-center justify-center  overflow-hidden  xl:flex-row  sg:min-h-[93vh] sg:flex-col  ${
+          minheight && '!min-h-[96vh]'
+        }  ${
+          !media2 ? (colors ? 'bg-[#cecdcd]' : 'bg-[#212731]') : 'bg-[#BBBBBB]'
         } transition-all duration-100`}
       >
         {media ? (
@@ -80,20 +63,6 @@ export default function Home() {
           <></>
         )}{' '}
         <Homes color={colors} />
-        {mousetrackw && (
-          <div
-            className={`pointer-events-none fixed left-0 top-0 z-50 -ml-[15px] -mt-[15px]  h-[30px] w-[30px] rounded-3xl border-[2px] border-solid border-white opacity-50 transition-all duration-700 ease-out`}
-            style={{
-              transform: `translate(${mousetrack.x}px, ${mousetrack.y}px)`,
-            }}
-          ></div>
-        )}
-        {mousetrackw && (
-          <div
-            className={`pointer-events-none fixed left-0 top-0 z-50   rounded-3xl border-[2px] border-solid   border-white opacity-50`}
-            style={mousetrackstyle}
-          ></div>
-        )}
       </main>
     </>
   );

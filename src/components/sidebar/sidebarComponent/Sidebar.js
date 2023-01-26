@@ -7,6 +7,7 @@ import { useRouter } from 'next/router';
 import { useState } from 'react';
 const Sidebar = () => {
   const router = useRouter();
+
   const [chg, setChg] = useState(false);
   const media = useMediaQuery('(min-width:1200px)');
   const colorchanger = () => {
@@ -19,7 +20,7 @@ const Sidebar = () => {
   return media ? (
     <div
       className={`${
-        chg ? 'bg-[#FEFCF3]' : 'bg-[#000007]'
+        chg ? 'bg-[#E0E0E0]' : 'bg-[#000007]'
       } flex flex-[0.3] flex-col items-start justify-center gap-y-16  px-[70px] text-white shadow-2xl transition-all duration-150 xl:h-[100vh] xl:min-w-[22%] xl:max-w-[23%]`}
     >
       <div>
@@ -44,6 +45,8 @@ const Sidebar = () => {
                     ? 'text-black'
                     : 'text-white'
                   : 'text-gray-400'
+              } transition-all duration-100 ease-in-out ${
+                chg ? 'hover:text-black' : 'hover:text-white'
               }`}
             >
               Home
@@ -58,6 +61,8 @@ const Sidebar = () => {
                     ? 'text-black'
                     : 'text-white'
                   : 'text-gray-400'
+              } transition-all duration-100 ease-in-out ${
+                chg ? 'hover:text-black' : 'hover:text-white'
               }`}
             >
               About
@@ -72,6 +77,8 @@ const Sidebar = () => {
                     ? 'text-black'
                     : 'text-white'
                   : 'text-gray-400'
+              } transition-all duration-100 ease-in-out ${
+                chg ? 'hover:text-black' : 'hover:text-white'
               }`}
             >
               Service
@@ -86,6 +93,8 @@ const Sidebar = () => {
                     ? 'text-black'
                     : 'text-white'
                   : 'text-gray-400'
+              } transition-all duration-100 ease-in-out ${
+                chg ? 'hover:text-black' : 'hover:text-white'
               }`}
             >
               projects
@@ -100,6 +109,8 @@ const Sidebar = () => {
                     ? 'text-black'
                     : 'text-white'
                   : 'text-gray-400'
+              } transition-all duration-100 ease-in-out ${
+                chg ? 'hover:text-black' : 'hover:text-white'
               }`}
             >
               News
@@ -111,9 +122,11 @@ const Sidebar = () => {
               className={`${
                 router.pathname == '/contact'
                   ? chg
-                    ? 'text-black'
+                    ? 'text-black '
                     : 'text-white'
                   : 'text-gray-400'
+              } transition-all duration-100 ease-in-out ${
+                chg ? 'hover:text-black' : 'hover:text-white'
               }`}
             >
               Contact

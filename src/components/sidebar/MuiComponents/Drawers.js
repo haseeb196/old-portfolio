@@ -26,7 +26,7 @@ const Drawers = () => {
         <Box className="flex flex-col flex-wrap items-start">
           <IconButton
             onClick={() => setOpen(false)}
-            className="pl-2 pt-2"
+            className="pl-3 pt-3"
           >
             <Clear />
           </IconButton>
@@ -36,7 +36,7 @@ const Drawers = () => {
                 href={'/'}
                 onClick={() => setOpen(false)}
                 className={`sm:text-[18px] md:text-[21px] lg:text-[21px] ${
-                  router.pathname == '/' ? 'text-black' : 'text-white'
+                  router.pathname == '/' ? 'text-black' : 'text-gray-400'
                 }`}
               >
                 Home

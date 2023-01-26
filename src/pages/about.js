@@ -1,5 +1,5 @@
 const about = () => {
-  return <div className="h-[90vh] w-[90vw]">gcnh</div>;
+  return <div></div>;
 };
 
 export default about;
