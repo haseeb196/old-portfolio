@@ -1,7 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+*,
+html {
+  margin: 0px;
+}
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
