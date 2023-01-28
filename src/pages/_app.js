@@ -6,7 +6,7 @@ import { useMediaQuery } from '@mui/material';
 export default function App({ Component, pageProps }) {
   const mousetrackw = useMediaQuery('(min-width:1024px)');
   return (
-    <div className="flex flex-col xl:flex-row ">
+    <div className="flex flex-col xl:flex-row">
       <div className="xl:flex-[0.22]">
         {' '}
         <Sidebar />

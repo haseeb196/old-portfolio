@@ -12,7 +12,7 @@ const Mouse = () => {
   };
   useEffect(() => {
     const handleMouseMove = (event) => {
-      setMousetrack({ x: event.pageX, y: event.pageY });
+      setMousetrack({ x: event.clientX, y: event.clientY });
     };
     window.addEventListener('mousemove', handleMouseMove);
 
@@ -24,13 +24,13 @@ const Mouse = () => {
     <>
       {' '}
       <div
-        className={`pointer-events-none fixed left-0 top-0 z-50 -ml-[15px] -mt-[15px]  h-[30px] w-[30px] rounded-3xl border-[2px] border-solid border-white opacity-80  transition-all duration-700 ease-out`}
+        className={`z-100 pointer-events-none fixed left-0 top-0 -ml-[15px] -mt-[15px]  h-[30px] w-[30px] rounded-3xl border-[2px] border-solid border-white opacity-80  transition-all duration-700 ease-out`}
         style={{
           transform: `translate(${mousetrack.x}px, ${mousetrack.y}px)`,
         }}
       ></div>
       <div
-        className={`pointer-events-none fixed left-0 top-0 z-50   rounded-3xl border-[2px] border-solid   border-white opacity-80`}
+        className={`z-100 pointer-events-none fixed left-0 top-0   rounded-3xl border-[2px] border-solid   border-white opacity-80`}
         style={mousetrackstyle}
       ></div>
     </>

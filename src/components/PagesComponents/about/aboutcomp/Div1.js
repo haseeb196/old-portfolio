@@ -1,9 +1,9 @@
 import { Button } from '@mui/material';
 import Image from 'next/image';
-const Top = () => {
+const Div1 = () => {
   return (
-    <div>
-      <div className="mb-14 flex flex-col gap-[0.6rem] capitalize">
+    <div className="xl:px-40 sg:px-16 s400:px-14">
+      <div className="mb-14 flex flex-col gap-[0.6rem] capitalize sm:mb-8 sg:mb-10 s400:mb-6">
         <h3 className="max-w-[80px] bg-[#b9b9b9] py-2 px-3 text-center text-[14.5px] font-semibold uppercase">
           about
         </h3>
@@ -23,7 +23,7 @@ const Top = () => {
         <h2 className="text-[25px] font-semibold">Adriano Smith</h2>
         <p className="text-[#474747]">web developer</p>
       </div>
-      <hr />
+      <hr className="border-gray-400" />
       <div className="flex max-w-[1000px] flex-col gap-5 py-8 font-serif">
         <p>
           Hi, my name is Adriano Smith and I began using WordPress when it first
@@ -38,9 +38,9 @@ const Top = () => {
           little-to-no maintenance while running on their own for years.
         </p>
       </div>
-      <hr />
+      <hr className="border-gray-400" />
       <div className="flex flex-row gap-72 py-8 s1139:flex-col s1139:gap-10">
-        <div className="flex flex-row gap-[2.9rem]">
+        <div className="flex flex-row gap-[2.9rem] s400:gap-[0.9rem]">
           <div className="flex flex-col gap-1 font-semibold capitalize">
             <p>birthday:</p>
 
@@ -54,14 +54,14 @@ const Top = () => {
           </div>
           <div className="flex flex-col flex-nowrap gap-1">
             <p>01.07.1990</p> <p>32</p>
-            <p>Ave 11, New York, USA</p>
+            <p>Ave 11, New York</p>
             <p>tokyo@gmail.com</p>
             <p>
               <a href="tel:+770221770505">+77 022 177 05 05</a>
             </p>
           </div>
         </div>
-        <div className="flex flex-row gap-[2.9rem]">
+        <div className="flex flex-row gap-[2.9rem] s400:gap-[0.9rem]">
           <div className="flex flex-col gap-1 font-semibold capitalize">
             <p>nationality:</p>
 
@@ -81,7 +81,7 @@ const Top = () => {
           </div>
         </div>
       </div>
-      <hr />
+      <hr className="border-gray-400" />
       <div className="py-9">
         <Button className="bg-white py-4 px-10 font-medium normal-case text-black  shadow-sm hover:bg-white">
           <a
@@ -96,4 +96,4 @@ const Top = () => {
   );
 };
 
-export default Top;
+export default Div1;
