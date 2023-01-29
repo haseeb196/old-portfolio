@@ -12,6 +12,7 @@ module.exports = {
       s1040: { max: '1040px' },
       s1139: { max: '1139px' },
       s400: { max: '400px' },
+      s760: { max : '760px'}
     },
     extend: {},
   },

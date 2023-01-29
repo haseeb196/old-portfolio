@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-page-custom-font */
-import Mouse from '@/components/Mousetracker/Mouse';
+import Mouse from '@/components/Animations/Mousetracker/Mouse';
 import Sidebar from '@/components/sidebar/sidebarComponent/Sidebar';
 import '@/styles/globals.css';
 import { useMediaQuery } from '@mui/material';

@@ -1,4 +1,4 @@
-import Drawers from '@/components/sidebar/MuiComponents/Drawers';
+import Drawers from '@/components/Animations/MuiComponents/Drawers';
 import { ModeNight, WbSunny } from '@mui/icons-material';
 import { IconButton } from '@mui/material';
 import useMediaQuery from '@mui/material/useMediaQuery';

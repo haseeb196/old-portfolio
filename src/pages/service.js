@@ -1,12 +1,5 @@
-import Progress from '@/components/Progress';
-
 const service = () => {
-  return (
-    <div>
-      service
-      <Progress />
-    </div>
-  );
+  return <div>service</div>;
 };
 
 export default service;

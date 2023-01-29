@@ -2,7 +2,7 @@ import { Button } from '@mui/material';
 import Image from 'next/image';
 const Div1 = () => {
   return (
-    <div className="xl:px-40 sg:px-16 s400:px-14">
+    <div className="xl:px-40 sg:px-16 s400:px-12">
       <div className="mb-14 flex flex-col gap-[0.6rem] capitalize sm:mb-8 sg:mb-10 s400:mb-6">
         <h3 className="max-w-[80px] bg-[#b9b9b9] py-2 px-3 text-center text-[14.5px] font-semibold uppercase">
           about
@@ -39,8 +39,8 @@ const Div1 = () => {
         </p>
       </div>
       <hr className="border-gray-400" />
-      <div className="flex flex-row gap-72 py-8 s1139:flex-col s1139:gap-10">
-        <div className="flex flex-row gap-[2.9rem] s400:gap-[0.9rem]">
+      <div className="flex flex-row gap-x-[30%] py-8 s760:flex-col s760:gap-y-[20px] ">
+        <div className="flex flex-row gap-[2.9rem] s400:gap-[10%]">
           <div className="flex flex-col gap-1 font-semibold capitalize">
             <p>birthday:</p>
 
@@ -61,7 +61,7 @@ const Div1 = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-row gap-[2.9rem] s400:gap-[0.9rem]">
+        <div className="flex flex-row gap-[2.9rem] s400:gap-[4%]">
           <div className="flex flex-col gap-1 font-semibold capitalize">
             <p>nationality:</p>
 
@@ -74,9 +74,10 @@ const Div1 = () => {
             <p>Freelance:</p>
           </div>
           <div className="flex flex-col flex-nowrap gap-1 capitalize">
-            <p className="uppercase">usa</p> <p>Univercity of Texas</p>
+            <p className="uppercase">usa</p>
+            <p className="whitespace-nowrap">Univercity of Texas</p>
             <p>Master</p>
-            <p>Playing Football</p>
+            <p className="whitespace-nowrap">Playing Football</p>
             <p>Available</p>
           </div>
         </div>

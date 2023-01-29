@@ -1,4 +1,4 @@
-import BubbleAnimation from '@/components/BubbleAnimation/Bubble';
+import BubbleAnimation from '@/components/Animations/BubbleAnimation/Bubble';
 import { Facebook, GitHub, LinkedIn, Twitter } from '@mui/icons-material';
 import { useMediaQuery } from '@mui/material';
 import { motion } from 'framer-motion';

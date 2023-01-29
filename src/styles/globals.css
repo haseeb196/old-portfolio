@@ -58,3 +58,11 @@ html {
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   }
 }
+
+.css-ha3bif-MuiTimelineItem-root:before {
+  padding: 0px !important;
+}
+
+.MuiTimeline-root {
+  padding: 0 !important;
+}
