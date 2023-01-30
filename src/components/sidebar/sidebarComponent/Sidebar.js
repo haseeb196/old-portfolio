@@ -21,7 +21,7 @@ const Sidebar = () => {
     <div
       className={`${
         chg ? 'bg-[#E0E0E0]' : 'bg-[#000007]'
-      } flex  flex-col items-start justify-center gap-y-16  px-[70px] text-white shadow-2xl transition-all duration-150 xl:fixed xl:h-[100vh] xl:min-w-[22%] xl:max-w-[23%] sg:!sticky sg:!top-0`}
+      } flex flex-col items-start justify-center gap-y-16  px-[70px] text-white shadow-2xl transition-all duration-150 xl:fixed xl:h-[100vh] xl:min-w-[22%] xl:max-w-[23%] sg:sticky sg:top-0`}
     >
       <div>
         <h1

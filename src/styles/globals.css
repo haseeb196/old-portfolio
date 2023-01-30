@@ -60,7 +60,7 @@ html {
 }
 
 .css-ha3bif-MuiTimelineItem-root:before {
-  padding: 0px !important;
+  display: none;
 }
 
 .MuiTimeline-root {

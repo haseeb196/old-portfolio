@@ -24,7 +24,7 @@ const Mouse = () => {
     <>
       {' '}
       <div
-        className={`z-100 pointer-events-none fixed left-0 top-0 -ml-[15px] -mt-[15px]  h-[30px] w-[30px] rounded-3xl border-[2px] border-solid border-white opacity-80  transition-all duration-700 ease-out`}
+        className={`z-100 duration-400 pointer-events-none fixed left-0 top-0 -ml-[15px]  -mt-[15px] h-[30px] w-[30px] rounded-3xl border-[2px] border-solid border-white  opacity-80 transition-all ease-out`}
         style={{
           transform: `translate(${mousetrack.x}px, ${mousetrack.y}px)`,
         }}
