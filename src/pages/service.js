@@ -1,12 +1,5 @@
-import Swiper from '@/components/Animations/Swiper/Swiper';
-
 const service = () => {
-  return (
-    <div>
-      service
-      <Swiper />
-    </div>
-  );
+  return <div>service</div>;
 };
 
 export default service;

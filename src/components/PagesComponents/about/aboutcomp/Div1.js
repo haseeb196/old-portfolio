@@ -11,9 +11,9 @@ const Div1 = () => {
       </div>
       <div className="max-w-[1000px]">
         <Image
+          priority
           width={1920}
           height={1080}
-          loading="lazy"
           src="https://marketifythemes.net/tailwind/tokyo/assets/img/slider/1.jpg"
           alt=""
           className="h-[100%] w-[100%]"

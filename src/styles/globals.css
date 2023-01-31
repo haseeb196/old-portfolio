@@ -66,3 +66,26 @@ html {
 .MuiTimeline-root {
   padding: 0 !important;
 }
+
+.squarediv:before {
+  position: absolute;
+  content: '';
+  height: 0px;
+  width: 0px;
+  top: 8.1rem;
+  border: solid transparent;
+  border-top-color: gray;
+  border-width: 18px 18px 0px 0px;
+}
+
+.squarediv:after {
+  position: absolute;
+  content: '';
+  height: 0px;
+  width: 0px;
+  top: 8.1rem;
+  border: solid transparent;
+  border-top-color: #cecdcd;
+  border-width: 14px 13px 0px 0px;
+  margin-left: 2px;
+}
