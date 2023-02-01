@@ -1,9 +1,12 @@
-import { Button } from '@mui/material';
+import { Button, useMediaQuery } from '@mui/material';
 import Image from 'next/image';
-
+import {motion} from 'framer-motion'
 const Div1 = () => {
+  const media1 = useMediaQuery('(min-width:1200px)');
   return (
-    <div className="xl:px-40 sg:px-16 s400:px-12">
+    <motion.div initial={media1 && { x: -12, opacity: 0 }}
+    animate={media1 && { x: 0, opacity: 1 }}
+    transition={{ duration: 0.5 }} className="xl:px-40 sg:px-16 s400:px-12">
       <div className="mb-14 flex flex-col gap-[0.6rem] capitalize sm:mb-8 sg:mb-10 s400:mb-6">
         <h3 className="max-w-[80px] bg-[#b9b9b9] py-2 px-3 text-center text-[14.5px] font-semibold uppercase">
           about
@@ -95,7 +98,7 @@ const Div1 = () => {
           </a>
         </Button>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
