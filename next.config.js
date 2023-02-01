@@ -2,8 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images : {
-    domains : ["marketifythemes.net"]
-    
+    domains : ['marketifythemes.net']
   }
 };
 

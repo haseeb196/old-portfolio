@@ -1,5 +1,6 @@
 import { Button } from '@mui/material';
 import Image from 'next/image';
+
 const Div1 = () => {
   return (
     <div className="xl:px-40 sg:px-16 s400:px-12">
@@ -8,18 +9,19 @@ const Div1 = () => {
           about
         </h3>
         <h2 className="text-[35px] font-extrabold">about me</h2>
+
+        <div className="max-w-[1000px]">
+          <Image
+            priority
+            width={1920}
+            height={1080}
+            src="https://marketifythemes.net/tailwind/tokyo/assets/img/slider/1.jpg"
+            alt=""
+            className="h-[100%] w-[100%]"
+          />
+        </div>
       </div>
-      <div className="max-w-[1000px]">
-        <Image
-          priority
-          width={1920}
-          height={1080}
-          src="https://marketifythemes.net/tailwind/tokyo/assets/img/slider/1.jpg"
-          alt=""
-          className="h-[100%] w-[100%]"
-        />
-      </div>
-      <div className="flex flex-col gap-[2px] py-8 capitalize">
+      <div className="flex flex-col gap-[2px] pb-8 pt-5 capitalize">
         <h2 className="text-[25px] font-semibold">Adriano Smith</h2>
         <p className="text-[#474747]">web developer</p>
       </div>

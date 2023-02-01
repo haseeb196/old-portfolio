@@ -1,9 +1,9 @@
-import Swipers from '@/components/Animations/Swiper/Swiper';
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
+import Swipers from '@/components/Animations/Swiper/Swiper'; // Import Swiper React components
+import { A11y, Autoplay, Mousewheel } from 'swiper';
 import 'swiper/css';
+import 'swiper/css/autoplay';
+import 'swiper/css/mousewheel';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 const Testimonial = () => {
   const content = {
@@ -38,9 +38,12 @@ const Testimonial = () => {
       <div className="flex flex-row xl:max-w-[60vw] sg:max-w-[100vw]">
         <Swiper
           slidesPerView={2}
+          modules={[Autoplay, A11y, Mousewheel]}
+          mousewheel={{ invert: true }}
           spaceBetween={90}
-          autoplay={{ delay: 2000 }}
-          breakpoints={{ 800: { slidesPerView: 2 }, 100: { slidesPerView: 1 } }}
+          loop={false}
+          autoplay={{ delay: 2100 }}
+          breakpoints={{ 825: { slidesPerView: 2 }, 100: { slidesPerView: 1 } }}
         >
           <SwiperSlide>
             <Swipers

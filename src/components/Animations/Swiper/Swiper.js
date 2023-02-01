@@ -2,12 +2,13 @@ import { Avatar } from '@mui/material';
 
 const Swipers = ({ text, name, about, image }) => {
   return (
-    <div className="flex flex-col items-start gap-6">
+    <div>
       <div
-        className={`squarediv w-full border-[2px] border-solid border-gray-400 p-[40px]`}
+        className={`squarediv relative mb-8 w-full border-[2px] border-solid border-gray-400 p-[40px]`}
       >
         <p className="text-center">{text}</p>
       </div>
+
       <div className="ml-[20px] flex flex-row gap-3">
         <div>
           <Avatar
