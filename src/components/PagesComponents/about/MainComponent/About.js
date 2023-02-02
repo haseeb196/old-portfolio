@@ -1,8 +1,8 @@
-import Div1 from '../aboutcomp/Div1';
-import Div2 from '../aboutcomp/Div2';
-import Div3 from '../aboutcomp/Div3';
-import Div4 from '../aboutcomp/Div4';
-import Testimonial from '../aboutcomp/Testimonial';
+import Div1 from '../components/Div1';
+import Div2 from '../components/Div2';
+import Div3 from '../components/Div3';
+import Div4 from '../components/Div4';
+import Testimonial from '../components/Testimonial';
 const About = () => {
   return (
     <div className="py-10">

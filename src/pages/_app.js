@@ -7,15 +7,17 @@ export default function App({ Component, pageProps }) {
   const mousetrackw = useMediaQuery('(min-width:1024px)');
   return (
     <div className="flex flex-col xl:flex-row">
-      <div className="xl:flex-[0.22]">
-        {' '}
+      {mousetrackw && <Mouse />}
+
+      <div className="z-30 xl:flex-[0.22] sg:sticky sg:top-0">
         <Sidebar />
+        {mousetrackw && <Mouse />}
       </div>
+
       <div className="xl:flex-[0.78]">
         {' '}
         <Component {...pageProps} />
       </div>
-      {mousetrackw && <Mouse />}
     </div>
   );
 }
