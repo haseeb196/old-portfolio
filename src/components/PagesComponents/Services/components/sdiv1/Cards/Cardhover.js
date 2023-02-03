@@ -1,12 +1,24 @@
+import Image from 'next/image';
+
 /* eslint-disable react/no-unescaped-entities */
 const Cardhover = () => {
   return (
-    <div>
-      <div></div>
+    <div className="flex flex-col gap-6">
       <div>
-        <h1>web Design</h1>
+        <Image
+          src="https://marketifythemes.net/tailwind/tokyo/assets/img/slider/1.jpg"
+          width={3840}
+          height={2160}
+          className="h-full w-full px-20 pt-20 s760:px-8"
+          alt=""
+        ></Image>
       </div>
-      <div>
+      <div className="px-20 s760:px-8">
+        <h1 className="text-[25px] font-semibold capitalize s760:text-[23px]">
+          web Design
+        </h1>
+      </div>
+      <div className="flex  flex-col gap-5 px-20 pb-20 text-[16px] font-medium text-[#424141] s760:px-8">
         <p>
           Tokyo is a leading web design agency with an award-winning design team
           that creates innovative, effective websites that capture your brand,

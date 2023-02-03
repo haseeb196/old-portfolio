@@ -1,10 +1,11 @@
-import Sdiv1 from '../components/Sdiv1';
+import Sdiv1 from '../components/sdiv1/Sdiv1';
+import Sdiv2 from '../components/sdiv2/Sdiv2';
 
 const Services = () => {
   return (
-    <div className="py-10 pl-3">
+    <div className="py-10">
       <Sdiv1 />
-      <div></div>
+      <Sdiv2 />
       <div></div>
       <div></div>
     </div>

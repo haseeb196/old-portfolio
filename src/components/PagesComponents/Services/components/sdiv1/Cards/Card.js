@@ -35,12 +35,12 @@ const Card = ({ title, index, text }) => {
 
       {drop && (
         <Backdrop open={drop}>
-          <div className="ml-[20%] flex flex-row items-start gap-3">
-            <div className="h-[40vh] w-full max-w-[900px] bg-[#cecdcd]">
+          <div className="ml-[20%] flex flex-row items-start gap-3 sg:mx-20 s760:mx-10 s760:flex-col-reverse s760:items-end">
+            <div className="h-[80vh] w-full max-w-[1050px] overflow-y-scroll scroll-smooth rounded-xl   bg-[#cecdcd]  shadow-2xl scrollbar scrollbar-track-transparent scrollbar-thumb-[#686767] scrollbar-thumb-rounded-[4px] scrollbar-corner-rounded-full scrollbar-w-[8px]">
               <Cardhover />
             </div>
             <div
-              className="rounded-xl border-[2px] border-solid border-white p-2 hover:rounded-[999px]"
+              className="rounded-xl border-[2px] border-solid border-white p-2 hover:rounded-[999px] s760:mt-4"
               onClick={changedrop}
             >
               <Close />

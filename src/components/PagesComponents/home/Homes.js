@@ -9,7 +9,7 @@ const Homes = ({ color }) => {
       className={`flex flex-row items-start !justify-center gap-10 px-4    s1040:flex-col s1040:gap-5`}
     >
       <motion.div
-        initial={media1 && { x: -12, opacity: 0 }}
+        initial={media1 && { x: -25, opacity: 0 }}
         animate={media1 && { x: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
         className="xl:ml-8 s1040:mx-auto"
@@ -17,7 +17,7 @@ const Homes = ({ color }) => {
         <BubbleAnimation cdg={color} />
       </motion.div>
       <motion.div
-        initial={media1 && { x: -12, opacity: 0 }}
+        initial={media1 && { x: -25, opacity: 0 }}
         animate={media1 && { x: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
         className="flex flex-col gap-6 sg:gap-4"

@@ -34,7 +34,7 @@ const Sidebar = () => {
       </div>
       <div>
         <ul
-          className={`flex flex-col gap-y-2 text-[19px] capitalize transition-all duration-100`}
+          className={`flex flex-col gap-y-2 text-[18px] capitalize transition-all duration-100`}
         >
           <li>
             <Link

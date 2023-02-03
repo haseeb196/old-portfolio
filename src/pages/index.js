@@ -40,7 +40,7 @@ export default function Home() {
         className={`flex  items-center justify-center overflow-hidden xl:!min-h-[100vh]  sg:min-h-[93vh]   ${
           minheight && '!min-h-[96vh]'
         }  ${
-          !media2 ? (colors ? 'bg-[#cecdcd]' : 'bg-[#212731]') : 'bg-[#BBBBBB]'
+          !media2 ? (colors ? 'bg-[#cecdcd]' : 'bg-[#1d2025]') : 'bg-[#BBBBBB]'
         }`}
       >
         {media ? (

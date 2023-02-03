@@ -6,7 +6,7 @@ const Div2 = () => {
   return (
     <div className="flex  flex-row gap-60 bg-[#979696] py-14 font-mono capitalize xl:px-40 sg:px-16 s1040:flex-col s1040:gap-10 s400:px-12">
       <motion.div
-        initial={media1 && { x: -12, opacity: 0 }}
+        initial={media1 && { x: -25, opacity: 0 }}
         animate={media1 && { x: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
         className="flex flex-col gap-6"
@@ -36,7 +36,7 @@ const Div2 = () => {
         </div>
       </motion.div>
       <motion.div
-        initial={media1 && { x: -12, opacity: 0 }}
+        initial={media1 && { x: -25, opacity: 0 }}
         animate={media1 && { x: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
         className="flex flex-col gap-6"

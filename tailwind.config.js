@@ -12,11 +12,10 @@ module.exports = {
       s1040: { max: '1040px' },
       s1139: { max: '1139px' },
       s400: { max: '400px' },
-      s760: { max : '760px'},
-      s2000: {min : '2000px'},
-      
+      s760: { max: '760px' },
+      s2000: { min: '2000px' },
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [require('tailwind-scrollbar')({ nocompatible: true })],
 };
