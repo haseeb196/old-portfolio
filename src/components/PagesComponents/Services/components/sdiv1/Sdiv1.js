@@ -12,7 +12,7 @@ const Sdiv1 = () => {
     { title: 'mobile App' },
   ];
   return (
-    <div className="flex flex-col gap-10 py-12  xl:px-40 sg:px-16 s400:px-12">
+    <div className="flex flex-col gap-10 py-12  xl:!px-40 sg:!px-16 s400:!px-6 s760:!px-10">
       <div className="flex flex-col gap-3">
         {' '}
         <h3 className="max-w-[85px] bg-[#b9b9b9] py-2 px-1 text-center text-[13px] font-semibold uppercase">

@@ -12,12 +12,12 @@ const Sdiv2 = () => {
     'https://marketifythemes.net/tailwind/tokyo/assets/img/partners/light/8.png',
   ];
   return (
-    <div className="my-14 flex flex-col gap-6 bg-[#979696] py-14 xl:px-40 sg:my-20 sg:px-16 s400:px-12">
+    <div className="my-14 flex flex-col items-start  gap-6 bg-[#979696] py-14 xl:px-40 sg:!my-20 sg:!px-16 s400:!px-6 s760:!px-10">
       <div className="text-[25px] font-bold capitalize">
         <h1>Partners</h1>
       </div>
-      <div className="container mx-auto s760:mx-0">
-        <div className="grid grid-cols-4 gap-0 s1040:!grid-cols-3 s1040:!grid-rows-3 s760:!grid-cols-1 s760:!grid-rows-6">
+      <div>
+        <div className="grid grid-cols-4 gap-0 s1040:!grid-cols-3 s1040:!grid-rows-3 s760:!grid-cols-2 s760:!grid-rows-5">
           {' '}
           {images.map((x, i) => {
             return (
