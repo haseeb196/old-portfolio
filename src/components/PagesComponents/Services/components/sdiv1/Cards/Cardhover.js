@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 /* eslint-disable react/no-unescaped-entities */
-const Cardhover = () => {
+const Cardhover = ({ title }) => {
   return (
     <div className="flex flex-col gap-6">
       <div>
@@ -15,7 +15,7 @@ const Cardhover = () => {
       </div>
       <div className="px-20 s760:px-8">
         <h1 className="text-[25px] font-semibold capitalize s760:text-[23px]">
-          web Design
+          {title}
         </h1>
       </div>
       <div className="flex  flex-col gap-5 px-20 pb-20 text-[16px] font-medium text-[#424141] s760:px-8">
