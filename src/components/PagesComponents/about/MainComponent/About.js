@@ -5,7 +5,7 @@ import Div4 from '../components/Div4';
 import Testimonial from '../components/Testimonial';
 const About = () => {
   return (
-    <div className="pb-10 xl:pt-10">
+    <div className="xl:pt-10">
       <Div1 />
       <Div2 />
       <Div3 />

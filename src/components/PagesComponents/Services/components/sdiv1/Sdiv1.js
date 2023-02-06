@@ -1,6 +1,8 @@
+import { useMediaQuery } from '@mui/material';
+import { motion } from 'framer-motion';
 import Card from './Cards/Card';
-
 const Sdiv1 = () => {
+  const media1 = useMediaQuery('(min-width:1200px)');
   const contents = [
     {
       title: 'web design',
@@ -12,7 +14,12 @@ const Sdiv1 = () => {
     { title: 'mobile App' },
   ];
   return (
-    <div className="flex flex-col gap-10 py-12  xl:!px-40 sg:!px-16 s400:!px-6 s760:!px-10">
+    <motion.div
+      initial={media1 && { x: -25, opacity: 0 }}
+      animate={media1 && { x: 0, opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      className="flex flex-col gap-10 py-12  xl:!px-40 sg:!px-16 s400:!px-6 s760:!px-10"
+    >
       <div className="flex flex-col gap-3">
         {' '}
         <h3 className="max-w-[85px] bg-[#b9b9b9] py-2 px-1 text-center text-[13px] font-semibold uppercase">
@@ -34,7 +41,7 @@ const Sdiv1 = () => {
           );
         })}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,6 +1,8 @@
+import { useMediaQuery } from '@mui/material';
+import { motion } from 'framer-motion';
 import Brand from './brandbox/Brand';
-
 const Sdiv2 = () => {
+  const media1 = useMediaQuery('(min-width:1200px)');
   const images = [
     'https://marketifythemes.net/tailwind/tokyo/assets/img/partners/light/1.png',
     'https://marketifythemes.net/tailwind/tokyo/assets/img/partners/light/2.png',
@@ -12,7 +14,12 @@ const Sdiv2 = () => {
     'https://marketifythemes.net/tailwind/tokyo/assets/img/partners/light/8.png',
   ];
   return (
-    <div className="my-12 flex flex-col items-start gap-8 bg-[#979696] pt-10 pb-[82px] xl:px-40 sg:!my-20 sg:!px-16 s400:!px-6 s760:!px-10">
+    <motion.div
+      initial={media1 && { x: -25, opacity: 0 }}
+      animate={media1 && { x: 0, opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      className="my-12 flex flex-col items-start gap-8 bg-[#979696] pt-10 pb-[82px] xl:px-40 sg:!my-20 sg:!px-16 s400:!px-6 s760:!px-10"
+    >
       <div className="text-[25px] font-bold capitalize">
         <h1>Partners</h1>
       </div>
@@ -29,7 +36,7 @@ const Sdiv2 = () => {
           })}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
