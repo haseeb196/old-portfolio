@@ -34,9 +34,7 @@ const Sdiv1 = () => {
               key={x.title}
               index={i + 1}
               title={x.title}
-              text={
-                'Web development is the most famous job in the world and it is very interesting...'
-              }
+              text={'Web development is the most famous job in the world and it is very interesting...'}
             />
           );
         })}

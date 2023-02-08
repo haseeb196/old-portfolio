@@ -17,5 +17,5 @@ module.exports = {
     },
     extend: {},
   },
-  plugins: [require('tailwind-scrollbar')({ nocompatible: true })],
+  plugins: [require('tailwind-scrollbar')({ nocompatible: true }), require('autoprefixer')]
 };

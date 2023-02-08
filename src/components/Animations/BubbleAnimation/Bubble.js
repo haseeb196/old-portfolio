@@ -1,6 +1,5 @@
 function BubbleAnimation({ cdg }) {
-  const background =
-    'https://img.freepik.com/premium-psd/luxury-dark-3d-logo-mockup_225928-131.jpg?w=360';
+  const background = 'https://img.freepik.com/premium-psd/luxury-dark-3d-logo-mockup_225928-131.jpg?w=360';
   const imagestyle = {
     backgroundImage: `url(${background})`,
     backgroundPosition: 'center',

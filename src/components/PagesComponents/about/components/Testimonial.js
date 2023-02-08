@@ -11,22 +11,19 @@ const Testimonial = () => {
       text: 'Beautiful minimalist design and great, fast response with support. Highly recommend. Thanks Marketify!',
       author: 'alexander walker',
       span: 'graphic designer',
-      image:
-        'https://i.pinimg.com/736x/87/14/d5/8714d527903f7a8093091e167d9bddcc.jpg',
+      image: 'https://i.pinimg.com/736x/87/14/d5/8714d527903f7a8093091e167d9bddcc.jpg',
     },
     x2: {
       text: 'I had a little problem and the support was just awesome to quickly solve the situation. And keep going on.',
       author: 'baraka clinton',
       span: 'english teacher',
-      image:
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2K27XkymJzsG1mdFcseZwBeqgyOLT2Pr_Kg&usqp=CAU',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2K27XkymJzsG1mdFcseZwBeqgyOLT2Pr_Kg&usqp=CAU',
     },
     x3: {
       text: 'These people really know what they are doing! Great customer support availability and supperb kindness.',
       author: 'mics4',
       span: 'developer',
-      image:
-        'https://img.myloview.com/stickers/people-or-human-logo-template-in-3d-circle-shape-700-238264360.jpg',
+      image: 'https://img.myloview.com/stickers/people-or-human-logo-template-in-3d-circle-shape-700-238264360.jpg',
     },
   };
 

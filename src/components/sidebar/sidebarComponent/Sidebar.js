@@ -24,30 +24,18 @@ const Sidebar = () => {
       } flex flex-col items-start justify-center gap-y-16  px-[70px] text-white shadow-2xl transition-all duration-150 xl:fixed xl:h-[100vh] xl:min-w-[22%] xl:max-w-[23%]`}
     >
       <div>
-        <h1
-          className={`text-[42px] font-[700] uppercase tracking-[0.35rem] ${
-            chg ? 'text-black' : 'text-white'
-          }`}
-        >
+        <h1 className={`text-[42px] font-[700] uppercase tracking-[0.35rem] ${chg ? 'text-black' : 'text-white'}`}>
           Tokyo
         </h1>
       </div>
       <div>
-        <ul
-          className={`flex flex-col gap-y-2 text-[18px] capitalize transition-all duration-100`}
-        >
+        <ul className={`flex flex-col gap-y-2 text-[18px] capitalize transition-all duration-100`}>
           <li>
             <Link
               href={'/'}
               className={`${
-                router.pathname == '/'
-                  ? chg
-                    ? 'text-black'
-                    : 'text-white'
-                  : 'text-gray-400'
-              } transition-all duration-100 ease-in-out ${
-                chg ? 'hover:text-black' : 'hover:text-white'
-              }`}
+                router.pathname == '/' ? (chg ? 'text-black' : 'text-white') : 'text-gray-400'
+              } transition-all duration-100 ease-in-out ${chg ? 'hover:text-black' : 'hover:text-white'}`}
             >
               Home
             </Link>
@@ -56,14 +44,8 @@ const Sidebar = () => {
             <Link
               href={'/about'}
               className={`${
-                router.pathname == '/about'
-                  ? chg
-                    ? 'text-black'
-                    : 'text-white'
-                  : 'text-gray-400'
-              } transition-all duration-100 ease-in-out ${
-                chg ? 'hover:text-black' : 'hover:text-white'
-              }`}
+                router.pathname == '/about' ? (chg ? 'text-black' : 'text-white') : 'text-gray-400'
+              } transition-all duration-100 ease-in-out ${chg ? 'hover:text-black' : 'hover:text-white'}`}
             >
               About
             </Link>
@@ -72,14 +54,8 @@ const Sidebar = () => {
             <Link
               href={'/service'}
               className={`${
-                router.pathname == '/service'
-                  ? chg
-                    ? 'text-black'
-                    : 'text-white'
-                  : 'text-gray-400'
-              } transition-all duration-100 ease-in-out ${
-                chg ? 'hover:text-black' : 'hover:text-white'
-              }`}
+                router.pathname == '/service' ? (chg ? 'text-black' : 'text-white') : 'text-gray-400'
+              } transition-all duration-100 ease-in-out ${chg ? 'hover:text-black' : 'hover:text-white'}`}
             >
               Service
             </Link>
@@ -88,14 +64,8 @@ const Sidebar = () => {
             <Link
               href={'/projects'}
               className={`${
-                router.pathname == '/projects'
-                  ? chg
-                    ? 'text-black'
-                    : 'text-white'
-                  : 'text-gray-400'
-              } transition-all duration-100 ease-in-out ${
-                chg ? 'hover:text-black' : 'hover:text-white'
-              }`}
+                router.pathname == '/projects' ? (chg ? 'text-black' : 'text-white') : 'text-gray-400'
+              } transition-all duration-100 ease-in-out ${chg ? 'hover:text-black' : 'hover:text-white'}`}
             >
               projects
             </Link>
@@ -104,14 +74,8 @@ const Sidebar = () => {
             <Link
               href={'/news'}
               className={`${
-                router.pathname == '/news'
-                  ? chg
-                    ? 'text-black'
-                    : 'text-white'
-                  : 'text-gray-400'
-              } transition-all duration-100 ease-in-out ${
-                chg ? 'hover:text-black' : 'hover:text-white'
-              }`}
+                router.pathname == '/news' ? (chg ? 'text-black' : 'text-white') : 'text-gray-400'
+              } transition-all duration-100 ease-in-out ${chg ? 'hover:text-black' : 'hover:text-white'}`}
             >
               News
             </Link>
@@ -120,14 +84,8 @@ const Sidebar = () => {
             <Link
               href={'/contact'}
               className={`${
-                router.pathname == '/contact'
-                  ? chg
-                    ? 'text-black '
-                    : 'text-white'
-                  : 'text-gray-400'
-              } transition-all duration-100 ease-in-out ${
-                chg ? 'hover:text-black' : 'hover:text-white'
-              }`}
+                router.pathname == '/contact' ? (chg ? 'text-black ' : 'text-white') : 'text-gray-400'
+              } transition-all duration-100 ease-in-out ${chg ? 'hover:text-black' : 'hover:text-white'}`}
             >
               Contact
             </Link>
@@ -164,9 +122,7 @@ const Sidebar = () => {
   ) : (
     <div className="flex flex-row items-center justify-between bg-[#03001C] py-3 text-white">
       <div className="ml-5">
-        <h1 className="text-[20px] font-bold uppercase tracking-widest ">
-          tokoyo
-        </h1>
+        <h1 className="text-[20px] font-bold uppercase tracking-widest ">tokoyo</h1>
       </div>
       <div className="mr-5">
         <Drawers />

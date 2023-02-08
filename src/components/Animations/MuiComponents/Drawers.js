@@ -69,9 +69,7 @@ const Drawers = () => {
                 href={'/projects'}
                 onClick={() => setOpen(false)}
                 className={`sm:text-[18px] md:text-[21px] lg:text-[21px] ${
-                  router.pathname == '/projects'
-                    ? 'text-black'
-                    : 'text-gray-400'
+                  router.pathname == '/projects' ? 'text-black' : 'text-gray-400'
                 }`}
               >
                 Projects

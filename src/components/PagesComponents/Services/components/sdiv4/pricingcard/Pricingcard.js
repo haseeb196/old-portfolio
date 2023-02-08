@@ -16,31 +16,27 @@ const Pricingcard = ({ price, type, popular, color }) => {
       </div>
       <div className="h-[2px] w-full bg-[#b8b6b6]"></div>
       <div className="flex flex-col gap-[6px] text-gray-600">
-        {['Premium Icons', 'Quality Logo', 'Stock Images', 'Free Support'].map(
-          (x, i) => {
-            return (
-              <p
-                className={`${
-                  color === 1 && i < 1
-                    ? 'text-gray-900'
-                    : color === 2 && i < 2
-                    ? 'text-gray-900'
-                    : color === 'all'
-                    ? 'text-gray-900'
-                    : 'text-gray-600'
-                }`}
-                key={i}
-              >
-                {x}
-              </p>
-            );
-          },
-        )}
+        {['Premium Icons', 'Quality Logo', 'Stock Images', 'Free Support'].map((x, i) => {
+          return (
+            <p
+              className={`${
+                color === 1 && i < 1
+                  ? 'text-gray-900'
+                  : color === 2 && i < 2
+                  ? 'text-gray-900'
+                  : color === 'all'
+                  ? 'text-gray-900'
+                  : 'text-gray-600'
+              }`}
+              key={i}
+            >
+              {x}
+            </p>
+          );
+        })}
       </div>
       <div>
-        <Button className="bg-[#ececec] py-4 px-10 text-[15px] capitalize text-black hover:bg-white">
-          purchase
-        </Button>
+        <Button className="bg-[#ececec] py-4 px-10 text-[15px] capitalize text-black hover:bg-white">purchase</Button>
       </div>
       {popular && (
         <div className="absolute -top-5 right-3 rounded-sm bg-[#dfdcdc] py-2 px-4 text-[14px] capitalize">

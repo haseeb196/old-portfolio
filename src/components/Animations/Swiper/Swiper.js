@@ -3,9 +3,7 @@ import { Avatar } from '@mui/material';
 const Swipers = ({ text, name, about, image }) => {
   return (
     <div>
-      <div
-        className={`squarediv relative mb-8 w-full border-[2px] border-solid border-gray-400 p-[40px]`}
-      >
+      <div className={`squarediv relative mb-8 w-full border-[2px] border-solid border-gray-400 p-[40px]`}>
         <p className="text-center">{text}</p>
       </div>
 
