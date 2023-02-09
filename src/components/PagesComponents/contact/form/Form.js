@@ -3,6 +3,7 @@ import { Button } from '@mui/material';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 const Form = () => {
+  const url = '/api/Contacts/mail';
   const [error, setError] = useState(false);
   const [emailerror, setEmailerror] = useState(false);
   const [formData, setFormData] = useState({
@@ -31,12 +32,23 @@ const Form = () => {
     } else if (!regexe.test(formData?.email)) {
       setEmailerror(true);
     } else {
+      fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        }),
+      });
+
       setFormData({
         name: '',
         email: '',
         message: '',
       });
-      //set the responsive heights for this page firsts
     }
   };
 
@@ -55,16 +67,15 @@ const Form = () => {
       </div>
       <div className="flex flex-col gap-9">
         <div className="relative w-full">
-          {error && (
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: error ? 1 : 0 }}
-              transition={{ duration: 0.9 }}
-              className="absolute z-0 text-[15px] text-red-500"
-            >
-              Please Fill Required Fields
-            </motion.div>
-          )}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: error ? 1 : 0 }}
+            transition={{ duration: 0.3 }}
+            className="absolute z-0 text-[15px] text-red-500"
+          >
+            Please Fill Required Fields
+          </motion.div>
+
           <motion.input
             animate={{ marginTop: error ? 30 : 0 }}
             type="text"
@@ -90,17 +101,16 @@ const Form = () => {
             autoComplete="off"
             className="w-full border-[1px] border-[#9e9e9e] bg-transparent px-3 py-2 text-[16px] outline-none transition-all duration-[0.2s] ease-linear placeholder:text-[#9e9e9e] focus:border-black"
           />
-          {emailerror && (
-            <motion.div
-              initial={{ opacity: 0, top: 20 }}
-              animate={{ top: 41, opacity: 1 }}
-              transition={{ duration: 0.3 }}
-              className="absolute my-1 flex max-w-[180px] flex-row items-center gap-2 capitalize text-red-500"
-            >
-              <Error />
-              <span>Enter a valid email</span>
-            </motion.div>
-          )}
+
+          <motion.div
+            initial={{ opacity: 0, top: emailerror ? 27 : 42 }}
+            animate={{ top: emailerror ? 42 : 35, opacity: emailerror ? 1 : 0 }}
+            transition={{ duration: emailerror ? 0.3 : 0.2 }}
+            className={`absolute my-1 flex max-w-[180px] flex-row items-center gap-2 capitalize text-red-500 `}
+          >
+            <Error />
+            <span>Enter a valid email</span>
+          </motion.div>
         </motion.div>
         <textarea
           name="message"

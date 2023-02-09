@@ -2,7 +2,7 @@ import Form from './form/Form';
 
 const Contacts = () => {
   return (
-    <div className="pb-10 xl:pt-10">
+    <div className="min-h-[100vh] pb-10 xl:pt-10">
       <div className="my-12 flex flex-col gap-5 xl:px-40 sg:!px-16 s400:!px-6 s760:!px-10">
         <div className="flex flex-col gap-2">
           {' '}
