@@ -1,16 +1,25 @@
-const User = require('database/Schema');
+/* eslint-disable unused-imports/no-unused-imports */
+/* eslint-disable no-unused-vars */
+import User from 'database/Schema';
 
-//"Error: MongooseError: Operation `users.insertOne()` buffering timed out after 10000ms",
 export default function handler(req, res) {
   const { name, message, email } = req.body;
-  if (req.method === 'POST') {
+
+  if (req.method === 'POST' || !name || !message || !email) {
     const user = new User({
       name: name,
-      message: message,
       email: email,
+      message: message,
     });
-    user.save();
-    res.status(200).json({ name: name, message: message, email: email });
+
+    user.save((err) => {
+      if (err) {
+        res.json({ message: err });
+      } else {
+        res.json({ message: 'success' });
+      }
+    });
   } else {
+    res.status(404).send('Error: ///<>hda34');
   }
 }

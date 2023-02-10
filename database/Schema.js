@@ -1,9 +1,9 @@
-import { model, models, Schema } from 'mongoose';
+import { mongoose, Schema } from 'mongoose';
 
 const userSchema = new Schema({
-  name: String,
   email: String,
+  name: String,
   message: String,
 });
 
-module.exports = models.Users || model('Users', userSchema);
+module.exports = mongoose.models.User || mongoose.model('User', userSchema);

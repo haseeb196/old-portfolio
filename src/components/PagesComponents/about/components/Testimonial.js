@@ -30,9 +30,9 @@ const Testimonial = () => {
   return (
     <div className="py-14 xl:px-40 sg:!px-16 s400:!px-6 s760:!px-10">
       <div className="mb-5">
-        <h1 className="font-serif text-[25px] font-[900] ">Testimonial</h1>
+        <h1 className="font-serif text-[25px] font-[900]">Testimonial</h1>
       </div>
-      <div className="flex flex-row xl:max-w-[60vw] sg:max-w-[100vw]">
+      <div className="flex flex-row xl:!max-w-[60vw] sg:max-w-[100vw]">
         <Swiper
           slidesPerView={2}
           modules={[Autoplay, A11y, Mousewheel]}

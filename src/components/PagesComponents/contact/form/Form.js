@@ -1,9 +1,12 @@
 import { Error } from '@mui/icons-material';
 import { Button } from '@mui/material';
 import { motion } from 'framer-motion';
+import { useSnackbar } from 'notistack';
 import { useState } from 'react';
+
 const Form = () => {
   const url = '/api/Contacts/mail';
+  const { enqueueSnackbar } = useSnackbar();
   const [error, setError] = useState(false);
   const [emailerror, setEmailerror] = useState(false);
   const [formData, setFormData] = useState({
@@ -32,7 +35,7 @@ const Form = () => {
     } else if (!regexe.test(formData?.email)) {
       setEmailerror(true);
     } else {
-      fetch(url, {
+      const res = await fetch(url, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -43,7 +46,22 @@ const Form = () => {
           message: formData.message,
         }),
       });
-
+      const data = await res.json();
+      if (data.message === 'success') {
+        enqueueSnackbar('Successfully Submitted!', {
+          variant: 'success',
+          autoHideDuration: 2500,
+          anchorOrigin: {
+            vertical: 'bottom',
+            horizontal: 'right',
+          },
+        });
+      } else {
+        enqueueSnackbar('Error!', {
+          variant: 'error',
+          autoHideDuration: 2500,
+        });
+      }
       setFormData({
         name: '',
         email: '',
@@ -60,8 +78,9 @@ const Form = () => {
     >
       <div className="shadow-md">
         <iframe
-          src={`https://maps.google.com/maps?q=53,103&z=13&output=embed`}
-          loading="lazy"
+          src={`https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed`}
+          loading="eager"
+          className="!bg-white"
           style={{ height: '400px', width: '100%' }}
         />
       </div>
