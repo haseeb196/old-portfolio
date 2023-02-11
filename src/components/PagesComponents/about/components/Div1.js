@@ -8,7 +8,7 @@ const Div1 = () => {
       initial={media1 && { x: -25, opacity: 0 }}
       animate={media1 && { x: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="my-12 xl:px-40 sg:!px-16 s400:!px-6 s760:!px-10"
+      className="my-12 xl:px-32 sg:!px-16 s400:!px-6 s760:!px-8"
     >
       <div className="mb-14 flex flex-col gap-[0.6rem] capitalize sm:mb-8 sg:mb-10 s400:mb-6">
         <h3 className="max-w-[80px] bg-[#b9b9b9] py-2 px-3 text-center text-[14px] font-semibold uppercase">about</h3>

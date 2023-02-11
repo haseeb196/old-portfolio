@@ -1,4 +1,4 @@
-import { Close } from '@mui/icons-material';
+import { Close, NavigateNext } from '@mui/icons-material';
 import { Backdrop } from '@mui/material';
 import { useState } from 'react';
 import Cardhover from './Cardhover';
@@ -29,8 +29,15 @@ const Card = ({ title, index, text }) => {
         <p className="break-words  text-[14.5px] text-[#413f3f]">{text}</p>
       </div>
 
-      <div>
-        <span className="font-bold capitalize">read more</span>
+      <div className="flex flex-col">
+        <span className="-mb-[2.5px] text-[16px] font-semibold capitalize">
+          read more
+          <NavigateNext className="-pr-3 w-[18px]" />
+        </span>
+        <span
+          className="border-so h-[2px] w-[0%] bg-black transition-all duration-300 group-hover:w-[32%]
+        "
+        ></span>
       </div>
 
       {drop && (

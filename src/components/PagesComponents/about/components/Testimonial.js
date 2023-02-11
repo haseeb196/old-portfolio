@@ -28,7 +28,7 @@ const Testimonial = () => {
   };
 
   return (
-    <div className="py-14 xl:px-40 sg:!px-16 s400:!px-6 s760:!px-10">
+    <div className="py-14 xl:px-32 sg:!px-16 s400:!px-6 s760:!px-8">
       <div className="mb-5">
         <h1 className="font-serif text-[25px] font-[900]">Testimonial</h1>
       </div>

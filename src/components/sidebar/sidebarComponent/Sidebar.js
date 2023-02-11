@@ -24,7 +24,7 @@ const Sidebar = () => {
       } flex flex-col items-start justify-center gap-y-16  px-[70px] text-white shadow-2xl transition-all duration-150 xl:fixed xl:h-[100vh] xl:min-w-[22%] xl:max-w-[23%]`}
     >
       <div>
-        <h1 className={`text-[42px] font-[700] uppercase tracking-[0.35rem] ${chg ? 'text-black' : 'text-white'}`}>
+        <h1 className={`text-[40px] font-[700] uppercase tracking-[0.35rem] ${chg ? 'text-black' : 'text-white'}`}>
           Tokyo
         </h1>
       </div>

@@ -7,7 +7,7 @@ const Sdiv3 = () => {
     { maintext: 'lines of code', num: '100', numtext: 'k+' },
   ];
   return (
-    <div className="my-12 flex flex-col gap-7 xl:px-40 sg:!px-16 s400:!px-6 s760:!px-10">
+    <div className="my-12 flex flex-col gap-7 xl:px-32 sg:!px-16 s400:!px-6 s760:!px-8">
       <div className="text-[25px] font-bold capitalize">
         <h1>fun fact</h1>
       </div>

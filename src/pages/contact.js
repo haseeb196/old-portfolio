@@ -1,4 +1,4 @@
-import Contacts from '@/components/PagesComponents/contact/Contacts';
+import Contacts from '@/components/PagesComponents/contact/Maincomponent/Contacts';
 import { motion, useScroll, useSpring } from 'framer-motion';
 import { SnackbarProvider } from 'notistack';
 

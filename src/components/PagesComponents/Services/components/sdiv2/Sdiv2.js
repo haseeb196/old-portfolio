@@ -18,7 +18,7 @@ const Sdiv2 = () => {
       initial={media1 && { x: -25, opacity: 0 }}
       animate={media1 && { x: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="my-12 flex flex-col items-start gap-8 bg-[#979696] pt-10 pb-[82px] xl:px-40 sg:!my-20 sg:!px-16 s400:!px-6 s760:!px-10"
+      className="my-12 flex flex-col items-start gap-8 bg-[#979696] pt-10 pb-[82px] xl:px-32 sg:!my-20 sg:!px-16 s400:!px-6 s760:!px-8"
     >
       <div className="text-[25px] font-bold capitalize">
         <h1>Partners</h1>

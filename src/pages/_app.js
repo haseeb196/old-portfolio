@@ -11,12 +11,12 @@ export default function App({ Component, pageProps }) {
     <div className="flex flex-col xl:flex-row">
       {mousetrackw && <Mouse />}
 
-      <div className="z-30 xl:flex-[0.22] sg:sticky sg:top-0">
+      <div className="z-30 xl:flex-[0.26] sg:sticky sg:top-0">
         <Sidebar />
         {mousetrackw && <Mouse />}
       </div>
 
-      <div className="xl:flex-[0.78]">
+      <div className="xl:flex-[0.93]">
         {' '}
         <Component {...pageProps} />
       </div>

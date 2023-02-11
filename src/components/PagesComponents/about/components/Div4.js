@@ -2,7 +2,7 @@ import Timelines from '@/components/Animations/MuiComponents/Timelines';
 
 const Div4 = () => {
   return (
-    <div className="flex flex-row gap-x-[20%] bg-[#979696] py-12 xl:px-40 sg:gap-[16%] sg:!px-16 s400:!px-6 s760:flex-col s760:!px-10">
+    <div className="flex flex-row gap-x-[20%] bg-[#979696] py-12 xl:px-32 sg:gap-[16%] sg:!px-16 s400:!px-6 s760:flex-col s760:!px-8">
       <div className="flex flex-col gap-6">
         <div>
           <h1 className="text-[24px] font-bold capitalize">education</h1>

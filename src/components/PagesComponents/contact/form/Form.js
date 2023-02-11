@@ -57,7 +57,7 @@ const Form = () => {
           },
         });
       } else {
-        enqueueSnackbar('Error!', {
+        enqueueSnackbar('Try Again', {
           variant: 'error',
           autoHideDuration: 2500,
         });
