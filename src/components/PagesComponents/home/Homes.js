@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 const Homes = ({ color }) => {
   const media1 = useMediaQuery('(min-width:1200px)');
   return (
-    <div className={`flex flex-row items-start !justify-center gap-10 px-4    s1040:flex-col s1040:gap-5`}>
+    <div className={`flex flex-row items-start !justify-center gap-10 px-7 s1040:flex-col s1040:gap-5`}>
       <motion.div
         initial={media1 && { x: -25, opacity: 0 }}
         animate={media1 && { x: 0, opacity: 1 }}

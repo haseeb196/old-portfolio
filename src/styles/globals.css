@@ -85,7 +85,6 @@ html {
 }
 
 ::-webkit-scrollbar {
-  width: 14px;
   background-color: #cecdcd;
 }
 
@@ -94,6 +93,7 @@ html {
   border: 3px solid rgba(0, 0, 0, 0);
   background-clip: padding-box;
   border-radius: 9999px;
+  width: 14px;
 }
 
 #scrollsg::-webkit-scrollbar {

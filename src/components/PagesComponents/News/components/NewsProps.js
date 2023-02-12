@@ -1,9 +1,9 @@
 import { ArrowForwardIos } from '@mui/icons-material';
 import Image from 'next/image';
-//style Read More animation from clone
+
 const NewsProps = () => {
   return (
-    <div className="group w-full bg-[white] shadow-lg">
+    <div className="group w-full bg-[#d8d6d6] shadow-lg">
       <div className="w-full overflow-hidden">
         <Image
           alt=""
@@ -28,9 +28,9 @@ const NewsProps = () => {
         </div>
       </div>
       <div className="my-4 flex flex-row items-center justify-between py-1 pr-3 pl-5 font-medium uppercase">
-        <div className="flex flex-row items-center">
-          <h1 className="">read more</h1>
-          <span className="h-[2px] w-3 border-solid bg-black"></span>
+        <div className="flex flex-col">
+          <h1 className="-mb-[2px] sm:mb-0">read more</h1>
+          <span className="h-[2px] w-0 border-solid bg-black transition-all duration-[150ms] ease-linear group-hover:w-full  sm:h-[0px] sm:w-0"></span>
         </div>
 
         <ArrowForwardIos className="h-[14px]" />

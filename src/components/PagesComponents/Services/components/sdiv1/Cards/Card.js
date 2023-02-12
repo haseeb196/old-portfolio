@@ -30,12 +30,12 @@ const Card = ({ title, index, text }) => {
       </div>
 
       <div className="flex flex-col">
-        <span className="-mb-[2.5px] text-[16px] font-semibold capitalize">
+        <span className="-mb-[2.5px] text-[16px] font-semibold capitalize sm:mb-0">
           read more
           <NavigateNext className="-pr-3 w-[18px]" />
         </span>
         <span
-          className="border-so h-[2px] w-[0%] bg-black transition-all duration-300 group-hover:w-[32%]
+          className="border-so h-[2px] w-[0%] bg-black transition-all duration-300 group-hover:w-[32%] sm:h-0 sm:w-0
         "
         ></span>
       </div>
