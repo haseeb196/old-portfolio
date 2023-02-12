@@ -14,17 +14,8 @@ const News = ({ news }) => {
         className="z-[100]  h-[2.5px] origin-[0%]  bg-[#ffffff]  xl:!fixed xl:!right-0 xl:!left-0  xl:!top-0 sg:sticky sg:top-[64px] sg:h-[5px]"
         style={{ scaleX }}
       ></motion.div>
-      {news?.data
-        .filter((x) => x.image != null)
-        .map((x, i) => {
-          return (
-            <Newsr
-              newsdata={x}
-              key={i}
-            />
-          );
-          //next build newsr.js go their after deleting this
-        })}
+
+      <Newsr newsdata={news.data} />
     </div>
   );
 };
@@ -32,7 +23,7 @@ const News = ({ news }) => {
 export async function getServerSideProps() {
   // Fetch data from external API
   const res = await fetch(
-    `http://api.mediastack.com/v1/news?access_key=${process.env.access_key}fed&keywords=tech&countries=us,gb&sources=cnn&language=en&limit=10`,
+    `http://api.mediastack.com/v1/news?sources=cnn&language=en&limit=25&keyword=technology&access_key=${process.env.access_key}fed`,
   );
   const news = await res.json();
 
