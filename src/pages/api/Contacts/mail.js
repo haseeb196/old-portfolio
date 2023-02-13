@@ -1,5 +1,6 @@
-import User from 'database/Schema';
 // eslint-disable-next-line unused-imports/no-unused-imports, no-unused-vars
+import User from 'database/Schema';
+
 export default function handler(req, res) {
   const { name, message, email } = req.body;
 

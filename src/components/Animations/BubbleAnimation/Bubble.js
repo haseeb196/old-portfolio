@@ -13,7 +13,7 @@ function BubbleAnimation({ cdg }) {
   };
   return (
     <div
-      className="min-h-[250px] min-w-[250px] sm:min-h-[200px] sm:min-w-[200px]"
+      className="min-h-[260px] min-w-[260px] sm:min-h-[200px] sm:min-w-[200px]"
       style={imagestyle}
     ></div>
   );

@@ -24,7 +24,7 @@ const Sdiv2 = () => {
         <h1>Partners</h1>
       </div>
       <div>
-        <div className="grid grid-cols-4 gap-0  s1040:!grid-cols-3 s1040:!grid-rows-3 s760:!grid-cols-2 s760:!grid-rows-4">
+        <div className="grid grid-cols-4   gap-0  s1040:!grid-cols-3 s1040:!grid-rows-3 s760:w-full s760:!grid-cols-2 s760:!grid-rows-4">
           {' '}
           {images.map((x, i) => {
             return (

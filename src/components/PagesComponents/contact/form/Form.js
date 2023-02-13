@@ -60,6 +60,10 @@ const Form = () => {
         enqueueSnackbar('Try Again', {
           variant: 'error',
           autoHideDuration: 2500,
+          anchorOrigin: {
+            vertical: 'bottom',
+            horizontal: 'right',
+          },
         });
       }
       setFormData({

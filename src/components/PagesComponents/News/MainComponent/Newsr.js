@@ -17,14 +17,14 @@ const Newsr = ({ newsdata }) => {
           <h2 className="mb-1 text-[30px] font-extrabold">Latest News</h2>
         </div>
         <div className="mb-16 mt-9 grid max-w-[950px] grid-cols-2 gap-x-[6%] gap-y-[70px] s760:grid-cols-1 s760:gap-16">
-          {newsdata.map((xs, i) => {
+          {newsdata?.map((xs, i) => {
             if (xs.image !== null) {
               return (
                 <NewsProps
-                  image={xs.image}
-                  title={xs.title}
-                  publish={xs.published_at}
-                  desc={xs.description}
+                  image={xs?.image}
+                  title={xs?.title}
+                  publish={xs?.published_at}
+                  desc={xs?.description}
                   key={i}
                   url={xs.url}
                   hashtag={xs.category}

@@ -15,15 +15,20 @@ const News = ({ news }) => {
         style={{ scaleX }}
       ></motion.div>
 
-      <Newsr newsdata={news.data} />
+      <Newsr newsdata={news?.data} />
     </div>
   );
 };
 
 export async function getServerSideProps() {
+  const today = new Date();
+  let dd = String(today.getDate()).padStart(2, '0');
+  let mm = String(today.getMonth() + 1).padStart(2, '0');
+  let yyyy = today.getFullYear();
+
   // Fetch data from external API
   const res = await fetch(
-    `http://api.mediastack.com/v1/news?sources=cnn&language=en&limit=25&keyword=technology&access_key=${process.env.access_key}fed`,
+    `http://api.mediastack.com/v1/news?sources=cnn&language=en&limit=25&date=${yyyy}-${mm}-${dd}&access_key=${process.env.access_key}fed`,
   );
   const news = await res.json();
 

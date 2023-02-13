@@ -4,3 +4,4 @@ out
 node_modules/
 jsconfig.json
 public
+src/pages/api/Contacts/mail.js

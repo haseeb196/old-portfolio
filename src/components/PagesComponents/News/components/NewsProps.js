@@ -1,7 +1,14 @@
 import { ArrowForwardIos } from '@mui/icons-material';
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
 
 const NewsProps = ({ image, url, title, publish, desc, hashtag }) => {
+  const [hydrated, setHydrated] = useState(false);
+  useEffect(() => {
+    //Hydration required for next.js or error.
+    setHydrated(true);
+  }, []);
+
   let options = {
     year: 'numeric',
     month: 'long',
@@ -11,7 +18,7 @@ const NewsProps = ({ image, url, title, publish, desc, hashtag }) => {
     second: 'numeric',
   };
 
-  return (
+  return hydrated ? (
     <div className="group w-full bg-[#d8d6d6] shadow-lg">
       <a
         href={url}
@@ -33,10 +40,11 @@ const NewsProps = ({ image, url, title, publish, desc, hashtag }) => {
             <span>#{hashtag}</span>
           </div>
           <div className="font-Roboto break-words text-[29px] font-bold  text-[#4e4e4e]">
-            <h1 className="truncate">{title}</h1>
+            <h1 className="max-h-[5rem] overflow-hidden">{title}</h1>
           </div>
-          <div className="max-w-50 font-opensanslight overflow-hidden text-ellipsis whitespace-nowrap py-4">{desc}</div>
+          <div className="font-opensanslight truncate  py-4">{desc}</div>
         </div>
+
         <div className="my-4 flex flex-row items-center justify-between py-1 pr-3 pl-5 font-medium uppercase">
           <div className="flex flex-col">
             <h1 className="-mb-[2px] sm:mb-0">read more</h1>
@@ -47,6 +55,8 @@ const NewsProps = ({ image, url, title, publish, desc, hashtag }) => {
         </div>
       </a>
     </div>
+  ) : (
+    <></>
   );
 };
 
