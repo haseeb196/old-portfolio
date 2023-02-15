@@ -29,7 +29,7 @@ const Progressbar = ({ title, percent }) => {
           initial={{ width: '0%' }}
           animate={{ width: inview ? `${percent}%` : '0%' }}
           transition={{ duration: 2, type: 'spring' }}
-          className="h-2 w-[95%] bg-black"
+          className="h-2 w-[95%] bg-[#3C3939]"
         ></motion.div>
       </div>
     </div>

@@ -3,7 +3,7 @@ import Image from 'next/image';
 /* eslint-disable react/no-unescaped-entities */
 const Cardhover = ({ title }) => {
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-6 text-[#3C3939]">
       <div>
         <Image
           src="https://marketifythemes.net/tailwind/tokyo/assets/img/slider/1.jpg"

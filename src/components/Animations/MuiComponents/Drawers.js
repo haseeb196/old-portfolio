@@ -18,15 +18,16 @@ const Drawers = () => {
       </IconButton>
       <Drawer
         sx={{ width: 500 }}
+        
         SlideProps={{ timeout: 300 }}
         open={open}
         onClose={() => setOpen(false)}
         anchor={'right'}
       >
-        <Box className="flex flex-col flex-wrap items-start">
+        <Box className="flex flex-col flex-wrap items-start bg-[#3C3939] h-full">
           <IconButton
             onClick={() => setOpen(false)}
-            className="pl-3 pt-3"
+            className="pl-3 pt-3 text-white"
           >
             <Clear />
           </IconButton>
@@ -36,7 +37,7 @@ const Drawers = () => {
                 href={'/'}
                 onClick={() => setOpen(false)}
                 className={`sm:text-[18px] md:text-[21px] lg:text-[21px] ${
-                  router.pathname == '/' ? 'text-black' : 'text-gray-400'
+                  router.pathname == '/' ? 'text-white' : 'text-gray-400'
                 }`}
               >
                 Home
@@ -47,7 +48,7 @@ const Drawers = () => {
                 href={'/about'}
                 onClick={() => setOpen(false)}
                 className={`sm:text-[18px] md:text-[21px] lg:text-[21px] ${
-                  router.pathname == '/about' ? 'text-black' : 'text-gray-400'
+                  router.pathname == '/about' ? 'text-white' : 'text-gray-400'
                 }`}
               >
                 About
@@ -58,7 +59,7 @@ const Drawers = () => {
                 href={'/service'}
                 onClick={() => setOpen(false)}
                 className={`sm:text-[18px] md:text-[21px] lg:text-[21px] ${
-                  router.pathname == '/service' ? 'text-black' : 'text-gray-400'
+                  router.pathname == '/service' ? 'text-white' : 'text-gray-400'
                 }`}
               >
                 Service
@@ -69,29 +70,19 @@ const Drawers = () => {
                 href={'/projects'}
                 onClick={() => setOpen(false)}
                 className={`sm:text-[18px] md:text-[21px] lg:text-[21px] ${
-                  router.pathname == '/projects' ? 'text-black' : 'text-gray-400'
+                  router.pathname == '/projects' ? 'text-white' : 'text-gray-400'
                 }`}
               >
                 Projects
               </Link>
             </ListItem>
-            <ListItem>
-              <Link
-                href={'/news'}
-                onClick={() => setOpen(false)}
-                className={`sm:text-[18px] md:text-[21px] lg:text-[21px] ${
-                  router.pathname == '/news' ? 'text-black' : 'text-gray-400'
-                }`}
-              >
-                News
-              </Link>
-            </ListItem>
+
             <ListItem>
               <Link
                 href={'/contact'}
                 onClick={() => setOpen(false)}
                 className={`sm:text-[18px] md:text-[21px] lg:text-[21px] ${
-                  router.pathname == '/contact' ? 'text-black' : 'text-gray-400'
+                  router.pathname == '/contact' ? 'text-white' : 'text-gray-400'
                 }`}
               >
                 Contact

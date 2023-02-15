@@ -8,7 +8,7 @@ const Sdiv3 = () => {
   ];
   return (
     <div className="my-12 flex flex-col gap-7 xl:px-32 sg:!px-16 s400:!px-6 s760:!px-8">
-      <div className="text-[25px] font-bold capitalize">
+      <div className="text-[25px] font-bold capitalize text-[#3C3939]">
         <h1>fun fact</h1>
       </div>
       <div className="flex flex-row gap-[66px] s760:flex-col s760:gap-14">

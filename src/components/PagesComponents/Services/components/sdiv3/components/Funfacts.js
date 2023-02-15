@@ -7,7 +7,7 @@ const Funfacts = ({ text, numtext, num }) => {
   return (
     <div className="flex w-full flex-col gap-2 border-[2px] border-[#b1afaf] py-[30px] text-center capitalize">
       {hview && (
-        <div className="text-[17px] font-bold">
+        <div className="text-[17px] font-bold text-[#3C3939]">
           <CountUp
             start={0}
             end={num}

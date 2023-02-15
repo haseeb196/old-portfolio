@@ -11,8 +11,8 @@ const Div1 = () => {
       className="my-12 xl:px-32 sg:!px-16 s400:!px-6 s760:!px-8"
     >
       <div className="mb-14 flex flex-col gap-[0.6rem] capitalize sm:mb-8 sg:mb-10 s400:mb-6">
-        <h3 className="max-w-[80px] bg-[#b9b9b9] py-2 px-3 text-center text-[14px] font-semibold uppercase">about</h3>
-        <h2 className="mb-5 text-[30px] font-extrabold">about me</h2>
+        <h3 className="max-w-[80px] bg-[#3C3939] rounded-[4px] py-2 px-3 text-center text-[14px] font-semibold uppercase text-white">about</h3>
+        <h2 className="mb-5 text-[30px] font-extrabold text-[#3C3939]">about me</h2>
 
         <div className="max-w-[1000px]">
           <Image
@@ -26,11 +26,11 @@ const Div1 = () => {
         </div>
       </div>
       <div className="flex flex-col gap-[2px] pb-8 pt-5 capitalize">
-        <h2 className="text-[25px] font-semibold">Adriano Smith</h2>
+        <h2 className="text-[25px] font-semibold text-[#3C3939]">Adriano Smith</h2>
         <p className="text-[#474747]">web developer</p>
       </div>
       <hr className="border-gray-400" />
-      <div className="flex max-w-[1000px] flex-col gap-5 py-8 font-serif">
+      <div className="flex max-w-[1000px] flex-col gap-5 py-8 font-roboto-condensed text-[17px] text-[#3C3939]">
         <p>
           Hi, my name is Adriano Smith and I began using WordPress when it first began. I’ve spent most of my waking
           hours for the last ten years designing, programming and operating WordPress sites.
@@ -43,9 +43,9 @@ const Div1 = () => {
         </p>
       </div>
       <hr className="border-gray-400" />
-      <div className="flex flex-row gap-x-[30%] py-8 s760:flex-col s760:gap-y-[20px] ">
-        <div className="flex flex-row gap-[2.9rem] s400:gap-[10%]">
-          <div className="flex flex-col gap-1 font-semibold capitalize">
+      <div className="flex flex-row gap-x-[26%] py-8 s760:flex-col s760:gap-y-[20px] ">
+        <div className="flex flex-row gap-[2rem] s400:gap-[10%]">
+          <div className="flex flex-col gap-1 font-semibold capitalize text-[#292727]">
             <p>birthday:</p>
 
             <p>age:</p>
@@ -56,7 +56,7 @@ const Div1 = () => {
 
             <p>phone:</p>
           </div>
-          <div className="flex flex-col flex-nowrap gap-1">
+          <div className="text-[#3C3939] flex flex-col flex-nowrap gap-1">
             <p>01.07.1990</p> <p>32</p>
             <p>Ave 11, New York</p>
             <p>tokyo@gmail.com</p>
@@ -65,8 +65,8 @@ const Div1 = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-row gap-[2.9rem] s400:gap-[4%]">
-          <div className="flex flex-col gap-1 font-semibold capitalize">
+        <div className="flex flex-row gap-[2rem] s400:gap-[4%]">
+          <div className="flex flex-col gap-1 font-semibold capitalize text-[#292727]">
             <p>nationality:</p>
 
             <p>study:</p>
@@ -77,7 +77,7 @@ const Div1 = () => {
 
             <p>Freelance:</p>
           </div>
-          <div className="flex flex-col flex-nowrap gap-1 capitalize">
+          <div className="flex flex-col flex-nowrap gap-1 capitalize text-[#3C3939]">
             <p className="uppercase">usa</p>
             <p className="whitespace-nowrap">Univercity of Texas</p>
             <p>Master</p>
@@ -88,7 +88,7 @@ const Div1 = () => {
       </div>
       <hr className="border-gray-400" />
       <div className="py-9">
-        <Button className="bg-white py-4 px-10 font-medium normal-case text-black  shadow-sm hover:bg-white">
+        <Button className="bg-white py-4 px-10 font-medium normal-case text-[#3C3939]  shadow-sm hover:bg-white">
           <a
             href=""
             download

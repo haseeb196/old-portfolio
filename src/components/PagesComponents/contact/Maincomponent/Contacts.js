@@ -13,10 +13,10 @@ const Contacts = () => {
       >
         <div className="flex flex-col gap-2">
           {' '}
-          <h3 className="max-w-[85px] bg-[#b9b9b9] py-2 px-1 text-center text-[14px] font-semibold uppercase">
+          <h3 className="max-w-[85px] text-white  bg-[#3C3939] py-2 px-1 text-center text-[14px] font-semibold uppercase  rounded-[4px]">
             contact
           </h3>
-          <h2 className="mb-5 text-[30px] font-extrabold">Get in Touch</h2>
+          <h2 className="mb-5 text-[30px] text-[#3C3939] font-extrabold">Get in Touch</h2>
         </div>
         <div>
           <Form />

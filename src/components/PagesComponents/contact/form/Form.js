@@ -145,7 +145,7 @@ const Form = () => {
 
         <Button
           type="submit"
-          className="max-w-[200px] bg-white   py-4 px-[54px] text-center text-[16px] capitalize text-[black] hover:bg-white"
+          className="max-w-[200px] bg-white   py-4 px-[54px] text-center text-[16px] capitalize text-[#3C3939] hover:bg-white"
         >
           Submit
         </Button>

@@ -11,7 +11,7 @@ const Contact = () => {
   });
   return (
     <SnackbarProvider maxSnack={3}>
-      <div className="bg-[#cecdcd]">
+      <div className="bg-[#CCC9C9]">
         <motion.div
           className="top-0 z-[100]  h-[2.5px] origin-[0%]  bg-[#ffffff]  xl:fixed xl:right-0 xl:left-0  sg:sticky sg:top-[64px] sg:h-[5px]"
           style={{ scaleX }}

@@ -16,17 +16,17 @@ const Card = ({ title, index, text }) => {
 
   return (
     <div
-      className="group flex w-full flex-col gap-5 rounded-sm bg-[#a09f9f] pl-[30px] pr-[30px] pt-[45px] pb-[40px]  shadow-md xl:max-w-[350px]"
+      className="group flex w-full flex-col gap-5 rounded-sm bg-[#949292]  pl-[30px] pr-[30px] pt-[45px] pb-[40px]  text-[#3C3939] shadow-md xl:max-w-[350px]"
       onClick={changedrop}
     >
-      <div className="max-w-[54px] rounded-[99999px] bg-[#bbb9b9] p-[14px] text-center  text-[17px] font-bold text-black transition-all duration-300 group-hover:bg-[#dddcdc]">
+      <div className="max-w-[54px] rounded-[99999px] bg-[#bbb9b9] p-[14px] text-center  text-[17px] font-bold text-[#252323] transition-all duration-300 group-hover:bg-[#dddcdc]">
         {index}
       </div>
       <div className="text-[20px] font-bold capitalize">
         <h1>{title}</h1>
       </div>
       <div>
-        <p className="break-words  text-[14.5px] text-[#413f3f]">{text}</p>
+        <p className="break-words  text-[14.5px] text-[#4e4949]">{text}</p>
       </div>
 
       <div className="flex flex-col">
@@ -44,7 +44,7 @@ const Card = ({ title, index, text }) => {
         <Backdrop open={drop}>
           <div className="ml-[20%] flex flex-row items-start gap-3 sg:mx-20 s760:mx-10 s760:flex-col-reverse s760:items-end">
             <div
-              className="h-[80vh] w-full max-w-[1050px] overflow-y-scroll scroll-smooth rounded-xl   bg-[#c2bfbf]  shadow-2xl"
+              className="h-[80vh]  w-full max-w-[1050px] overflow-y-scroll scroll-smooth rounded-xl   bg-[#bbbaba]  shadow-2xl z-[9999]"
               id="scrollsg"
             >
               <Cardhover title={title} />

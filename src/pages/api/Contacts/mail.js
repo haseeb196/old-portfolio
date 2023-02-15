@@ -1,10 +1,10 @@
-// eslint-disable-next-line unused-imports/no-unused-imports, no-unused-vars
 import User from 'database/Schema';
-
+// eslint-disable-next-line unused-imports/no-unused-imports, no-unused-vars
+import db from 'database/connection'
 export default function handler(req, res) {
   const { name, message, email } = req.body;
 
-  if (req.method === 'POST' || name || message || email) {
+  if (req.method === 'POST' && name && message && email) {
     const user = new User({
       name: name,
       email: email,

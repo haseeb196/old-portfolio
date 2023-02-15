@@ -1,27 +1,50 @@
 import Image from 'next/image';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
+const Showcase = ({ img, link, button, type }) => {
+  const [show, setShow] = useState(false);
+  useEffect(() => {
+    if (button === type) {
+      setShow(true);
+    } else {
+      setShow(false);
+    }
+  }, [button, type]);
 
-const Showcase = () => {
-  const [open, setOpen] = useState(false);
-  return (
-    <div
-      className="relative max-h-[650px] min-h-[350px] w-full cursor-pointer transition-all duration-[3s] ease-in-out"
-      onMouseEnter={() => setOpen(true)}
-      onMouseLeave={() => setOpen(false)}
-    >
-      {open && (
-        <p className={`${open && 'backdrop-blur-md'} absolute flex h-full w-full items-center justify-center`}>
-          whats-app
-        </p>
-      )}
-      <Image
-        className={`h-full w-full object-cover`}
-        src="https://i.tribune.com.pk/media/images/FsWUqRoOsPu1660720205-0/FsWUqRoOsPu1660720205-0.jpg"
-        alt=""
-        height={1920}
-        width={1080}
-      />
-    </div>
+  return button === 'all' ? (
+    <motion.div initial={{ opacity : 0}} animate={{opacity : 1}} transition={{duration : 0.2}} className="group min-h-[250px]  w-full  cursor-pointer overflow-hidden">
+      <a
+        href={link}
+        target="_blank"
+        rel="noreferrer"
+      >
+        <Image
+          className={`h-full w-full transition-all duration-[0.5s] ease-in-out group-hover:scale-[1.1]`}
+          src={img}
+          alt=""
+          height={1920}
+          width={1080}
+        />
+      </a>
+    </motion.div>
+  ) : show ? (
+    <motion.div initial={{ opacity : 0}} animate={{opacity : 1}} transition={{duration : 0.2}} className="group min-h-[250px]  w-full  cursor-pointer overflow-hidden">
+      <a
+        href={link}
+        target="_blank"
+        rel="noreferrer"
+      >
+        <Image
+          className={`h-full w-full  transition-all duration-[0.5s] ease-in-out group-hover:scale-[1.1]`}
+          src={img}
+          alt=""
+          height={1920}
+          width={1080}
+        />
+      </a>
+    </motion.div>
+  ) : (
+    <></>
   );
 };
 
