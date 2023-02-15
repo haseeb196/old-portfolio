@@ -12,7 +12,7 @@ const Homes = () => {
         transition={{ duration: 0.5 }}
         className="xl:ml-8 s1040:mx-auto"
       >
-        <BubbleAnimation  />
+        <BubbleAnimation />
       </motion.div>
       <motion.div
         initial={media1 && { x: -25, opacity: 0 }}

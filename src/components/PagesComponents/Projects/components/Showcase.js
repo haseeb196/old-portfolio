@@ -1,6 +1,6 @@
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
 const Showcase = ({ img, link, button, type }) => {
   const [show, setShow] = useState(false);
   useEffect(() => {
@@ -12,7 +12,12 @@ const Showcase = ({ img, link, button, type }) => {
   }, [button, type]);
 
   return button === 'all' ? (
-    <motion.div initial={{ opacity : 0}} animate={{opacity : 1}} transition={{duration : 0.2}} className="group min-h-[250px]  w-full  cursor-pointer overflow-hidden">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.2 }}
+      className="group min-h-[250px]  w-full  cursor-pointer overflow-hidden"
+    >
       <a
         href={link}
         target="_blank"
@@ -28,7 +33,12 @@ const Showcase = ({ img, link, button, type }) => {
       </a>
     </motion.div>
   ) : show ? (
-    <motion.div initial={{ opacity : 0}} animate={{opacity : 1}} transition={{duration : 0.2}} className="group min-h-[250px]  w-full  cursor-pointer overflow-hidden">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.2 }}
+      className="group min-h-[250px]  w-full  cursor-pointer overflow-hidden"
+    >
       <a
         href={link}
         target="_blank"

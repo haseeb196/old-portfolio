@@ -18,13 +18,12 @@ const Drawers = () => {
       </IconButton>
       <Drawer
         sx={{ width: 500 }}
-        
         SlideProps={{ timeout: 300 }}
         open={open}
         onClose={() => setOpen(false)}
         anchor={'right'}
       >
-        <Box className="flex flex-col flex-wrap items-start bg-[#3C3939] h-full">
+        <Box className="flex h-full flex-col flex-wrap items-start bg-[#3C3939]">
           <IconButton
             onClick={() => setOpen(false)}
             className="pl-3 pt-3 text-white"

@@ -87,7 +87,7 @@ const Sidebar = () => {
   ) : (
     <div className="flex flex-row items-center justify-between bg-[#3C3939] py-3 text-white">
       <div className="ml-5">
-        <h1 className="text-[20px] font-bold uppercase tracking-widest glow">tokoyo</h1>
+        <h1 className="glow text-[20px] font-bold uppercase tracking-widest">tokoyo</h1>
       </div>
       <div className="mr-5">
         <Drawers />

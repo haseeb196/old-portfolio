@@ -3,7 +3,7 @@ import User from 'database/Schema';
 import db from 'database/connection'
 export default function handler(req, res) {
   const { name, message, email } = req.body;
-
+ 
   if (req.method === 'POST' && name && message && email) {
     const user = new User({
       name: name,

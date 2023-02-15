@@ -22,7 +22,7 @@ const Sdiv1 = () => {
     >
       <div className="flex flex-col gap-3">
         {' '}
-        <h3 className="max-w-[85px] bg-[#3C3939] py-2 px-1 text-center text-[13px] font-semibold uppercase text-white rounded-[4px]">
+        <h3 className="max-w-[85px] rounded-[4px] bg-[#3C3939] py-2 px-1 text-center text-[13px] font-semibold uppercase text-white">
           Services
         </h3>
         <h2 className="text-[30px] font-extrabold capitalize text-[#3C3939]">what i do</h2>

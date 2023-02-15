@@ -44,7 +44,7 @@ const Card = ({ title, index, text }) => {
         <Backdrop open={drop}>
           <div className="ml-[20%] flex flex-row items-start gap-3 sg:mx-20 s760:mx-10 s760:flex-col-reverse s760:items-end">
             <div
-              className="h-[80vh]  w-full max-w-[1050px] overflow-y-scroll scroll-smooth rounded-xl   bg-[#bbbaba]  shadow-2xl z-[9999]"
+              className="z-[9999]  h-[80vh] w-full max-w-[1050px] overflow-y-scroll scroll-smooth   rounded-xl  bg-[#bbbaba] shadow-2xl"
               id="scrollsg"
             >
               <Cardhover title={title} />

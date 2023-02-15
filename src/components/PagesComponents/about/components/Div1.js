@@ -11,7 +11,9 @@ const Div1 = () => {
       className="my-12 xl:px-32 sg:!px-16 s400:!px-6 s760:!px-8"
     >
       <div className="mb-14 flex flex-col gap-[0.6rem] capitalize sm:mb-8 sg:mb-10 s400:mb-6">
-        <h3 className="max-w-[80px] bg-[#3C3939] rounded-[4px] py-2 px-3 text-center text-[14px] font-semibold uppercase text-white">about</h3>
+        <h3 className="max-w-[80px] rounded-[4px] bg-[#3C3939] py-2 px-3 text-center text-[14px] font-semibold uppercase text-white">
+          about
+        </h3>
         <h2 className="mb-5 text-[30px] font-extrabold text-[#3C3939]">about me</h2>
 
         <div className="max-w-[1000px]">
@@ -30,7 +32,7 @@ const Div1 = () => {
         <p className="text-[#474747]">web developer</p>
       </div>
       <hr className="border-gray-400" />
-      <div className="flex max-w-[1000px] flex-col gap-5 py-8 font-roboto-condensed text-[17px] text-[#3C3939]">
+      <div className="font-roboto-condensed flex max-w-[1000px] flex-col gap-5 py-8 text-[17px] text-[#3C3939]">
         <p>
           Hi, my name is Adriano Smith and I began using WordPress when it first began. I’ve spent most of my waking
           hours for the last ten years designing, programming and operating WordPress sites.
@@ -56,7 +58,7 @@ const Div1 = () => {
 
             <p>phone:</p>
           </div>
-          <div className="text-[#3C3939] flex flex-col flex-nowrap gap-1">
+          <div className="flex flex-col flex-nowrap gap-1 text-[#3C3939]">
             <p>01.07.1990</p> <p>32</p>
             <p>Ave 11, New York</p>
             <p>tokyo@gmail.com</p>

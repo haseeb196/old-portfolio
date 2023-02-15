@@ -23,7 +23,7 @@ const Pricing = () => {
   ];
   return (
     <div className="flex flex-col gap-6 bg-[#979696] py-16 pt-14 xl:px-32 sg:!mt-20 sg:!px-16 s400:!px-6 s760:!px-8">
-      <div className="text-[#3C3939] text-[25px] font-bold capitalize">
+      <div className="text-[25px] font-bold capitalize text-[#3C3939]">
         <h1>pricing</h1>
       </div>
       <div className="flex flex-row gap-[5.5%] s760:flex-col s760:gap-y-[50px]">

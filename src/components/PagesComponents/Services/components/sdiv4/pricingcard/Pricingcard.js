@@ -36,7 +36,9 @@ const Pricingcard = ({ price, type, popular, color }) => {
         })}
       </div>
       <div>
-        <Button className="bg-[#ececec] py-4 px-10 text-[15px] capitalize text-[#292626] hover:bg-white">purchase</Button>
+        <Button className="bg-[#ececec] py-4 px-10 text-[15px] capitalize text-[#292626] hover:bg-white">
+          purchase
+        </Button>
       </div>
       {popular && (
         <div className="absolute -top-5 right-3 rounded-sm bg-[#dfdcdc] py-2 px-4 text-[14px] capitalize">

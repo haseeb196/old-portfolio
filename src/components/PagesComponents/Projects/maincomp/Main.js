@@ -47,7 +47,7 @@ const Main = () => {
       <div className="xl:px-32 sg:!px-16 s400:!px-6 s760:!px-8">
         <div className="flex flex-row items-end gap-[40%] py-9  s760:flex-col s760:items-start s760:gap-y-6  s760:py-8">
           <div className="flex flex-col gap-3">
-            <h3 className="max-w-[85px] bg-[#3C3939] py-2 px-1 text-center text-white rounded-[4px] text-[13px] font-semibold uppercase">
+            <h3 className="max-w-[85px] rounded-[4px] bg-[#3C3939] py-2 px-1 text-center text-[13px] font-semibold uppercase text-white">
               Projects
             </h3>
             <h2 className="text-[30px] font-extrabold capitalize text-[#3C3939]">personal projects</h2>
@@ -91,7 +91,7 @@ const Main = () => {
             </ul>
           </div>
         </div>
-        <div  className="grid max-w-[960px] grid-cols-2 gap-9 s760:grid-cols-1">
+        <div className="grid max-w-[960px] grid-cols-2 gap-9 s760:grid-cols-1">
           {content.map((x, i) => {
             return (
               <Showcase
