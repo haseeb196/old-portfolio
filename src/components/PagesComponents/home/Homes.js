@@ -1,4 +1,5 @@
 import BubbleAnimation from '@/components/Animations/BubbleAnimation/Bubble';
+import styles from '@/styles/Animation.module.css';
 import { Facebook, GitHub, LinkedIn, Twitter } from '@mui/icons-material';
 import { useMediaQuery } from '@mui/material';
 import { motion } from 'framer-motion';
@@ -20,12 +21,12 @@ const Homes = () => {
         transition={{ duration: 0.5 }}
         className="flex flex-col gap-6 sg:gap-4"
       >
-        <h1
-          className={`text-[48px] font-semibold uppercase text-[#3C3939] sm:!text-[30px] lg:!text-start sg:text-center sg:text-[44px] 
-          `}
+        <div
+          className={`${styles.content} flex flex-row justify-center sm:!text-[10px] lg:justify-start xl:justify-start sg:text-[15px] s400:!text-center s400:!text-[9px]`}
         >
-          adriano smith
-        </h1>
+          <h1>adriano smith</h1>
+          <h1>adriano smith</h1>
+        </div>
         <p
           className={`text-[22px] text-[#3C3939] sm:!text-[18px] lg:!text-start xl:max-w-[650px] sg:max-w-[600px] sg:text-center sg:text-[20px]  
           `}
@@ -36,25 +37,25 @@ const Homes = () => {
         <div className="flex gap-8 lg:!justify-start sg:flex-row sg:justify-center">
           <button>
             <Facebook
-              htmlColor={`#403829`}
+              htmlColor={`#666054`}
               className="text-[30px] sm:text-[24px]"
             />
           </button>
           <button>
             <Twitter
-              htmlColor={`#403829`}
+              htmlColor={`#666054`}
               className="text-[30px] sm:text-[24px]"
             />
           </button>
           <button>
             <GitHub
-              htmlColor={`#403829`}
+              htmlColor={`#666054`}
               className="text-[30px] sm:text-[24px]"
             />
           </button>
           <button>
             <LinkedIn
-              htmlColor={`#403829`}
+              htmlColor={`#666054`}
               className="text-[30px] sm:text-[24px]"
             />
           </button>

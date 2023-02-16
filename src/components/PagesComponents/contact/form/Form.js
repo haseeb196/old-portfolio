@@ -1,14 +1,14 @@
-import { Error } from '@mui/icons-material';
-import { Button } from '@mui/material';
+import styles from '@/styles/Animation.module.css';
+import { Clear, Done, Error } from '@mui/icons-material';
 import { motion } from 'framer-motion';
-import { useSnackbar } from 'notistack';
 import { useState } from 'react';
-
 const Form = () => {
   const url = '/api/Contacts/mail';
-  const { enqueueSnackbar } = useSnackbar();
+
   const [error, setError] = useState(false);
   const [emailerror, setEmailerror] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+  const [submitvalidate, setSubmitvalidate] = useState('');
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -35,6 +35,7 @@ const Form = () => {
     } else if (!regexe.test(formData?.email)) {
       setEmailerror(true);
     } else {
+      setSubmitted(true);
       const res = await fetch(url, {
         method: 'POST',
         headers: {
@@ -47,25 +48,21 @@ const Form = () => {
         }),
       });
       const data = await res.json();
+      setTimeout(() => {
+        setSubmitted(false);
+      }, 2200);
       if (data.message === 'success') {
-        enqueueSnackbar('Successfully Submitted!', {
-          variant: 'success',
-          autoHideDuration: 2500,
-          anchorOrigin: {
-            vertical: 'bottom',
-            horizontal: 'right',
-          },
-        });
+        setTimeout(() => {
+          setSubmitvalidate('success');
+        }, 2200);
       } else {
-        enqueueSnackbar('Try Again', {
-          variant: 'error',
-          autoHideDuration: 2500,
-          anchorOrigin: {
-            vertical: 'bottom',
-            horizontal: 'right',
-          },
-        });
+        setTimeout(() => {
+          setSubmitvalidate('fail');
+        }, 2200);
       }
+      setTimeout(() => {
+        setSubmitvalidate('');
+      }, 3000);
       setFormData({
         name: '',
         email: '',
@@ -143,12 +140,15 @@ const Form = () => {
           className="h-40 w-full resize-none border-[1px] border-[#9e9e9e] bg-transparent px-3 py-3 text-[16px] outline-0 transition-all duration-[0.2s] ease-linear placeholder:text-[#9e9e9e] focus:border-black "
         />
 
-        <Button
+        <button
           type="submit"
-          className="max-w-[200px] bg-white   py-4 px-[54px] text-center text-[16px] capitalize text-[#3C3939] hover:bg-white"
+          className={`${styles.button} ${submitted && styles.onclic}  ${
+            submitvalidate === 'success' && styles.validates
+          } ${submitvalidate === 'fail' && styles.validatef}`}
         >
-          Submit
-        </Button>
+          {submitvalidate === 'success' && <Done />}
+          {submitvalidate === 'fail' && <Clear />}
+        </button>
       </div>
     </form>
   );
