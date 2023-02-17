@@ -26,7 +26,7 @@ const Pricing = () => {
       <div className="text-[25px] font-bold capitalize text-[#3C3939]">
         <h1>pricing</h1>
       </div>
-      <div className="flex flex-row gap-[5.5%] s760:flex-col s760:gap-y-[50px]">
+      <div className="flex flex-row gap-[5.4%] sg:gap-[3.4%] s760:flex-col s760:gap-y-[50px]">
         {prices.map((x, i) => {
           return (
             <Pricingcard

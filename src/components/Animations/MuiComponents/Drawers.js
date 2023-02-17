@@ -17,7 +17,7 @@ const Drawers = () => {
         <Menu style={{ color: 'white' }} />
       </IconButton>
       <Drawer
-        sx={{ width: 500 }}
+        sx={{ '& .MuiDrawer-paper': { width: 300 } }}
         SlideProps={{ timeout: 300 }}
         open={open}
         onClose={() => setOpen(false)}
@@ -26,7 +26,7 @@ const Drawers = () => {
         <Box className="flex h-full flex-col flex-wrap items-start bg-[#3C3939]">
           <IconButton
             onClick={() => setOpen(false)}
-            className="pl-3 pt-3 text-white"
+            className="!pl-3 !pt-3 !text-white"
           >
             <Clear />
           </IconButton>
@@ -35,7 +35,7 @@ const Drawers = () => {
               <Link
                 href={'/'}
                 onClick={() => setOpen(false)}
-                className={`sm:text-[18px] md:text-[21px] lg:text-[21px] ${
+                className={`sm:text-[19px] md:text-[21px] lg:text-[21px] ${
                   router.pathname == '/' ? 'text-white' : 'text-gray-400'
                 }`}
               >
@@ -46,7 +46,7 @@ const Drawers = () => {
               <Link
                 href={'/about'}
                 onClick={() => setOpen(false)}
-                className={`sm:text-[18px] md:text-[21px] lg:text-[21px] ${
+                className={`sm:text-[19px] md:text-[21px] lg:text-[21px] ${
                   router.pathname == '/about' ? 'text-white' : 'text-gray-400'
                 }`}
               >
@@ -57,7 +57,7 @@ const Drawers = () => {
               <Link
                 href={'/service'}
                 onClick={() => setOpen(false)}
-                className={`sm:text-[18px] md:text-[21px] lg:text-[21px] ${
+                className={`sm:text-[19px] md:text-[21px] lg:text-[21px] ${
                   router.pathname == '/service' ? 'text-white' : 'text-gray-400'
                 }`}
               >
@@ -68,7 +68,7 @@ const Drawers = () => {
               <Link
                 href={'/projects'}
                 onClick={() => setOpen(false)}
-                className={`sm:text-[18px] md:text-[21px] lg:text-[21px] ${
+                className={`sm:text-[19px] md:text-[21px] lg:text-[21px] ${
                   router.pathname == '/projects' ? 'text-white' : 'text-gray-400'
                 }`}
               >
@@ -80,7 +80,7 @@ const Drawers = () => {
               <Link
                 href={'/contact'}
                 onClick={() => setOpen(false)}
-                className={`sm:text-[18px] md:text-[21px] lg:text-[21px] ${
+                className={`sm:text-[19px] md:text-[21px] lg:text-[21px] ${
                   router.pathname == '/contact' ? 'text-white' : 'text-gray-400'
                 }`}
               >

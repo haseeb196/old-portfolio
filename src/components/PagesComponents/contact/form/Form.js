@@ -55,7 +55,7 @@ const Form = () => {
         setTimeout(() => {
           setSubmitvalidate('success');
         }, 2200);
-      } else {
+      } else if (data.message === 'error') {
         setTimeout(() => {
           setSubmitvalidate('fail');
         }, 2200);

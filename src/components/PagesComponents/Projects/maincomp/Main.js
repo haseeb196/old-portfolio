@@ -91,7 +91,7 @@ const Main = () => {
             </ul>
           </div>
         </div>
-        <div className="grid max-w-[960px] grid-cols-2 gap-9 s760:grid-cols-1">
+        <div className="grid max-w-[960px] grid-cols-2 gap-9 s760:grid-cols-1 s2000:max-w-[1150px] s2000:grid-cols-3">
           {content.map((x, i) => {
             return (
               <Showcase

@@ -90,7 +90,7 @@ const Div1 = () => {
       </div>
       <hr className="border-gray-400" />
       <div className="py-9">
-        <Button className="bg-white py-4 px-10 font-medium normal-case text-[#3C3939]  shadow-sm hover:bg-white">
+        <Button className="!bg-white !py-4 !px-10 font-medium normal-case !text-[#3C3939]  shadow-sm hover:bg-white">
           <a
             href=""
             download

@@ -1,6 +1,8 @@
+// prettier-ignore
 import User from 'database/Schema';
 // eslint-disable-next-line unused-imports/no-unused-imports, no-unused-vars
- import db from 'database/connection'
+import db from 'database/connection'
+
 export default function handler(req, res) {
   const { name, message, email } = req.body;
 
@@ -13,12 +15,12 @@ export default function handler(req, res) {
 
     user.save((err) => {
       if (err) {
-        res.json({ message: err });
+        res.json({ message: 'error' });
       } else {
         res.json({ message: 'success' });
       }
     });
   } else {
-    res.status(404).send('Error: ///<>hda34');
+    res.status(404).send('Error: ///<>hjnda34');
   }
 }
