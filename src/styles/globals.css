@@ -53,7 +53,7 @@ html {
 }
 
 .css-ha3bif-MuiTimelineItem-root:before {
-  display: none;
+  display: none !important;
 }
 
 .MuiTimeline-root {

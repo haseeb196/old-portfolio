@@ -25,7 +25,7 @@ export default function Home() {
         />
       </Head>
       <main
-        className={`flex  items-center justify-center overflow-hidden xl:!min-h-[100vh]  sg:min-h-[93vh]   ${
+        className={`flex  items-center justify-center !overflow-hidden xl:!min-h-[100vh]  sg:min-h-[93vh]   ${
           minheight && '!min-h-[96vh]'
         }  bg-[#CCC9C9]`}
       >

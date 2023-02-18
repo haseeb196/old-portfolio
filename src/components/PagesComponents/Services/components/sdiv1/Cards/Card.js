@@ -37,7 +37,7 @@ const Card = ({ title, index, text }) => {
           <NavigateNext className="-pr-3 w-[18px]" />
         </span>
         <span
-          className="border-so h-[2px] w-[0%] bg-black transition-all duration-300 group-hover:w-[32%] sm:h-0 sm:w-0
+          className="border-so h-[2px] w-[0px] bg-black transition-all duration-300 group-hover:w-[96px] sm:h-0 sm:w-0
         "
         ></span>
       </div>
