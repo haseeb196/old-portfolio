@@ -1,4 +1,5 @@
 import Pricingcard from './pricingcard/Pricingcard';
+import React from 'react';
 
 const Pricing = () => {
   const prices = [

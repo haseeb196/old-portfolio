@@ -1,7 +1,8 @@
 import { Button, useMediaQuery } from '@mui/material';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-const Div1 = () => {
+import React from 'react';
+function Div1() {
   const media1 = useMediaQuery('(min-width:1200px)');
   return (
     <motion.div
@@ -101,6 +102,6 @@ const Div1 = () => {
       </div>
     </motion.div>
   );
-};
+}
 
 export default Div1;

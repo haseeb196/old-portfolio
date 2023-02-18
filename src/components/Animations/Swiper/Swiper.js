@@ -1,5 +1,5 @@
 import { Avatar } from '@mui/material';
-
+import React from 'react';
 const Swipers = ({ text, name, about, image }) => {
   return (
     <div>

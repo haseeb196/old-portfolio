@@ -1,5 +1,6 @@
 import Swipers from '@/components/Animations/Swiper/Swiper'; // Import Swiper React components
 import { A11y, Autoplay, Mousewheel } from 'swiper';
+import React from 'react';
 import 'swiper/css';
 import 'swiper/css/autoplay';
 import 'swiper/css/mousewheel';

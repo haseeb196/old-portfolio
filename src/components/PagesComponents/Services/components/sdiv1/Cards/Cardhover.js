@@ -1,6 +1,7 @@
-import Image from 'next/image';
-
 /* eslint-disable react/no-unescaped-entities */
+import Image from 'next/image';
+import React from 'react';
+
 const Cardhover = ({ title }) => {
   return (
     <div className="flex flex-col gap-6 text-[#3C3939]">

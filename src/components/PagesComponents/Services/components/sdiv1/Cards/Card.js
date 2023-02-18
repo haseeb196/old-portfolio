@@ -2,15 +2,17 @@ import { Close, NavigateNext } from '@mui/icons-material';
 import { Backdrop } from '@mui/material';
 import { useState } from 'react';
 import Cardhover from './Cardhover';
-
+import React from 'react';
 const Card = ({ title, index, text }) => {
   const [drop, setDrop] = useState(false);
 
   const changedrop = () => {
     if (drop) {
       setDrop(false);
+      document.body.style.overflowY = 'unset';
     } else if (!drop) {
       setDrop(true);
+      document.body.style.overflow = 'hidden';
     }
   };
 
@@ -42,9 +44,9 @@ const Card = ({ title, index, text }) => {
 
       {drop && (
         <Backdrop open={drop}>
-          <div className="ml-[20%] flex flex-row items-start gap-3 sg:mx-20 s760:mx-10 s760:flex-col-reverse s760:items-end">
+          <div className="ml-[20%]  flex flex-row items-start gap-3 sg:mx-20 s760:mx-10 s760:flex-col-reverse s760:items-end">
             <div
-              className="z-[9999]  h-[80vh] w-full max-w-[1050px] overflow-y-scroll scroll-smooth   rounded-xl  bg-[#bbbaba] shadow-2xl"
+              className="h-[80vh] w-full max-w-[1050px] overflow-y-scroll scroll-smooth   rounded-xl  bg-[#bbbaba] shadow-2xl"
               id="scrollsg"
             >
               <Cardhover title={title} />

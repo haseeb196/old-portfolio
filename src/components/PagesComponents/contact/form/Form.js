@@ -1,6 +1,7 @@
 import styles from '@/styles/Animation.module.css';
 import { Clear, Done, Error } from '@mui/icons-material';
 import { motion } from 'framer-motion';
+import React from 'react';
 import { useState } from 'react';
 const Form = () => {
   const url = '/api/Contacts/mail';

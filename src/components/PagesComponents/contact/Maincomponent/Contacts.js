@@ -1,6 +1,7 @@
 import { useMediaQuery } from '@mui/material';
 import { motion } from 'framer-motion';
 import Form from '../form/Form';
+import React from 'react';
 const Contacts = () => {
   const media1 = useMediaQuery('(min-width:1200px)');
   return (

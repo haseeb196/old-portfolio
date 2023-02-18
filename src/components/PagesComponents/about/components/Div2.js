@@ -1,6 +1,7 @@
 import Progressbar from '@/components/Animations/progressBar/Progressbar';
 import { useMediaQuery } from '@mui/material';
 import { motion } from 'framer-motion';
+import React from 'react';
 const Div2 = () => {
   const media1 = useMediaQuery('(min-width:1200px)');
   return (

@@ -3,6 +3,7 @@ import Mouse from '@/components/Animations/Mousetracker/Mouse';
 import Preloader from '@/components/Animations/Preloader/Preloader';
 import Sidebar from '@/components/sidebar/sidebarComponent/Sidebar';
 import '@/styles/globals.css';
+import React from 'react';
 import { useMediaQuery } from '@mui/material';
 import { useEffect, useState } from 'react';
 

@@ -1,4 +1,5 @@
 import styles from '@/styles/Preloader.module.css';
+import React from 'react';
 const Preloader = () => {
   return (
     <div className={styles.parent}>

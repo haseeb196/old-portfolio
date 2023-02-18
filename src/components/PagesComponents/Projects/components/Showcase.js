@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import React from 'react';
 import { useEffect, useState } from 'react';
 const Showcase = ({ img, link, button, type }) => {
   const [show, setShow] = useState(false);

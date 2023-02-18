@@ -1,3 +1,4 @@
+import React from 'react';
 import Contacts from '@/components/PagesComponents/contact/Maincomponent/Contacts';
 import { motion, useScroll, useSpring } from 'framer-motion';
 

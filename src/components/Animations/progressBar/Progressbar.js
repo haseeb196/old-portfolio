@@ -1,5 +1,5 @@
 import { motion, useInView } from 'framer-motion';
-import { useRef } from 'react';
+import { useRef, React } from 'react';
 import CountUp from 'react-countup';
 const Progressbar = ({ title, percent }) => {
   const ref = useRef(null);

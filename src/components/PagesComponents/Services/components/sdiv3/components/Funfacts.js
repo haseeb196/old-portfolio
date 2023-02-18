@@ -1,5 +1,6 @@
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
+import React from 'react';
 import CountUp from 'react-countup';
 const Funfacts = ({ text, numtext, num }) => {
   const ref = useRef(null);
