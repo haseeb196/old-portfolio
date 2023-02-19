@@ -7,13 +7,12 @@ import React from 'react';
 import { useMediaQuery } from '@mui/material';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
-import Error404 from '@/components/Animations/404_Animation/Error404';
 
 export default function App({ Component, pageProps }) {
   const mousetrackw = useMediaQuery('(min-width:1024px)');
   const [loading, setLoading] = useState(true);
   const router = useRouter();
-  const [error404, setError404] = useState(false);
+  const [sidebar, setSidebar] = useState(false);
   useEffect(() => {
     setTimeout(() => setLoading(false), 1950);
     if (
@@ -23,31 +22,27 @@ export default function App({ Component, pageProps }) {
       router.pathname === '/projects' ||
       router.pathname === '/contact'
     ) {
-      setError404(false);
+      setSidebar(true);
     } else {
-      setError404(true);
+      setSidebar(false);
     }
   }, [router]);
   return (
     <>
       {!loading ? (
-        !error404 ? (
-          <div className="flex flex-col xl:flex-row">
+        <div className="flex flex-col xl:flex-row">
+          {mousetrackw && <Mouse />}
+
+          <div className="z-30 xl:flex-[0.26] sg:sticky sg:top-0">
+            {sidebar && <Sidebar />}
             {mousetrackw && <Mouse />}
-
-            <div className="z-30 xl:flex-[0.26] sg:sticky sg:top-0">
-              <Sidebar />
-              {mousetrackw && <Mouse />}
-            </div>
-
-            <div className="xl:flex-[0.93]">
-              {' '}
-              <Component {...pageProps} />
-            </div>
           </div>
-        ) : (
-          <Error404 />
-        )
+
+          <div className="xl:flex-[0.93]">
+            {' '}
+            <Component {...pageProps} />
+          </div>
+        </div>
       ) : (
         <Preloader />
       )}

@@ -19,12 +19,12 @@ function Div1() {
 
         <div className="max-w-[1000px]">
           <Image
-            priority
             width={1920}
             height={1080}
             src="https://marketifythemes.net/tailwind/tokyo/assets/img/slider/1.jpg"
             alt=""
             className="h-[100%] w-[100%]"
+            loading='lazy'
           />
         </div>
       </div>

@@ -30,6 +30,7 @@ const Showcase = ({ img, link, button, type }) => {
           alt=""
           height={1920}
           width={1080}
+          loading='lazy'
         />
       </a>
     </motion.div>
