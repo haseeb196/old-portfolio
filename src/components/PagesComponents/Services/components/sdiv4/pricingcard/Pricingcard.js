@@ -36,7 +36,7 @@ const Pricingcard = ({ price, type, popular, color }) => {
         })}
       </div>
       <div>
-        <Button className="!bg-[#ececec] !py-4 !px-10 text-[15px] capitalize !text-[#292626] hover:bg-white">
+        <Button className="!bg-[#ececec] !py-4 !px-10 text-[15px] !capitalize !text-[#292626] hover:bg-white">
           purchase
         </Button>
       </div>
