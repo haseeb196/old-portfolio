@@ -130,3 +130,7 @@ html {
 .font-roboto-condensed {
   font-family: 'Roboto Condensed', sans-serif;
 }
+
+.css-1rcbby2::before {
+  display: none !important;
+}
