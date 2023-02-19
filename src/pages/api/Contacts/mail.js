@@ -8,9 +8,8 @@ export default function handler(req, res) {
       email: email,
       message: message,
     });
-    user.save();
     res.json({ message: 'success' });
-    
+    user.save();
   } else {
     res.status(404).send('Error: ///<>hjnda34');
   }
