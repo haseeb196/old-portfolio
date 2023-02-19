@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }) {
   const router = useRouter();
   const [sidebar, setSidebar] = useState(false);
   useEffect(() => {
-    setTimeout(() => setLoading(false), 1950);
+    setTimeout(() => setLoading(false), 1750);
     if (
       router.pathname === '/' ||
       router.pathname === '/about' ||
