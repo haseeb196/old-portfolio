@@ -83,20 +83,12 @@
   }
 }
 
-.validatef {
-  background: red !important;
-  color: white !important;
-  border-color: red !important;
-  font-size: 13px;
-}
-
 .validates {
   font-size: 13px;
   color: white !important;
   background: #1ecd97 !important;
   border-color: #1ecd97 !important;
 }
-.validates:after,
-.validatef:after {
+.validates:after {
   content: '';
 }

@@ -9,7 +9,7 @@ const Form = () => {
   const [error, setError] = useState(false);
   const [emailerror, setEmailerror] = useState(false);
   const [submitted, setSubmitted] = useState(false);
-  const [submitvalidate, setSubmitvalidate] = useState('');
+  const [submitvalidate, setSubmitvalidate] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -49,20 +49,15 @@ const Form = () => {
         }),
       });
       const data = await res.json();
-      setTimeout(() => {
-        setSubmitted(false);
-      }, 2200);
+
       if (data.message === 'success') {
         setTimeout(() => {
-          setSubmitvalidate('success');
-        }, 2200);
-      } else if (data.message === 'error') {
-        setTimeout(() => {
-          setSubmitvalidate('fail');
+          setSubmitted(false);
+          setSubmitvalidate(true);
         }, 2200);
       }
       setTimeout(() => {
-        setSubmitvalidate('');
+        setSubmitvalidate(false);
       }, 3000);
       setFormData({
         name: '',
@@ -143,12 +138,9 @@ const Form = () => {
 
         <button
           type="submit"
-          className={`${styles.button} ${submitted && styles.onclic}  ${
-            submitvalidate === 'success' && styles.validates
-          } ${submitvalidate === 'fail' && styles.validatef}`}
+          className={`${styles.button} ${submitted && styles.onclic}  ${submitvalidate && styles.validates}`}
         >
-          {submitvalidate === 'success' && <Done />}
-          {submitvalidate === 'fail' && <Clear />}
+          {submitvalidate && <Done />}
         </button>
       </div>
     </form>
