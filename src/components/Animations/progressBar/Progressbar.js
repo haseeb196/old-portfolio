@@ -9,7 +9,7 @@ const Progressbar = ({ title, percent }) => {
     <div className="flex min-w-[16vw] flex-col gap-3">
       <div className="flex justify-between pt-1">
         <div>
-          <p className="font-bold">{title}</p>
+          <p className="font-bold text-[#2c2a2a]">{title}</p>
         </div>
         <div>
           {' '}
@@ -29,7 +29,7 @@ const Progressbar = ({ title, percent }) => {
           initial={{ width: '0%' }}
           animate={{ width: inview ? `${percent}%` : '0%' }}
           transition={{ duration: 2, type: 'spring' }}
-          className="h-2 w-[95%] bg-[#3C3939]"
+          className="h-2 w-[95%] bg-[#312e2e]"
         ></motion.div>
       </div>
     </div>

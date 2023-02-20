@@ -11,11 +11,12 @@ const Swipers = ({ text, name, about, image }) => {
           <Avatar
             sx={{ width: 50, height: 50 }}
             src={image}
+            alt='avatar'
           />
         </div>
         <div>
           <h1 className="text-[19px] font-bold capitalize">{name}</h1>
-          <p className="text-gray-500">{about}</p>
+          <p className="text-[#646262]">{about}</p>
         </div>
       </div>
     </div>

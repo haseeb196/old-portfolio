@@ -11,28 +11,28 @@ function Div1() {
       className="my-12 xl:px-32 sg:!px-16 s400:!px-6 s760:!px-8"
     >
       <div className="mb-14 flex flex-col gap-[0.6rem] capitalize sm:mb-8 sg:mb-10 s400:mb-6">
-        <h3 className="max-w-[80px] rounded-[4px] bg-[#3C3939] py-2 px-3 text-center text-[14px] font-semibold uppercase text-white">
+        <h1 className="max-w-[80px] rounded-[4px] bg-[#3C3939] py-2 px-3 text-center text-[14px] font-semibold uppercase text-white">
           about
-        </h3>
-        <h2 className="mb-5 text-[30px] font-extrabold text-[#3C3939]">about me</h2>
+        </h1>
+        <h2 className="mb-5 text-[30px] font-extrabold text-[#2c2a2a]">about me</h2>
 
         <div className="max-w-[1000px]">
           <Image
             width={1920}
             height={1080}
             src="https://marketifythemes.net/tailwind/tokyo/assets/img/slider/1.jpg"
-            alt=""
+            alt="photo"
             className="h-[100%] w-[100%]"
-            loading="lazy"
+          priority
           />
         </div>
       </div>
       <div className="flex flex-col gap-[2px] pb-8 pt-5 capitalize">
-        <h2 className="text-[25px] font-semibold text-[#3C3939]">Adriano Smith</h2>
-        <p className="text-[#474747]">web developer</p>
+        <h2 className="text-[25px] font-semibold text-[#2c2a2a]">Adriano Smith</h2>
+        <p className="text-[#575656]">web developer</p>
       </div>
       <hr className="border-gray-400" />
-      <div className="font-roboto-condensed flex max-w-[1000px] flex-col gap-5 py-8 text-[17px] text-[#3C3939]">
+      <div className="font-roboto-condensed flex max-w-[1000px] flex-col gap-5 py-8 text-[17px] text-[#2c2a2a]">
         <p>
           Hi, my name is Adriano Smith and I began using WordPress when it first began. I’ve spent most of my waking
           hours for the last ten years designing, programming and operating WordPress sites.
@@ -47,7 +47,7 @@ function Div1() {
       <hr className="border-gray-400" />
       <div className="flex flex-row gap-x-[26%] py-8 s760:flex-col s760:gap-y-[20px] ">
         <div className="flex flex-row gap-[2rem] s400:gap-[10%]">
-          <div className="flex flex-col gap-1 font-semibold capitalize text-[#292727]">
+          <div className="flex flex-col gap-1 font-semibold capitalize text-[#2c2a2a]">
             <p>birthday:</p>
 
             <p>age:</p>
@@ -58,8 +58,9 @@ function Div1() {
 
             <p>phone:</p>
           </div>
-          <div className="flex flex-col flex-nowrap gap-1 text-[#3C3939]">
-            <p>01.07.1990</p> <p>32</p>
+          <div className="flex flex-col flex-nowrap gap-1 text-[#424040]">
+            <p>01.07.1990</p> 
+            <p>32</p>
             <p>Ave 11, New York</p>
             <p>tokyo@gmail.com</p>
             <p>
@@ -68,7 +69,7 @@ function Div1() {
           </div>
         </div>
         <div className="flex flex-row gap-[2rem] s400:gap-[4%]">
-          <div className="flex flex-col gap-1 font-semibold capitalize text-[#292727]">
+          <div className="flex flex-col gap-1 font-semibold capitalize text-[#2c2a2a]">
             <p>nationality:</p>
 
             <p>study:</p>
@@ -79,7 +80,7 @@ function Div1() {
 
             <p>Freelance:</p>
           </div>
-          <div className="flex flex-col flex-nowrap gap-1 capitalize text-[#3C3939]">
+          <div className="flex flex-col flex-nowrap gap-1 capitalize text-[#424040]">
             <p className="uppercase">usa</p>
             <p className="whitespace-nowrap">Univercity of Texas</p>
             <p>Master</p>
@@ -90,7 +91,7 @@ function Div1() {
       </div>
       <hr className="border-gray-400" />
       <div className="py-9">
-        <Button className="!bg-white !py-4 !px-10 font-medium normal-case !text-[#3C3939]  shadow-sm hover:bg-white">
+        <Button className="!bg-white !py-4 !px-10 font-medium  !capitalize !text-[#2c2a2a]  shadow-sm hover:bg-white">
           <a
             href=""
             download
