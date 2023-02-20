@@ -1,6 +1,5 @@
 import BubbleAnimation from '@/components/Animations/BubbleAnimation/Bubble';
 import styles from '@/styles/Animation.module.css';
-import React from 'react';
 import { Facebook, GitHub, LinkedIn, Twitter } from '@mui/icons-material';
 import { useMediaQuery } from '@mui/material';
 import { motion } from 'framer-motion';
@@ -36,25 +35,25 @@ const Homes = () => {
         </p>
 
         <div className="flex gap-8 lg:!justify-start sg:flex-row sg:justify-center">
-          <button>
+          <button aria-label="facebook">
             <Facebook
               htmlColor={`#666054`}
               className="!sm:text-[24px] !text-[30px]"
             />
           </button>
-          <button>
+          <button aria-label="twitter">
             <Twitter
               htmlColor={`#666054`}
               className="!sm:text-[24px] !text-[30px]"
             />
           </button>
-          <button>
+          <button aria-label="github">
             <GitHub
               htmlColor={`#666054`}
               className="!sm:text-[24px] !text-[30px]"
             />
           </button>
-          <button>
+          <button aria-label="linkedin">
             <LinkedIn
               htmlColor={`#666054`}
               className="!sm:text-[24px] !text-[30px]"

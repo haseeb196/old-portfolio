@@ -1,6 +1,5 @@
-import React from 'react';
-import { motion, useScroll, useSpring } from 'framer-motion';
 import Main from '@/components/PagesComponents/Projects/maincomp/Main';
+import { motion, useScroll, useSpring } from 'framer-motion';
 
 const Projects = () => {
   const { scrollYProgress } = useScroll();

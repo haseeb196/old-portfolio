@@ -1,5 +1,5 @@
 import Lottie from 'lottie-web';
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 const Error404 = () => {
   const ref = useRef(null);

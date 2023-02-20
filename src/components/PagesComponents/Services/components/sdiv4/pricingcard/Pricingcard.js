@@ -1,5 +1,4 @@
 import { Button } from '@mui/material';
-import React from 'react';
 const Pricingcard = ({ price, type, popular, color }) => {
   return (
     <div

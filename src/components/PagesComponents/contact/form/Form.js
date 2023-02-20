@@ -1,11 +1,9 @@
 import styles from '@/styles/Animation.module.css';
-import { Clear, Done, Error } from '@mui/icons-material';
+import { Done, Error } from '@mui/icons-material';
+import { db } from 'database/firebase';
 import { motion } from 'framer-motion';
-import React from 'react';
 import { useState } from 'react';
 const Form = () => {
-  const url = '/api/Contacts/mail';
-
   const [error, setError] = useState(false);
   const [emailerror, setEmailerror] = useState(false);
   const [submitted, setSubmitted] = useState(false);
@@ -37,28 +35,21 @@ const Form = () => {
       setEmailerror(true);
     } else {
       setSubmitted(true);
-      const res = await fetch(url, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          message: formData.message,
-        }),
+      db.collection('user').add({
+        name: formData.name,
+        email: formData.email,
+        message: formData.message,
       });
-      const data = await res.json();
 
-      if (data.message === 'success') {
-        setTimeout(() => {
-          setSubmitted(false);
-          setSubmitvalidate(true);
-        }, 2200);
-      }
+      setTimeout(() => {
+        setSubmitted(false);
+        setSubmitvalidate(true);
+      }, 2150);
+
       setTimeout(() => {
         setSubmitvalidate(false);
       }, 3000);
+
       setFormData({
         name: '',
         email: '',

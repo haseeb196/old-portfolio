@@ -1,4 +1,3 @@
-import React from 'react';
 import Services from '@/components/PagesComponents/Services/MainComponent/Services';
 import { motion, useScroll, useSpring } from 'framer-motion';
 const Service = () => {

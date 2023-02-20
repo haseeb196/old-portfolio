@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import React from 'react';
 import { useEffect, useState } from 'react';
 const Showcase = ({ img, link, button, type }) => {
   const [show, setShow] = useState(false);
@@ -30,7 +29,7 @@ const Showcase = ({ img, link, button, type }) => {
           alt=""
           height={1920}
           width={1080}
-          loading='lazy'
+          loading="lazy"
         />
       </a>
     </motion.div>

@@ -1,6 +1,6 @@
 import { useMediaQuery } from '@mui/material';
 import { motion } from 'framer-motion';
-import { useState, React } from 'react';
+import { useState } from 'react';
 import Showcase from '../components/Showcase';
 const Main = () => {
   const media1 = useMediaQuery('(min-width:1200px)');

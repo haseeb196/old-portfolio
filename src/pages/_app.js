@@ -3,10 +3,9 @@ import Mouse from '@/components/Animations/Mousetracker/Mouse';
 import Preloader from '@/components/Animations/Preloader/Preloader';
 import Sidebar from '@/components/sidebar/sidebarComponent/Sidebar';
 import '@/styles/globals.css';
-import React from 'react';
 import { useMediaQuery } from '@mui/material';
-import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
 
 export default function App({ Component, pageProps }) {
   const mousetrackw = useMediaQuery('(min-width:1024px)');

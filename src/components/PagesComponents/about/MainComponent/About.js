@@ -1,6 +1,5 @@
 import Div1 from '../components/Div1';
 import Div2 from '../components/Div2';
-import React from 'react';
 import Div3 from '../components/Div3';
 import Div4 from '../components/Div4';
 import Testimonial from '../components/Testimonial';

@@ -1,5 +1,4 @@
 import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineSeparator } from '@mui/lab';
-import React from 'react';
 const Timelines = ({ D1, D2, D3, t1, t2, t3 }) => {
   return (
     <Timeline>

@@ -1,5 +1,4 @@
 import Funfacts from './components/Funfacts';
-import React from 'react';
 
 const Sdiv3 = () => {
   const boxfun = [

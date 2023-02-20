@@ -1,4 +1,3 @@
-import React from 'react';
 import About from '@/components/PagesComponents/about/MainComponent/About';
 import { motion, useScroll, useSpring } from 'framer-motion';
 

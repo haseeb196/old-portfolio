@@ -2,7 +2,6 @@ import { Close, NavigateNext } from '@mui/icons-material';
 import { Backdrop } from '@mui/material';
 import { useState } from 'react';
 import Cardhover from './Cardhover';
-import React from 'react';
 const Card = ({ title, index, text }) => {
   const [drop, setDrop] = useState(false);
 

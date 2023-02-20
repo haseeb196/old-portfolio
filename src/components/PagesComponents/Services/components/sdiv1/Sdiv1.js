@@ -1,7 +1,6 @@
 import { useMediaQuery } from '@mui/material';
 import { motion } from 'framer-motion';
 import Card from './Cards/Card';
-import React from 'react';
 const Sdiv1 = () => {
   const media1 = useMediaQuery('(min-width:1200px)');
   const contents = [

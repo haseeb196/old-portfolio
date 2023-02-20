@@ -1,4 +1,3 @@
-import React from 'react';
 function BubbleAnimation() {
   const background = 'https://img.freepik.com/premium-psd/luxury-dark-3d-logo-mockup_225928-131.jpg?w=360';
   const imagestyle = {

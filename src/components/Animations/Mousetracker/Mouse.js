@@ -1,4 +1,4 @@
-import { useEffect, useState, React } from 'react';
+import { useEffect, useState } from 'react';
 const Mouse = () => {
   const [mousetrack, setMousetrack] = useState({});
   const mousetrackstyle = {

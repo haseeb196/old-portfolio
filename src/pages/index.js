@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-page-custom-font */
-import React from 'react';
 import Homes from '@/components/PagesComponents/home/Homes';
 import { useMediaQuery } from '@mui/material';
 import Head from 'next/head';

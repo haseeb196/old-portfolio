@@ -1,7 +1,6 @@
 import { Button, useMediaQuery } from '@mui/material';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import React from 'react';
 function Div1() {
   const media1 = useMediaQuery('(min-width:1200px)');
   return (
@@ -24,7 +23,7 @@ function Div1() {
             src="https://marketifythemes.net/tailwind/tokyo/assets/img/slider/1.jpg"
             alt=""
             className="h-[100%] w-[100%]"
-            loading='lazy'
+            loading="lazy"
           />
         </div>
       </div>

@@ -1,5 +1,4 @@
 import Timelines from '@/components/Animations/MuiComponents/Timelines';
-import React from 'react';
 const Div4 = () => {
   return (
     <div className="flex flex-row gap-x-[20%] bg-[#9c9898] py-12 text-[#3C3939] xl:px-32 sg:gap-[16%] sg:!px-16 s400:!px-6 s760:flex-col s760:!px-8">
