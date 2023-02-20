@@ -17,21 +17,21 @@ const Card = ({ title, index, text }) => {
 
   return (
     <div
-      className="group flex w-full flex-col gap-5 rounded-sm bg-[#949292]  pl-[30px] pr-[30px] pt-[45px] pb-[40px]  text-[#3C3939] shadow-md xl:max-w-[350px]"
+      className="group flex w-full flex-col gap-5 rounded-sm bg-[#aaa8a8]  pl-[30px] pr-[30px] pt-[45px] pb-[40px]  text-[#280B0B] shadow-md xl:max-w-[350px]"
       onClick={changedrop}
     >
-      <div className="max-w-[54px] rounded-[99999px] bg-[#bbb9b9] p-[14px] text-center  text-[17px] font-bold text-[#252323] transition-all duration-300 group-hover:bg-[#dddcdc]">
+      <div className="max-w-[54px] rounded-[99999px] bg-[#bbb9b9] p-[14px] text-center  text-[17px] font-bold !text-[#252323] transition-all duration-300 group-hover:bg-[#dddcdc]">
         {index}
       </div>
       <div className="text-[20px] font-bold capitalize">
         <h1>{title}</h1>
       </div>
       <div>
-        <p className="break-words  text-[14.5px] text-[#4e4949]">{text}</p>
+        <p className="break-words  text-[14.6px] text-[#403535]">{text}</p>
       </div>
 
       <div className="flex flex-col">
-        <span className="-mb-[2.5px] text-[16px] font-semibold capitalize sm:mb-0">
+        <span className="-mb-[2.5px] text-[16px] font-semibold capitalize !text-[#280B0B] sm:mb-0">
           read more
           <NavigateNext className="-pr-3 w-[18px]" />
         </span>

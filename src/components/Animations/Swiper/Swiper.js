@@ -11,7 +11,7 @@ const Swipers = ({ text, name, about, image }) => {
           <Avatar
             sx={{ width: 50, height: 50 }}
             src={image}
-            alt='avatar'
+            alt="avatar"
           />
         </div>
         <div>

@@ -17,7 +17,7 @@ const Timelines = ({ D1, D2, D3, t1, t2, t3 }) => {
               <span className="whitespace-nowrap text-[19px] font-semibold sg:text-[16px] s400:whitespace-normal">
                 {t1?.title}
               </span>
-              <span className="text-[15px] text-[#3d3939] sg:text-[13px]">{t1?.span}</span>
+              <span className="text-[15px] text-[#373434] sg:text-[13px]">{t1?.span}</span>
             </div>
           </div>
         </TimelineContent>
@@ -37,7 +37,7 @@ const Timelines = ({ D1, D2, D3, t1, t2, t3 }) => {
               <span className="whitespace-nowrap  text-[19px] font-semibold sg:text-[16px] s400:whitespace-normal">
                 {t2?.title}
               </span>
-              <span className="text-[15px] text-[#3d3939]  sg:text-[13px]">{t2?.span}</span>
+              <span className="text-[15px] text-[#373434]  sg:text-[13px]">{t2?.span}</span>
             </div>
           </div>
         </TimelineContent>
@@ -56,7 +56,7 @@ const Timelines = ({ D1, D2, D3, t1, t2, t3 }) => {
               <span className="whitespace-nowrap text-[19px] font-semibold sg:text-[16px] s400:whitespace-normal">
                 {t3?.title}
               </span>
-              <span className="text-[15px] text-[#3d3939]  sg:text-[13px]">{t3?.span}</span>
+              <span className="text-[15px] text-[#373434]  sg:text-[13px]">{t3?.span}</span>
             </div>
           </div>
         </TimelineContent>

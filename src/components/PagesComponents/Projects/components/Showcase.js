@@ -22,14 +22,15 @@ const Showcase = ({ img, link, button, type }) => {
         href={link}
         target="_blank"
         rel="noreferrer"
+        aria-label="click for project to open"
       >
         <Image
-          className={`h-full w-full transition-all duration-[0.5s] ease-in-out group-hover:scale-[1.1]`}
+          className={`aspect-auto h-full w-full transition-all duration-[0.5s] ease-in-out group-hover:scale-[1.1]`}
           src={img}
-          alt=""
+          alt="project-image"
           height={1920}
           width={1080}
-          loading="lazy"
+          priority
         />
       </a>
     </motion.div>

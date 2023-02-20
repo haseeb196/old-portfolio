@@ -7,11 +7,11 @@ const Pricingcard = ({ price, type, popular, color }) => {
       } flex w-full flex-col items-start gap-5 border-[2px] border-[#b9b6b6] px-7 pt-5 pb-10 shadow-sm xl:min-w-[200px]  s400:min-w-[190px]`}
     >
       <div>
-        <h1 className="text-[40px] font-bold text-[#3C3939]">
+        <h1 className="text-[40px] font-bold text-black">
           {price}
           <sub>$</sub>
         </h1>
-        <p className="text-[24.5px] font-bold capitalize text-[#3C3939]">{type}</p>
+        <p className="text-[24.5px] font-bold capitalize text-black">{type}</p>
       </div>
       <div className="h-[2px] w-full bg-[#b8b6b6]"></div>
       <div className="flex flex-col gap-[6px] text-gray-600">
@@ -20,12 +20,12 @@ const Pricingcard = ({ price, type, popular, color }) => {
             <p
               className={`${
                 color === 1 && i < 1
-                  ? 'text-[#292626]'
+                  ? 'text-[#000000]'
                   : color === 2 && i < 2
-                  ? 'text-[#292626]'
+                  ? 'text-[#000000]'
                   : color === 'all'
-                  ? 'text-[#292626]'
-                  : 'text-gray-600'
+                  ? 'text-[#000000]'
+                  : 'text-[#0A0000]'
               }`}
               key={i}
             >
@@ -35,7 +35,7 @@ const Pricingcard = ({ price, type, popular, color }) => {
         })}
       </div>
       <div>
-        <Button className="!bg-[#ececec] !py-4 !px-10 text-[15px] !capitalize !text-[#292626] hover:bg-white">
+        <Button className="!bg-[#ececec] !py-4 !px-10 text-[15px] !capitalize !text-[#2c2a2a] hover:bg-white">
           purchase
         </Button>
       </div>

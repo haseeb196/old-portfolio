@@ -13,9 +13,9 @@ const Contacts = () => {
       >
         <div className="flex flex-col gap-2">
           {' '}
-          <h3 className="max-w-[85px] rounded-[4px]  bg-[#3C3939] py-2 px-1 text-center text-[14px] font-semibold uppercase  text-white">
+          <h1 className="max-w-[85px] rounded-[4px]  bg-[#3C3939] py-2 px-1 text-center text-[14px] font-semibold uppercase  text-white">
             contact
-          </h3>
+          </h1>
           <h2 className="mb-5 text-[30px] font-extrabold text-[#3C3939]">Get in Touch</h2>
         </div>
         <div>

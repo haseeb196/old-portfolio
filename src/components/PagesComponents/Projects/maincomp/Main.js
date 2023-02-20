@@ -47,10 +47,10 @@ const Main = () => {
       <div className="xl:px-32 sg:!px-16 s400:!px-6 s760:!px-8">
         <div className="flex flex-row items-end gap-[40%] py-9  s760:flex-col s760:items-start s760:gap-y-6  s760:py-8">
           <div className="flex flex-col gap-3">
-            <h3 className="max-w-[85px] rounded-[4px] bg-[#3C3939] py-2 px-1 text-center text-[13px] font-semibold uppercase text-white">
+            <h1 className="max-w-[85px] rounded-[4px] bg-[#3C3939] py-2 px-1 text-center text-[13px] font-semibold uppercase text-white">
               Projects
-            </h3>
-            <h2 className="text-[30px] font-extrabold capitalize text-[#3C3939]">personal projects</h2>
+            </h1>
+            <h2 className="text-[30px] font-extrabold capitalize text-[#2c2a2a]">personal projects</h2>
           </div>
           <div className="text-[15px] font-medium capitalize">
             <ul className="flex flex-row gap-4">
@@ -59,7 +59,7 @@ const Main = () => {
                   onClick={() => {
                     setBt('all');
                   }}
-                  className={`${bt === 'all' ? 'text-black' : 'text-gray-500'} cursor-pointer`}
+                  className={`${bt === 'all' ? 'text-black' : 'text-[#474940]'} cursor-pointer`}
                 >
                   All
                 </button>
@@ -67,7 +67,7 @@ const Main = () => {
               <li>
                 <button
                   onClick={() => setBt('clones')}
-                  className={`${bt === 'clones' ? 'text-black' : 'text-gray-500'} cursor-pointer`}
+                  className={`${bt === 'clones' ? 'text-black' : 'text-[#474940]'} cursor-pointer`}
                 >
                   Clones
                 </button>
@@ -75,7 +75,7 @@ const Main = () => {
               <li>
                 <button
                   onClick={() => setBt('design')}
-                  className={`${bt === 'design' ? 'text-black' : 'text-gray-500'} cursor-pointer`}
+                  className={`${bt === 'design' ? 'text-black' : 'text-[#474940]'} cursor-pointer`}
                 >
                   Designs
                 </button>
@@ -83,7 +83,7 @@ const Main = () => {
               <li>
                 <button
                   onClick={() => setBt('backend')}
-                  className={`${bt === 'backend' ? 'text-black' : 'text-gray-500'} cursor-pointer`}
+                  className={`${bt === 'backend' ? 'text-black' : 'text-[#474940]'} cursor-pointer`}
                 >
                   Backend
                 </button>

@@ -17,7 +17,7 @@ const Funfacts = ({ text, numtext, num }) => {
         </div>
       )}
       <div
-        className="text-gray-500"
+        className="text-[#555353]"
         ref={ref}
       >
         {text}

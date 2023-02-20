@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Cardhover = ({ title }) => {
   return (
-    <div className="flex flex-col gap-6 text-[#3C3939]">
+    <div className="flex flex-col gap-6 text-[#2c2a2a]">
       <div>
         <Image
           src="https://marketifythemes.net/tailwind/tokyo/assets/img/slider/1.jpg"
@@ -16,7 +16,7 @@ const Cardhover = ({ title }) => {
       <div className="px-20 s760:px-8">
         <h1 className="text-[25px] font-semibold capitalize s760:text-[23px]">{title}</h1>
       </div>
-      <div className="flex  flex-col gap-5 px-20 pb-20 text-[16px] font-medium text-[#424141] s760:px-8">
+      <div className="flex  flex-col gap-5 px-20 pb-20 text-[16px] font-medium text-[#3d3b3b] s760:px-8">
         <p>
           Tokyo is a leading web design agency with an award-winning design team that creates innovative, effective
           websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your

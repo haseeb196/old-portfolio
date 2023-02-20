@@ -67,8 +67,9 @@ const Form = () => {
       <div className="shadow-md">
         <iframe
           src={`https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed`}
-          loading="eager"
+          loading="lazy"
           className="!bg-white"
+          title="google maps"
           style={{ height: '400px', width: '100%' }}
         />
       </div>
@@ -129,6 +130,7 @@ const Form = () => {
 
         <button
           type="submit"
+          aria-label="click to submit"
           className={`${styles.button} ${submitted && styles.onclic}  ${submitvalidate && styles.validates}`}
         >
           {submitvalidate && <Done />}

@@ -1,5 +1,6 @@
 import Main from '@/components/PagesComponents/Projects/maincomp/Main';
 import { motion, useScroll, useSpring } from 'framer-motion';
+import Head from 'next/head';
 
 const Projects = () => {
   const { scrollYProgress } = useScroll();
@@ -9,13 +10,22 @@ const Projects = () => {
     restDelta: 0.001,
   });
   return (
-    <div className="bg-[#CCC9C9]">
-      <motion.div
-        className="top-0 z-[100]  h-[2.5px] origin-[0%]  bg-[#ffffff]  xl:fixed xl:right-0 xl:left-0  sg:sticky sg:top-[64px] sg:h-[5px]"
-        style={{ scaleX }}
-      ></motion.div>
-      <Main />
-    </div>
+    <>
+      <Head>
+        <meta
+          name="description"
+          content="Projects Section"
+        />
+        <title>Projects</title>
+      </Head>
+      <div className="bg-[#CCC9C9]">
+        <motion.div
+          className="top-0 z-[100]  h-[2.5px] origin-[0%]  bg-[#ffffff]  xl:fixed xl:right-0 xl:left-0  sg:sticky sg:top-[64px] sg:h-[5px]"
+          style={{ scaleX }}
+        ></motion.div>
+        <Main />
+      </div>
+    </>
   );
 };
 

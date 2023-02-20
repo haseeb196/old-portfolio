@@ -23,13 +23,13 @@ function Div1() {
             src="https://marketifythemes.net/tailwind/tokyo/assets/img/slider/1.jpg"
             alt="photo"
             className="h-[100%] w-[100%]"
-          priority
+            priority
           />
         </div>
       </div>
       <div className="flex flex-col gap-[2px] pb-8 pt-5 capitalize">
         <h2 className="text-[25px] font-semibold text-[#2c2a2a]">Adriano Smith</h2>
-        <p className="text-[#575656]">web developer</p>
+        <p className="text-[#393838]">web developer</p>
       </div>
       <hr className="border-gray-400" />
       <div className="font-roboto-condensed flex max-w-[1000px] flex-col gap-5 py-8 text-[17px] text-[#2c2a2a]">
@@ -59,7 +59,7 @@ function Div1() {
             <p>phone:</p>
           </div>
           <div className="flex flex-col flex-nowrap gap-1 text-[#424040]">
-            <p>01.07.1990</p> 
+            <p>01.07.1990</p>
             <p>32</p>
             <p>Ave 11, New York</p>
             <p>tokyo@gmail.com</p>
@@ -91,7 +91,7 @@ function Div1() {
       </div>
       <hr className="border-gray-400" />
       <div className="py-9">
-        <Button className="!bg-white !py-4 !px-10 font-medium  !capitalize !text-[#2c2a2a]  shadow-sm hover:bg-white">
+        <Button className="!bg-white !py-4 !px-10 font-medium  !capitalize !text-[#2c2a2a] shadow-sm hover:bg-white">
           <a
             href=""
             download

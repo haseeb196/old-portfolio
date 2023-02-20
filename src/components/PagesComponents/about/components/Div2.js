@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const Div2 = () => {
   const media1 = useMediaQuery('(min-width:1200px)');
   return (
-    <div className="flex flex-row gap-60 bg-[#9c9898] py-14 font-mono capitalize text-[#2c2a2a] xl:px-32 sg:!px-16 s1040:flex-col s1040:gap-10 s400:!px-6 s760:!px-8">
+    <div className="flex flex-row gap-60 bg-[#9e9b9b] py-14 font-mono capitalize text-[#2c2a2a] xl:px-32 sg:!px-16 s1040:flex-col s1040:gap-10 s400:!px-6 s760:!px-8">
       <motion.div
         initial={media1 && { x: -25, opacity: 0 }}
         animate={media1 && { x: 0, opacity: 1 }}
