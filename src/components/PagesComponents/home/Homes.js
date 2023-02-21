@@ -19,22 +19,22 @@ const Homes = () => {
         initial={media1 && { x: -25, opacity: 0 }}
         animate={media1 && { x: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="flex flex-col gap-6 sg:gap-4"
+        className="flex flex-col gap-[8px]"
       >
         <div
           className={`${styles.content} flex flex-row justify-center sm:!text-[10px] lg:justify-start xl:justify-start sg:text-[15px] s400:!text-center s400:!text-[9px]`}
         >
-          <h1>adriano smith</h1>
-          <h1>adriano smith</h1>
+          <h1>abdul haseeb</h1>
+          <h1>abdul haseeb</h1>
         </div>
         <p
           className={`text-[22px] text-[#3C3939] sm:!text-[18px] lg:!text-start xl:max-w-[650px] sg:max-w-[600px] sg:text-center sg:text-[20px]  
           `}
         >
-          I am a WordPress Developer at heart and create features that are best suited for the job at hand.
+          Passionate junior front-end developer creating beautiful websites with continuous improvement.
         </p>
 
-        <div className="flex gap-8 lg:!justify-start sg:flex-row sg:justify-center">
+        <div className="mt-5 flex gap-8 lg:!justify-start sg:flex-row sg:justify-center">
           <button aria-label="facebook">
             <Facebook
               htmlColor={`#666054`}
