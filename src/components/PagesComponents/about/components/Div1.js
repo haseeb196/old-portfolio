@@ -28,20 +28,20 @@ function Div1() {
         </div>
       </div>
       <div className="flex flex-col gap-[2px] pb-8 pt-5 capitalize">
-        <h2 className="text-[25px] font-semibold text-[#2c2a2a]">Adriano Smith</h2>
+        <h2 className="text-[25px] font-semibold text-[#2c2a2a]">Abdul haseeb</h2>
         <p className="text-[#393838]">web developer</p>
       </div>
       <hr className="border-gray-400" />
-      <div className="font-roboto-condensed flex max-w-[1000px] flex-col gap-5 py-8 text-[17px] text-[#2c2a2a]">
-        <p>
-          Hi, my name is Adriano Smith and I began using WordPress when it first began. I’ve spent most of my waking
-          hours for the last ten years designing, programming and operating WordPress sites.
+      <div className="flex  max-w-[1000px] flex-col gap-5 py-8 font-sans text-[17px] text-[#2c2a2a]">
+        <p className="flex flex-col gap-1">
+          As a frontend developer, my passion lies in crafting beautiful, intuitive user interfaces that bring digital
+          experiences to life. I thrive on creating seamless interactions that leave a lasting impression on users.{' '}
         </p>
         <p>
-          One of my specialties is taking an idea from scratch and creating a full-fledged platform. I go beyond to
-          produce sites with a unique, outstanding, contemporary look-and-feel. With extensive knowledge of web
-          mechanics, I’m able to optimize complex integrations to require little-to-no maintenance while running on
-          their own for years.
+          My expertise in HTML, CSS, and Javascript, combined with my proficiency in frameworks such as React JS, Next
+          JS and Tailwind CSS, allows me to build visually stunning and highly responsive web applications. Whether
+          it&apos;s creating a website from scratch or revamping an existing one, I approach each project with a
+          creative mindset and an unwavering commitment to quality.
         </p>
       </div>
       <hr className="border-gray-400" />
@@ -52,39 +52,26 @@ function Div1() {
 
             <p>age:</p>
 
-            <p>address:</p>
-
             <p>email:</p>
-
-            <p>phone:</p>
           </div>
-          <div className="flex flex-col flex-nowrap gap-1 text-[#424040]">
-            <p>01.07.1990</p>
-            <p>32</p>
-            <p>Ave 11, New York</p>
-            <p>tokyo@gmail.com</p>
-            <p>
-              <a href="tel:+770221770505">+77 022 177 05 05</a>
-            </p>
+          <div className="flex max-w-[140px] flex-col flex-nowrap gap-1 text-[#424040]">
+            <p>10.9.2006</p>
+            <p>{new Date().getFullYear() - '2006'}</p>
+
+            <p className="s400:break-words">haseebsiddiqui1965@gmail.com</p>
           </div>
         </div>
         <div className="flex flex-row gap-[2rem] s400:gap-[4%]">
           <div className="flex flex-col gap-1 font-semibold capitalize text-[#2c2a2a]">
             <p>nationality:</p>
-
-            <p>study:</p>
-
-            <p>Degree:</p>
-
-            <p>Interest:</p>
-
+            <p>phone:</p>
             <p>Freelance:</p>
           </div>
           <div className="flex flex-col flex-nowrap gap-1 capitalize text-[#424040]">
-            <p className="uppercase">usa</p>
-            <p className="whitespace-nowrap">Univercity of Texas</p>
-            <p>Master</p>
-            <p className="whitespace-nowrap">Playing Football</p>
+            <p>Pakistani</p>
+            <p className="whitespace-nowrap">
+              <a href="tel:+770221770505">+77 022 177 05 05</a>
+            </p>
             <p>Available</p>
           </div>
         </div>

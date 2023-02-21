@@ -22,7 +22,7 @@ const Homes = () => {
         className="flex flex-col gap-[8px]"
       >
         <div
-          className={`${styles.content} flex flex-row justify-center sm:!text-[10px] lg:justify-start xl:justify-start sg:text-[15px] s400:!text-center s400:!text-[9px]`}
+          className={` ${styles.content} flex flex-row justify-center sm:!text-[10px] lg:justify-start xl:justify-start sg:text-[15px] s400:!text-center s400:!text-[9px]`}
         >
           <h1>abdul haseeb</h1>
           <h1>abdul haseeb</h1>

@@ -7,43 +7,97 @@ const Div3 = () => {
         <div>
           <h1 className="text-[25px] font-bold capitalize">knowledge</h1>
         </div>
-        <div className="flex flex-col gap-1">
+        <div className="flex flex-col gap-2">
           <p className="flex gap-x-2">
-            <NavigateNext /> <span className="text-[#444141]">Bootstrap, Angular</span>
+            <NavigateNext /> <span className="text-[#444141]">Node js</span>
           </p>
           <p className="flex gap-x-2">
-            <NavigateNext /> <span className="text-[#444141]">React, Vue, Laravel</span>
+            <NavigateNext /> <span className="text-[#444141]">React js, Next js</span>
+          </p>
+
+          <p className="flex gap-x-2">
+            <NavigateNext /> <span className="text-[#444141]">Tailwind css, Sass</span>
           </p>
           <p className="flex gap-x-2">
-            <NavigateNext /> <span className="text-[#444141]">Stylus, Sass, Less</span>
+            <NavigateNext /> <span className="text-[#444141]">Material Ui</span>
           </p>
           <p className="flex gap-x-2">
-            <NavigateNext /> <span className="text-[#444141]">Gulp, Webpack, Grunt</span>
+            <NavigateNext /> <span className="text-[#444141]">Git, Github</span>
           </p>
           <p className="flex gap-x-2">
-            <NavigateNext /> <span className="text-[#444141]">Tweenmax, GSAP</span>
+            <NavigateNext /> <span className="text-[#444141]">Firebase, Mongodb</span>
+          </p>
+          <p className="flex gap-x-2">
+            <NavigateNext /> <span className="text-[#444141]">Rest Api&apos;s</span>
           </p>
         </div>
       </div>
+
       <div className="flex flex-col gap-y-8 s760:gap-y-6">
         <div>
-          <h1 className="text-[25px] font-bold capitalize">Interests</h1>
+          <h1 className="text-[25px] font-bold capitalize">certifications</h1>
         </div>
-        <div className="flex flex-col gap-1">
+        <div className="flex flex-col gap-2">
           <p className="flex gap-x-2">
-            <NavigateNext /> <span className="text-[#444141]">Make UI/UX Design</span>
+            <NavigateNext />{' '}
+            <span className="text-[#444141] hover:text-black">
+              <a
+                href="https://www.freecodecamp.org/certification/fcc9ddae037-9284-4210-a51d-54bbc9d0ad5a/legacy-front-end"
+                target={'_blank'}
+                rel="noreferrer"
+              >
+                Legacy Front End
+              </a>
+            </span>
           </p>
           <p className="flex gap-x-2">
-            <NavigateNext /> <span className="text-[#444141]">Create Mobile App</span>
+            <NavigateNext />{' '}
+            <span className="text-[#444141] hover:text-black">
+              <a
+                href="https://www.freecodecamp.org/certification/fcc9ddae037-9284-4210-a51d-54bbc9d0ad5a/front-end-development-libraries"
+                target={'_blank'}
+                rel="noreferrer"
+              >
+                Front End Development Libraries
+              </a>
+            </span>
           </p>
           <p className="flex gap-x-2">
-            <NavigateNext /> <span className="text-[#444141]">Site Optimization</span>
+            <NavigateNext />{' '}
+            <span className="text-[#444141] hover:text-black">
+              <a
+                href="https://www.freecodecamp.org/certification/fcc9ddae037-9284-4210-a51d-54bbc9d0ad5a/responsive-web-design"
+                target={'_blank'}
+                rel="noreferrer"
+              >
+                Responsive Web Design
+              </a>
+            </span>
           </p>
           <p className="flex gap-x-2">
-            <NavigateNext /> <span className="text-[#444141]">Custom Website</span>
+            <NavigateNext />{' '}
+            <span className="text-[#444141] hover:text-black">
+              <a
+                href="https://www.freecodecamp.org/certification/fcc9ddae037-9284-4210-a51d-54bbc9d0ad5a/back-end-development-and-apis"
+                target={'_blank'}
+                rel="noreferrer"
+              >
+                Back End Development and APIs
+              </a>
+            </span>
           </p>
+
           <p className="flex gap-x-2">
-            <NavigateNext /> <span className="text-[#444141]">Learn Ecommerce</span>
+            <NavigateNext />
+            <span className="text-[#444141] hover:text-black">
+              <a
+                href="https://www.freecodecamp.org/certification/fcc9ddae037-9284-4210-a51d-54bbc9d0ad5a/data-visualization"
+                target={'_blank'}
+                rel="noreferrer"
+              >
+                Data Visualization
+              </a>
+            </span>
           </p>
         </div>
       </div>

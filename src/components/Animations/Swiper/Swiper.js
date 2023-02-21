@@ -1,8 +1,10 @@
 import { Avatar } from '@mui/material';
-const Swipers = ({ text, name, about, image }) => {
+const Swipers = ({ text, name, image }) => {
   return (
     <div>
-      <div className={`squarediv relative mb-8 w-full border-[2px] border-solid border-gray-400 p-[40px]`}>
+      <div
+        className={`squarediv relative mb-8 min-h-[150px] w-full border-[2px] border-solid border-[#413e3e] p-[40px]`}
+      >
         <p className="text-center">{text}</p>
       </div>
 
@@ -14,9 +16,8 @@ const Swipers = ({ text, name, about, image }) => {
             alt="avatar"
           />
         </div>
-        <div>
+        <div className={`flex flex-col items-center justify-center`}>
           <h1 className="text-[19px] font-bold capitalize">{name}</h1>
-          <p className="text-[#646262]">{about}</p>
         </div>
       </div>
     </div>

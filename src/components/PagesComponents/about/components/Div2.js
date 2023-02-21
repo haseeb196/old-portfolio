@@ -57,12 +57,6 @@ const Div2 = () => {
               percent={81}
             />
           </div>
-          <div>
-            <Progressbar
-              title={'arabic'}
-              percent={50}
-            />
-          </div>
         </div>
       </motion.div>
     </div>
