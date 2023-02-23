@@ -22,7 +22,7 @@ const Testimonial = () => {
   };
 
   return (
-    <div className="bg-[#9e9b9b] py-14 text-[#2c2a2a]  xl:px-32 sg:!px-16 s400:!px-6 s760:!px-8">
+    <div className="bg-[#9e9b9b] py-12 text-[#2c2a2a]  xl:px-32 sg:!px-16 s400:!px-6 s760:!px-8">
       <div className="mb-5">
         <h1 className="font-serif text-[25px] font-[900]">Testimonial</h1>
       </div>

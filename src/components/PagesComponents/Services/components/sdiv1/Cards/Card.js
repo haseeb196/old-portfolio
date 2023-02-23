@@ -2,16 +2,14 @@ import { Close, NavigateNext } from '@mui/icons-material';
 import { Backdrop } from '@mui/material';
 import { useState } from 'react';
 import Cardhover from './Cardhover';
-const Card = ({ title, index, text }) => {
+const Card = ({ title, index, text1, text2, text3 }) => {
   const [drop, setDrop] = useState(false);
 
   const changedrop = () => {
     if (drop) {
       setDrop(false);
-      document.body.style.overflowY = 'unset';
     } else if (!drop) {
       setDrop(true);
-      document.body.style.overflow = 'hidden';
     }
   };
 
@@ -27,7 +25,7 @@ const Card = ({ title, index, text }) => {
         <h1>{title}</h1>
       </div>
       <div>
-        <p className="break-words  text-[14.6px] text-[#403535]">{text}</p>
+        <p className="max-h-[48.5px]  overflow-hidden break-words  text-[14.6px] text-[#403535]">{text1}</p>
       </div>
 
       <div className="flex flex-col">
@@ -40,15 +38,19 @@ const Card = ({ title, index, text }) => {
         "
         ></span>
       </div>
-
       {drop && (
         <Backdrop open={drop}>
-          <div className="ml-[20%]  flex flex-row items-start gap-3 sg:mx-20 s760:mx-10 s760:flex-col-reverse s760:items-end">
+          <div className="flex flex-row items-start  gap-3 sg:mx-20 s760:mx-10 s760:mb-auto s760:flex-col-reverse s760:items-end">
             <div
-              className="h-[80vh] w-full max-w-[1050px] overflow-y-scroll scroll-smooth   rounded-xl  bg-[#bbbaba] shadow-2xl"
+              className="flex h-[800px] w-full max-w-[1100px]  overflow-y-scroll scroll-smooth rounded-xl bg-[#bbbaba]   shadow-2xl   xl:ml-[23%]"
               id="scrollsg"
             >
-              <Cardhover title={title} />
+              <Cardhover
+                title={title}
+                t1={text1}
+                t2={text2}
+                t3={text3}
+              />
             </div>
             <div
               className="rounded-xl border-[2px] border-solid border-white p-2 hover:rounded-[999px] s760:mt-4"

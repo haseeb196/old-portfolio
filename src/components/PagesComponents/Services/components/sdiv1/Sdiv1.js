@@ -1,24 +1,16 @@
 import { useMediaQuery } from '@mui/material';
 import { motion } from 'framer-motion';
+import contents from 'lib/data/Service_page/Content';
 import Card from './Cards/Card';
 const Sdiv1 = () => {
   const media1 = useMediaQuery('(min-width:1200px)');
-  const contents = [
-    {
-      title: 'web design',
-    },
-    { title: 'content writing' },
-    { title: 'brand identity' },
-    { title: 'live chat' },
-    { title: 'after effects' },
-    { title: 'mobile App' },
-  ];
+
   return (
     <motion.div
       initial={media1 && { x: -25, opacity: 0 }}
       animate={media1 && { x: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="flex flex-col gap-10 py-12  xl:!px-32 sg:!px-16 s400:!px-6 s760:!px-8"
+      className="relative z-[10] flex flex-col gap-10  py-12 xl:!px-32 sg:!px-16 s400:!px-6 s760:!px-8"
     >
       <div className="flex flex-col gap-3">
         {' '}
@@ -34,7 +26,9 @@ const Sdiv1 = () => {
               key={x.title}
               index={i + 1}
               title={x.title}
-              text={'Web development is the most famous job in the world and it is very interesting...'}
+              text1={x.t1}
+              text2={x.t2}
+              text3={x.t3}
             />
           );
         })}
