@@ -29,12 +29,12 @@ const Main = () => {
     {
       type: 'design',
       link: 'https://moboapp-693b1.web.app',
-      img: '/screenshot.png',
+      img: '/projectsImages/Screenshot.png',
     },
     {
       type: 'backend',
       link: 'https://wiki-app-cddfc.web.app',
-      img: '/searchengine.png',
+      img: '/projectsImages/searchengine.png',
     },
   ];
   return (

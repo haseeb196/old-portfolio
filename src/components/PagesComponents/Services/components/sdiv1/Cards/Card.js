@@ -25,7 +25,7 @@ const Card = ({ title, index, text1, text2, text3 }) => {
         <h1>{title}</h1>
       </div>
       <div>
-        <p className="max-h-[48.5px]  overflow-hidden break-words  text-[14.6px] text-[#403535]">{text1}</p>
+        <p className="max-h-[48.2px]  overflow-hidden break-words  text-[14.6px] text-[#403535]">{text1}</p>
       </div>
 
       <div className="flex flex-col">

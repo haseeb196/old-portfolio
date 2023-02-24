@@ -6,10 +6,11 @@ const Cardhover = ({ title, t1, t2, t3 }) => {
     <div className="flex flex-col gap-6 text-[#2c2a2a]">
       <div>
         <Image
-          src={`/ServiceImages/${title}.png`}
-          width={3840}
-          height={2160}
-          className="h-full min-h-[500px] w-full px-20 pt-20 s760:px-8"
+          src={`/ServiceImages/${title}.webp`}
+          width={1920}
+          height={1080}
+          loading="eager"
+          className="h-full w-full px-20 pt-20 s760:px-8"
           alt=""
         ></Image>
       </div>
