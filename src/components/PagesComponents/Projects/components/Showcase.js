@@ -16,7 +16,7 @@ const Showcase = ({ img, link, button, type }) => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.2 }}
-      className="group min-h-[250px]  w-full  cursor-pointer overflow-hidden"
+      className="group   w-full  cursor-pointer overflow-hidden"
     >
       <a
         href={link}
@@ -39,7 +39,7 @@ const Showcase = ({ img, link, button, type }) => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.2 }}
-      className="group min-h-[250px]  w-full  cursor-pointer overflow-hidden"
+      className="group   w-full  cursor-pointer overflow-hidden"
     >
       <a
         href={link}

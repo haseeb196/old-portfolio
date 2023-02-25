@@ -1,14 +1,11 @@
-import { useMediaQuery } from '@mui/material';
 import { motion } from 'framer-motion';
 import contents from 'lib/data/Service_page/Content';
 import Card from './Cards/Card';
 const Sdiv1 = () => {
-  const media1 = useMediaQuery('(min-width:1200px)');
-
   return (
     <motion.div
-      initial={media1 && { x: -25, opacity: 0 }}
-      animate={media1 && { x: 0, opacity: 1 }}
+      initial={{ x: -25, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
       className="relative z-[10] flex flex-col gap-10  py-12 xl:!px-32 sg:!px-16 s400:!px-6 s760:!px-8"
     >

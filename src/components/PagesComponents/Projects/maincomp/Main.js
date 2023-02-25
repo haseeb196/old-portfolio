@@ -1,30 +1,28 @@
-import { useMediaQuery } from '@mui/material';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import Showcase from '../components/Showcase';
 const Main = () => {
-  const media1 = useMediaQuery('(min-width:1200px)');
   const [bt, setBt] = useState('all');
   const content = [
     {
       type: 'clones',
-      img: 'https://i.pcmag.com/imagery/reviews/06ZvTNln3Toz309WtTLDiwP-25.fit_scale.size_760x427.v1652212718.jpg',
+      img: '/projectsImages/whatsapp.webp',
       link: 'https://whatsapp-mern-56d98.web.app',
     },
     {
       type: 'clones',
-      img: 'https://www.techjuice.pk/wp-content/uploads/2021/02/linkedin-101-hero@2x.png',
+      img: '/projectsImages/linkedin.webp',
       link: 'https://linkedin-clone-e629b.web.app',
     },
     {
       type: 'clones',
       link: 'https://fb-clone-359ec.web.app',
-      img: 'https://pixy.org/src/9/thumbs350/93087.jpg',
+      img: '/projectsImages/facebook.webp',
     },
     {
       type: 'clones',
       link: 'https://clone-acad5.web.app',
-      img: 'https://cdn.vox-cdn.com/thumbor/jJ_w_lWMMvGKoaLp_zaEXJpyZ9c=/0x0:1320x880/1400x788/filters:focal(660x440:661x441)/cdn.vox-cdn.com/uploads/chorus_asset/file/21939811/newgmaillogo.jpg',
+      img: '/projectsImages/gmail.webp',
     },
     {
       type: 'design',
@@ -34,13 +32,13 @@ const Main = () => {
     {
       type: 'backend',
       link: 'https://wiki-app-cddfc.web.app',
-      img: '/projectsImages/searchengine.png',
+      img: '/projectsImages/searchengine.webp',
     },
   ];
   return (
     <motion.div
-      initial={media1 && { x: -25, opacity: 0 }}
-      animate={media1 && { x: 0, opacity: 1 }}
+      initial={{ x: -25, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
       className="min-h-[100vh] pb-10 xl:pt-10"
     >

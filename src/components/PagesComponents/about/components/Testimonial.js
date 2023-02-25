@@ -1,10 +1,10 @@
 import Swipers from '@/components/Animations/Swiper/Swiper'; // Import Swiper React components
+import { motion } from 'framer-motion';
 import { A11y, Autoplay, Mousewheel } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/autoplay';
 import 'swiper/css/mousewheel';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 const Testimonial = () => {
   const content = {
     x1: {
@@ -22,7 +22,12 @@ const Testimonial = () => {
   };
 
   return (
-    <div className="bg-[#9e9b9b] py-12 text-[#2c2a2a]  xl:px-32 sg:!px-16 s400:!px-6 s760:!px-8">
+    <motion.div
+      initial={{ x: -25, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      className="bg-[#9e9b9b] py-12 text-[#2c2a2a]  xl:px-32 sg:!px-16 s400:!px-6 s760:!px-8"
+    >
       <div className="mb-5">
         <h1 className="font-serif text-[25px] font-[900]">Testimonial</h1>
       </div>
@@ -56,7 +61,7 @@ const Testimonial = () => {
           </SwiperSlide>
         </Swiper>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

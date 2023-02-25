@@ -1,9 +1,14 @@
 import { NavigateNext } from '@mui/icons-material';
-
+import { motion } from 'framer-motion';
 const Div3 = () => {
   return (
-    <div className="flex flex-row gap-x-[30%] py-[56px]  text-[#2c2a2a] xl:px-32 sg:!px-16 s400:!px-6 s760:flex-col s760:gap-y-[26px] s760:!px-8">
-      <div className="flex flex-col gap-y-8 s760:gap-y-6">
+    <div
+      initial={{ x: -25, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      className="flex flex-row gap-x-[30%] py-[56px]  text-[#2c2a2a] xl:px-32 sg:!px-16 s400:!px-6 s760:flex-col s760:gap-y-[26px] s760:!px-8"
+    >
+      <motion.div className="flex flex-col gap-y-8 s760:gap-y-6">
         <div>
           <h1 className="text-[25px] font-bold capitalize">knowledge</h1>
         </div>
@@ -31,7 +36,7 @@ const Div3 = () => {
             <NavigateNext /> <span className="text-[#444141]">Rest Api&apos;s</span>
           </p>
         </div>
-      </div>
+      </motion.div>
 
       <div className="flex flex-col gap-y-8 s760:gap-y-6">
         <div>

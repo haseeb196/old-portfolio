@@ -11,7 +11,7 @@ const Sidebar = () => {
     <div
       className={`
        shadow-box
-       flex flex-col items-start justify-center gap-y-16 bg-[#3C3939]  px-[70px] text-white  xl:fixed xl:h-[100vh] xl:min-w-[22%] xl:max-w-[23%]`}
+       flex flex-col items-start justify-center gap-y-16 bg-[#3C3939]  px-[70px] text-[#EEEE]  xl:fixed xl:h-[100vh] xl:min-w-[22%] xl:max-w-[23%]`}
     >
       <div>
         <h1
@@ -79,7 +79,7 @@ const Sidebar = () => {
         </ul>
       </div>
       <div className={`font-roboto-condensed text-gray-400`}>
-        <p>@2022 Tokyo</p>
+        <p>@2023 Tokyo</p>
         <p>Created by Me</p>{' '}
       </div>
     </div>

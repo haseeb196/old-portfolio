@@ -90,7 +90,7 @@ html {
 
 @keyframes glow {
   from {
-    text-shadow: 0 0 6px #161313, 0 0 6px #161313;
+    text-shadow: 0 0 6px #241b1b, 0 0 6px #161111;
   }
   to {
     text-shadow: 0 0 5px #dddada;

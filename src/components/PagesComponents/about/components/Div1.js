@@ -1,12 +1,11 @@
-import { Button, useMediaQuery } from '@mui/material';
+import { Button } from '@mui/material';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 function Div1() {
-  const media1 = useMediaQuery('(min-width:1200px)');
   return (
     <motion.div
-      initial={media1 && { x: -25, opacity: 0 }}
-      animate={media1 && { x: 0, opacity: 1 }}
+      initial={{ x: -25, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
       className="my-12 xl:px-32 sg:!px-16 s400:!px-6 s760:!px-8"
     >
