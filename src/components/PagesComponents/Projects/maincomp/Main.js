@@ -27,7 +27,7 @@ const Main = () => {
     {
       type: 'design',
       link: 'https://moboapp-693b1.web.app',
-      img: '/projectsImages/Screenshot.png',
+      img: '/projectsImages/Screenshot.webp',
     },
     {
       type: 'backend',

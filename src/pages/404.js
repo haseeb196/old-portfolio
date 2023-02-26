@@ -1,4 +1,5 @@
 import Lottie from 'lottie-web';
+import Head from 'next/head';
 import { useEffect, useRef } from 'react';
 
 const Error404 = () => {
@@ -16,9 +17,19 @@ const Error404 = () => {
   });
 
   return (
-    <div className="flex h-screen w-screen items-center justify-center">
-      <div ref={ref}></div>
-    </div>
+    <>
+      <Head>
+        <title>Error 404</title>
+
+        <meta
+          name="description"
+          content="Error Page"
+        />
+      </Head>
+      <div className="flex h-screen w-screen items-center justify-center">
+        <div ref={ref}></div>
+      </div>
+    </>
   );
 };
 

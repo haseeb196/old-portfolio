@@ -9,7 +9,7 @@ const Cardhover = ({ title, t1, t2, t3 }) => {
           src={`/ServiceImages/${title}.webp`}
           width={1920}
           height={1080}
-          loading="eager"
+          priority
           className="h-full w-full px-20 pt-20 s760:px-8"
           alt=""
         ></Image>
