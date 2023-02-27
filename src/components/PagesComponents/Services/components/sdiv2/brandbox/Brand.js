@@ -7,7 +7,7 @@ const Brand = ({ image }) => {
         width={1920}
         height={1080}
         src={image}
-        className="px-[37.5%] py-5 opacity-40 transition-all duration-300 group-hover:opacity-100"
+        className="!px-[37.5%] !py-5 opacity-40 transition-all duration-300 group-hover:opacity-100"
       ></Image>
     </div>
   );

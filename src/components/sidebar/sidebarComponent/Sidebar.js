@@ -11,14 +11,14 @@ const Sidebar = () => {
     <div
       className={`
        shadow-box
-       flex flex-col items-start justify-center gap-y-16 bg-[#3C3939]  px-[70px] text-[#EEEE]  xl:fixed xl:h-[100vh] xl:min-w-[22%] xl:max-w-[23%]`}
+       flex flex-col items-start justify-center gap-y-16 bg-[#3C3939]  px-[70px] text-[#EEEE]  xl:fixed xl:h-[100vh] xl:min-w-[22%] xl:max-w-[22%]`}
     >
       <div>
         <h1
-          className={`glow text-[40px] font-[700]  uppercase
+          className={`reenie-beanie glow flex flex-col text-[34px]
           tracking-[0.35rem] text-white`}
         >
-          Tokyo
+          <span>Abdul</span> <span>Haseeb</span>
         </h1>
       </div>
       <div>
@@ -79,14 +79,14 @@ const Sidebar = () => {
         </ul>
       </div>
       <div className={`font-roboto-condensed text-gray-400`}>
-        <p>@2023 Tokyo</p>
+        <p>@2023</p>
         <p>Created by Me</p>{' '}
       </div>
     </div>
   ) : (
     <div className="flex flex-row items-center justify-between bg-[#3C3939] py-3 text-white">
       <div className="ml-5">
-        <h1 className="glow text-[20px] font-bold uppercase tracking-widest">tokoyo</h1>
+        <h1 className="reenie-beanie glow text-[19px] tracking-widest">Abdul Haseeb</h1>
       </div>
       <div className="mr-5">
         <Drawers />

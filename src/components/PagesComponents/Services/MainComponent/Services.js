@@ -4,7 +4,7 @@ import Sdiv3 from '../components/sdiv3/Sdiv3';
 
 const Services = () => {
   return (
-    <div className="xl:pt-10 ">
+    <div className="min-h-[100vh] xl:pt-10">
       <Sdiv1 />
       <Sdiv2 />
       <Sdiv3 />

@@ -5,7 +5,7 @@ import Div3 from '../components/Div3';
 import Testimonial from '../components/Testimonial';
 const About = () => {
   return (
-    <div className="xl:pt-10">
+    <div className="min-h-[100vh] xl:pt-10">
       <Div1 />
       <Div2 />
       <Div3 />
