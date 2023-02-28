@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import Mouse from '@/components/Animations/Mousetracker/Mouse';
 import Preloader from '@/components/Animations/Preloader/Preloader';
+import Cbutton from '@/components/PagesComponents/ContactButton/Cbutton';
 import Sidebar from '@/components/sidebar/sidebarComponent/Sidebar';
 import '@/styles/globals.css';
 import { useMediaQuery } from '@mui/material';
@@ -59,7 +60,7 @@ export default function App({ Component, pageProps }) {
       {!loading ? (
         <div className="flex flex-col xl:flex-row">
           {mousetrackw && <Mouse />}
-
+          {sidebar && <Cbutton />}
           <div className="z-30 xl:flex-[0.26] sg:sticky sg:top-0">
             {sidebar && <Sidebar />}
             {mousetrackw && <Mouse />}

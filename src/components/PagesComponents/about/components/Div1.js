@@ -1,4 +1,3 @@
-import { Button } from '@mui/material';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 function Div1() {
@@ -54,7 +53,7 @@ function Div1() {
             <p>email:</p>
           </div>
           <div className="flex max-w-[140px] flex-col flex-nowrap gap-1 text-[#424040]">
-            <p>10.9.2006</p>
+            <p>10-9-2006</p>
             <p>{new Date().getFullYear() - '2006'}</p>
 
             <p className="s400:break-words">haseebsiddiqui1965@gmail.com</p>
@@ -77,14 +76,13 @@ function Div1() {
       </div>
       <hr className="border-gray-400" />
       <div className="py-9">
-        <Button className="!bg-white !py-4 !px-10 font-medium  !capitalize !text-[#2c2a2a] shadow-sm hover:bg-white">
-          <a
-            href=""
-            download
-          >
-            Download CV
-          </a>
-        </Button>
+        <a
+          href=""
+          download
+          className="rounded-full bg-white !py-4 !px-10 font-medium"
+        >
+          Download CV
+        </a>
       </div>
     </motion.div>
   );

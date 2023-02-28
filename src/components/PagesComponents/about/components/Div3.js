@@ -8,7 +8,7 @@ const Div3 = () => {
       transition={{ duration: 0.5 }}
       className="flex flex-row gap-x-[30%] py-[56px]  text-[#2c2a2a] xl:px-32 sg:!px-16 s400:!px-6 s760:flex-col s760:gap-y-[26px] s760:!px-8"
     >
-      <motion.div className="flex flex-col gap-y-8 s760:gap-y-6">
+      <motion.div className="flex flex-col gap-y-5">
         <div>
           <h1 className="text-[25px] font-bold capitalize">knowledge</h1>
         </div>
@@ -38,7 +38,7 @@ const Div3 = () => {
         </div>
       </motion.div>
 
-      <div className="flex flex-col gap-y-8 s760:gap-y-6">
+      <div className="flex flex-col gap-y-5">
         <div>
           <h1 className="text-[25px] font-bold capitalize">certifications</h1>
         </div>
