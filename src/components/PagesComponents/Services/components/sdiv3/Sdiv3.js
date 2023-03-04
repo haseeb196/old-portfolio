@@ -2,8 +2,8 @@ import { motion } from 'framer-motion';
 import Funfacts from './components/Funfacts';
 const Sdiv3 = () => {
   const boxfun = [
-    { maintext: 'projects completed', num: '777', numtext: '+' },
-    { maintext: 'happy clients', num: '200', numtext: 'k' },
+    { maintext: 'projects completed', num: '30', numtext: '+' },
+    { maintext: 'happy clients', num: '20', numtext: 'k' },
     { maintext: 'lines of code', num: '10', numtext: 'k+' },
   ];
   return (

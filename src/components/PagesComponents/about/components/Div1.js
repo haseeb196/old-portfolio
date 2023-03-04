@@ -18,7 +18,7 @@ function Div1() {
           <Image
             width={1920}
             height={1080}
-            src="https://marketifythemes.net/tailwind/tokyo/assets/img/slider/1.jpg"
+            src="/ProfilePic/Haseeb%202.png"
             alt="photo"
             className="h-[100%] w-[100%]"
             priority

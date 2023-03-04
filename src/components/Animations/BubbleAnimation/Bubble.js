@@ -1,7 +1,7 @@
 function BubbleAnimation() {
-  const background = 'https://img.freepik.com/premium-psd/luxury-dark-3d-logo-mockup_225928-131.jpg?w=360';
-  const imagestyle = {
-    backgroundImage: `url(${background})`,
+  const link = 'http://localhost:3000/ProfilePic/Haseeb%202.png'
+    const imagestyle = {
+    backgroundImage: `url(${link})`,
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     backgroundBlendMode: 'multiply',
