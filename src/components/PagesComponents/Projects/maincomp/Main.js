@@ -31,7 +31,7 @@ const Main = () => {
     },
     {
       type: 'backend',
-      link: 'https://wiki-app-cddfc.web.app',
+      link: 'https://wiki-app-red.vercel.app',
       img: '/projectsImages/searchengine.webp',
     },
   ];
