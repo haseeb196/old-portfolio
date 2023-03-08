@@ -35,30 +35,30 @@ const Homes = () => {
         </p>
 
         <div className="mt-5 flex gap-8 lg:!justify-start sg:flex-row sg:justify-center">
-          <button aria-label="facebook">
+          <button aria-label="facebook" rel='noreferrer' target={'_blank'}>
             <Facebook
               htmlColor={`#666054`}
               className="!sm:text-[24px] !text-[30px]"
             />
           </button>
-          <button aria-label="twitter">
+          <a href='https://twitter.com/Abdul_Haseeb093' rel='noreferrer' target={'_blank'}>
             <Twitter
               htmlColor={`#666054`}
               className="!sm:text-[24px] !text-[30px]"
             />
-          </button>
-          <button aria-label="github">
+          </a>
+          <a href='https://github.com/haseeb196' rel='noreferrer' target={'_blank'}>
             <GitHub
               htmlColor={`#666054`}
               className="!sm:text-[24px] !text-[30px]"
             />
-          </button>
-          <button aria-label="linkedin">
+          </a>
+          <a href='https://linkedin.com/in/abdulhaseeb-dev' rel='noreferrer' target={'_blank'}>
             <LinkedIn
               htmlColor={`#666054`}
               className="!sm:text-[24px] !text-[30px]"
             />
-          </button>
+          </a>
         </div>
       </motion.div>
     </div>
