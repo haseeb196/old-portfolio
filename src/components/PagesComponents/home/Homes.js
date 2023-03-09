@@ -38,6 +38,7 @@ const Homes = () => {
           <a
             href="https://www.facebook.com/haseeb.siddiqui.75098"
             rel="noreferrer"
+            aria-label="facebook"
             target={'_blank'}
           >
             <Facebook
@@ -48,6 +49,7 @@ const Homes = () => {
           <a
             href="https://twitter.com/Abdul_Haseeb093"
             rel="noreferrer"
+            aria-label="twitter"
             target={'_blank'}
           >
             <Twitter
@@ -58,6 +60,7 @@ const Homes = () => {
           <a
             href="https://github.com/haseeb196"
             rel="noreferrer"
+            aria-label="github"
             target={'_blank'}
           >
             <GitHub
@@ -68,6 +71,7 @@ const Homes = () => {
           <a
             href="https://linkedin.com/in/abdulhaseeb-dev"
             rel="noreferrer"
+            aria-label="linkedin"
             target={'_blank'}
           >
             <LinkedIn
