@@ -77,8 +77,8 @@ function Div1() {
       <hr className="border-gray-400" />
       <div className="py-9">
         <a
-          href=""
-          download
+          href="/cv/abdul-haseeb.pdf"
+          download="abdul-haseeb-cv.pdf"
           className="rounded-full bg-white !py-4 !px-10 font-medium"
         >
           Download CV

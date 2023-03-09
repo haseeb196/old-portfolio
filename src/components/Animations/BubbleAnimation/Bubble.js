@@ -1,6 +1,6 @@
 function BubbleAnimation() {
-  const link = 'http://localhost:3000/ProfilePic/Haseeb%202.png'
-    const imagestyle = {
+  const link = 'http://localhost:3000/ProfilePic/Haseeb%202.png';
+  const imagestyle = {
     backgroundImage: `url(${link})`,
     backgroundPosition: 'center',
     backgroundSize: 'cover',

@@ -59,7 +59,6 @@ export default function App({ Component, pageProps }) {
       </Head>
       {!loading ? (
         <div className="flex flex-col xl:flex-row">
-      
           {mousetrackw && <Mouse />}
           {sidebar && <Cbutton />}
           <div className="z-30 xl:flex-[0.26] sg:sticky sg:top-0">

@@ -35,25 +35,41 @@ const Homes = () => {
         </p>
 
         <div className="mt-5 flex gap-8 lg:!justify-start sg:flex-row sg:justify-center">
-          <a href='https://www.facebook.com/haseeb.siddiqui.75098' rel='noreferrer' target={'_blank'}>
+          <a
+            href="https://www.facebook.com/haseeb.siddiqui.75098"
+            rel="noreferrer"
+            target={'_blank'}
+          >
             <Facebook
               htmlColor={`#666054`}
               className="!sm:text-[24px] !text-[30px]"
             />
           </a>
-          <a href='https://twitter.com/Abdul_Haseeb093' rel='noreferrer' target={'_blank'}>
+          <a
+            href="https://twitter.com/Abdul_Haseeb093"
+            rel="noreferrer"
+            target={'_blank'}
+          >
             <Twitter
               htmlColor={`#666054`}
               className="!sm:text-[24px] !text-[30px]"
             />
           </a>
-          <a href='https://github.com/haseeb196' rel='noreferrer' target={'_blank'}>
+          <a
+            href="https://github.com/haseeb196"
+            rel="noreferrer"
+            target={'_blank'}
+          >
             <GitHub
               htmlColor={`#666054`}
               className="!sm:text-[24px] !text-[30px]"
             />
           </a>
-          <a href='https://linkedin.com/in/abdulhaseeb-dev' rel='noreferrer' target={'_blank'}>
+          <a
+            href="https://linkedin.com/in/abdulhaseeb-dev"
+            rel="noreferrer"
+            target={'_blank'}
+          >
             <LinkedIn
               htmlColor={`#666054`}
               className="!sm:text-[24px] !text-[30px]"
