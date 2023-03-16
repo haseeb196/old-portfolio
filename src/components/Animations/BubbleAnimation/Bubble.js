@@ -1,5 +1,5 @@
 function BubbleAnimation() {
-  const link = '';
+  const link = '/ProfilePic/profilepci.jpg';
   const imagestyle = {
     backgroundImage: `url(${link})`,
     backgroundPosition: 'center',

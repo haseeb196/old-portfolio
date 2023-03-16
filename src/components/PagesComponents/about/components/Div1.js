@@ -1,6 +1,31 @@
 import { motion } from 'framer-motion';
-import Image from 'next/image';
+import Lottie from 'lottie-web';
+import { useEffect, useRef } from 'react';
+import Typed from 'typed.js';
+
 function Div1() {
+  const ref = useRef();
+  const typer = useRef();
+  useEffect(() => {
+    const dawg = ref.current;
+    const el = typer.current;
+    const instance = Lottie.loadAnimation({
+      container: dawg,
+      renderer: 'svg',
+      autoplay: true,
+      path: '/Aboutanimate/coding.json',
+    });
+    const typed = new Typed(el, {
+      strings: ['Abdul haseeb', 'hello!'],
+      typeSpeed: 90,
+      loop: true,
+    });
+    return () => {
+      instance.destroy();
+      typed.destroy();
+    };
+  }, []);
+
   return (
     <motion.div
       initial={{ x: -25, opacity: 0 }}
@@ -14,19 +39,20 @@ function Div1() {
         </h1>
         <h2 className="mb-5 text-[30px] font-extrabold text-[#2c2a2a]">about me</h2>
 
-        <div className="max-w-[1000px]">
-          <Image
-            width={1920}
-            height={1080}
-            src=""
-            alt="photo"
-            className="h-[100%] w-[100%]"
-            priority
-          />
-        </div>
+        <div
+          className="max-h-[700px] max-w-[700px]"
+          ref={ref}
+        ></div>
       </div>
       <div className="flex flex-col gap-[2px] pb-8 pt-5 capitalize">
-        <h2 className="text-[25px] font-semibold text-[#2c2a2a]">Abdul haseeb</h2>
+        <div className="flex items-center align-bottom">
+          {' '}
+          <h2
+            className="!whitespace-nowrap text-[25px]  font-semibold text-[#2c2a2a]"
+            ref={typer}
+          ></h2>
+        </div>
+
         <p className="text-[#393838]">web developer</p>
       </div>
       <hr className="border-gray-400" />
