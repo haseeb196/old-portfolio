@@ -1,31 +1,6 @@
 import { motion } from 'framer-motion';
-import Lottie from 'lottie-web';
-import { useEffect, useRef } from 'react';
-import Typed from 'typed.js';
 
 function Div1() {
-  const ref = useRef();
-  const typer = useRef();
-  useEffect(() => {
-    const dawg = ref.current;
-    const el = typer.current;
-    const instance = Lottie.loadAnimation({
-      container: dawg,
-      renderer: 'svg',
-      autoplay: true,
-      path: '/Aboutanimate/coding.json',
-    });
-    const typed = new Typed(el, {
-      strings: ['Abdul haseeb', 'hello!'],
-      typeSpeed: 90,
-      loop: true,
-    });
-    return () => {
-      instance.destroy();
-      typed.destroy();
-    };
-  }, []);
-
   return (
     <motion.div
       initial={{ x: -25, opacity: 0 }}
@@ -33,27 +8,8 @@ function Div1() {
       transition={{ duration: 0.5 }}
       className="my-12 xl:px-32 sg:!px-16 s400:!px-6 s760:!px-8"
     >
-      <div className="mb-14 flex flex-col gap-[0.6rem] capitalize sm:mb-8 sg:mb-10 s400:mb-6">
-        <h1 className="max-w-[80px] rounded-[4px] bg-[#3C3939] py-2 px-3 text-center text-[14px] font-semibold uppercase text-white">
-          about
-        </h1>
-        <h2 className="mb-5 text-[30px] font-extrabold text-[#2c2a2a]">about me</h2>
-
-        <div
-          className="max-h-[700px] max-w-[700px]"
-          ref={ref}
-        ></div>
-      </div>
-      <div className="flex flex-col gap-[2px] pb-8 pt-5 capitalize">
-        <div className="flex items-center align-bottom">
-          {' '}
-          <h2
-            className="!whitespace-nowrap text-[25px]  font-semibold text-[#2c2a2a]"
-            ref={typer}
-          ></h2>
-        </div>
-
-        <p className="text-[#393838]">web developer</p>
+      <div className="mb-2 flex flex-col gap-[0.6rem] capitalize">
+        <h2 className="text-[30px] font-extrabold text-[#2c2a2a]">about me</h2>
       </div>
       <hr className="border-gray-400" />
       <div className="flex  max-w-[1000px] flex-col gap-5 py-8 font-sans text-[17px] text-[#2c2a2a]">
