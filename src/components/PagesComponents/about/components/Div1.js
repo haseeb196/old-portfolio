@@ -44,14 +44,10 @@ function Div1() {
         <div className="flex flex-row gap-[2rem] s400:gap-[4%]">
           <div className="flex flex-col gap-1 font-semibold capitalize text-[#2c2a2a]">
             <p>nationality:</p>
-            <p>phone:</p>
             <p>Freelance:</p>
           </div>
           <div className="flex flex-col flex-nowrap gap-1 capitalize text-[#424040]">
             <p>Pakistani</p>
-            <p className="whitespace-nowrap">
-              <a href="tel:+770221770505">+77 022 177 05 05</a>
-            </p>
             <p>Available</p>
           </div>
         </div>
