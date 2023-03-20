@@ -31,7 +31,7 @@ const Homes = () => {
           className={`text-[22px] text-[#3C3939] sm:!text-[18px] lg:!text-start xl:max-w-[650px] sg:max-w-[600px] sg:text-center sg:text-[20px]  
           `}
         >
-          Passionate junior front-end developer creating beautiful websites with continuous improvement.
+          Passionate front-end developer creating beautiful websites with continuous improvement.
         </p>
 
         <div className="mt-5 flex gap-8 lg:!justify-start sg:flex-row sg:justify-center">

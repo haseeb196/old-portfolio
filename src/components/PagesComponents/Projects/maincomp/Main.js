@@ -43,9 +43,9 @@ const Main = () => {
       className="min-h-[100vh] pb-10 xl:pt-10"
     >
       <div className="xl:px-32 sg:!px-16 s400:!px-6 s760:!px-8">
-        <div className="flex flex-row items-end gap-[40%] py-9  s760:flex-col s760:items-start s760:gap-y-6  s760:py-8">
+        <div className="flex max-w-[960px] flex-row items-end justify-between py-9  s760:flex-col  s760:items-start s760:gap-y-6 s760:py-8  s2000:max-w-[1150px]">
           <div className="flex flex-col gap-3">
-            <h1 className="max-w-[85px] rounded-[4px] bg-[#3C3939] py-2 px-1 text-center text-[13px] font-semibold uppercase text-white">
+            <h1 className="max-w-[85px] rounded-[4px] bg-[#3C3939] py-2 px-1  text-center text-[13px] font-semibold uppercase text-white">
               Projects
             </h1>
             <h2 className="text-[30px] font-extrabold capitalize text-[#2c2a2a]">personal projects</h2>
