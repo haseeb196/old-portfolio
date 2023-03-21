@@ -4,7 +4,7 @@ const Form = () => {
   return (
     <form
       className="flex flex-col gap-9"
-      action="https://formsubmit.co/haseebsiddiqui1965@gmail.com"
+      action="https://formsubmit.co/42e81acfaf63ff4439185135ecfb4fb2"
       method="POST"
     >
       <div className="shadow-md">
