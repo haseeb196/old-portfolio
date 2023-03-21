@@ -1,68 +1,11 @@
 import styles from '@/styles/Animation.module.css';
-import { Done, Error } from '@mui/icons-material';
-import { db } from 'database/firebase';
-import { motion } from 'framer-motion';
-import { useState } from 'react';
+
 const Form = () => {
-  const [error, setError] = useState(false);
-  const [emailerror, setEmailerror] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
-  const [submitvalidate, setSubmitvalidate] = useState(false);
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
-  const regexe = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
-  const formhandler = () => {
-    setEmailerror(false);
-    setError(false);
-  };
-
-  const handleChange = (e) => {
-    setError(false);
-    setEmailerror(false);
-
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    if (formData.name == '' || formData.email == '' || formData.message == '') {
-      setError(true);
-    } else if (!regexe.test(formData?.email)) {
-      setEmailerror(true);
-    } else {
-      setSubmitted(true);
-      db.collection('user').add({
-        name: formData.name,
-        email: formData.email,
-        message: formData.message,
-      });
-
-      setTimeout(() => {
-        setSubmitted(false);
-        setSubmitvalidate(true);
-      }, 2150);
-
-      setTimeout(() => {
-        setSubmitvalidate(false);
-      }, 3000);
-
-      setFormData({
-        name: '',
-        email: '',
-        message: '',
-      });
-    }
-  };
-
   return (
     <form
-      onSubmit={handleSubmit}
       className="flex flex-col gap-9"
-      onClick={formhandler}
+      action="https://formsubmit.co/haseebsiddiqui1965@gmail.com"
+      method="POST"
     >
       <div className="shadow-md">
         <iframe
@@ -75,66 +18,36 @@ const Form = () => {
       </div>
       <div className="flex flex-col gap-9">
         <div className="relative w-full">
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: error ? 1 : 0 }}
-            transition={{ duration: 0.3 }}
-            className="absolute z-0 text-[15px] text-red-500"
-          >
-            Please Fill Required Fields
-          </motion.div>
-
-          <motion.input
-            animate={{ marginTop: error ? 30 : 0 }}
+          <input
             type="text"
             name="name"
-            value={formData.name}
-            onChange={handleChange}
             placeholder="Name"
+            required
             autoComplete="off"
             className="w-full border-[1px] border-[#9e9e9e] bg-transparent   px-3 py-2 text-[16px] outline-none transition-all duration-[0.2s] ease-linear placeholder:text-[#9e9e9e] focus:border-black"
           />
         </div>
-        <motion.div
-          animate={{ marginBottom: emailerror ? 20 : 0 }}
-          transition={{ duration: 0.3 }}
-          className="relative w-full"
-        >
+        <div className="relative w-full">
           <input
-            type="text"
+            type="email"
             name="email"
-            value={formData.email}
-            onChange={handleChange}
             placeholder="Email"
             autoComplete="off"
+            required
             className="w-full border-[1px] border-[#9e9e9e] bg-transparent px-3 py-2 text-[16px] outline-none transition-all duration-[0.2s] ease-linear placeholder:text-[#9e9e9e] focus:border-black"
           />
-
-          <motion.div
-            initial={{ opacity: 0, top: emailerror ? 27 : 42 }}
-            animate={{ top: emailerror ? 42 : 35, opacity: emailerror ? 1 : 0 }}
-            transition={{ duration: emailerror ? 0.3 : 0.2 }}
-            className={`absolute my-1 flex max-w-[180px] flex-row items-center gap-2 capitalize text-red-500 `}
-          >
-            <Error />
-            <span>Enter a valid email</span>
-          </motion.div>
-        </motion.div>
+        </div>
         <textarea
           name="message"
-          value={formData.message}
-          onChange={handleChange}
           placeholder="Message"
+          required
           className="h-40 w-full resize-none border-[1px] border-[#9e9e9e] bg-transparent px-3 py-3 text-[16px] outline-0 transition-all duration-[0.2s] ease-linear placeholder:text-[#9e9e9e] focus:border-black "
         />
 
         <button
-          type="submit"
           aria-label="click to submit"
-          className={`${styles.button} ${submitted && styles.onclic}  ${submitvalidate && styles.validates}`}
-        >
-          {submitvalidate && <Done />}
-        </button>
+          className={`${styles.button}`}
+        ></button>
       </div>
     </form>
   );

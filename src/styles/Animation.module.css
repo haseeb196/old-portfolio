@@ -57,38 +57,3 @@
 .button:after {
   content: 'SUBMIT';
 }
-
-.onclic {
-  width: 40px;
-  border-color: rgb(230, 226, 226);
-  border-width: 5px;
-  font-size: 0;
-  border-left-color: white;
-  animation: rotating 2s 0.25s linear infinite;
-}
-.onclic:after {
-  content: '';
-}
-
-.onclic:hover {
-  background: transparent;
-}
-
-@keyframes rotating {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.validates {
-  font-size: 13px;
-  color: white !important;
-  background: #1ecd97 !important;
-  border-color: #1ecd97 !important;
-}
-.validates:after {
-  content: '';
-}
