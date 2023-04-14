@@ -19,9 +19,12 @@ const Div3 = () => {
           <p className="flex gap-x-2">
             <NavigateNext /> <span className="text-[#444141]">React js, Next js</span>
           </p>
+          <p className="flex gap-x-2">
+            <NavigateNext /> <span className="text-[#444141]">Redux js</span>
+          </p>
 
           <p className="flex gap-x-2">
-            <NavigateNext /> <span className="text-[#444141]">Tailwind css, Sass</span>
+            <NavigateNext /> <span className="text-[#444141]">Tailwind CSS</span>
           </p>
           <p className="flex gap-x-2">
             <NavigateNext /> <span className="text-[#444141]">Material Ui, Ionic</span>
