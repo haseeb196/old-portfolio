@@ -34,6 +34,16 @@ const Main = () => {
       link: 'https://wiki-app-red.vercel.app',
       img: '/projectsImages/searchengine.webp',
     },
+    {
+      type: 'clones',
+      link: 'https://chatgpt-clon.vercel.app',
+      img: '/projectsImages/chatgpt-pic.webp',
+    },
+    {
+      type: 'clones',
+      link: 'https://amazon-clone13.vercel.app',
+      img: '/projectsImages/amzon-clone-img.webp',
+    },
   ];
   return (
     <motion.div

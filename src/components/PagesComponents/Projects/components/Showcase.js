@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 const Showcase = ({ img, link, button, type }) => {
   const [show, setShow] = useState(false);
   useEffect(() => {
-    if (button === type) {
+    if (button == type) {
       setShow(true);
     } else {
       setShow(false);
