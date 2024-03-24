@@ -3,7 +3,7 @@ import Funfacts from './components/Funfacts';
 const Sdiv3 = () => {
   const boxfun = [
     { maintext: 'projects completed', num: '30', numtext: '+' },
-    { maintext: 'happy clients', num: '20', numtext: 'k' },
+    { maintext: 'happy clients', num: '0', numtext: 'k' },
     { maintext: 'lines of code', num: '10', numtext: 'k+' },
   ];
   return (
